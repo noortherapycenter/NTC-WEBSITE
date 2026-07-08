@@ -1,2 +1,6 @@
 # Redirect www to root
 https://www.noortherapycenter.com/* https://noortherapycenter.com/:splat 301!
+
+# Admin link goes straight to the portal (no intermediate page)
+/admin.html /staff-portal/index.html 302!
+/admin /staff-portal/index.html 302!
