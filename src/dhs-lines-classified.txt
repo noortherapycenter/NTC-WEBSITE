@@ -1,0 +1,759 @@
+
+### QSP 7120 C.pdf
+HDR  | DHS-7120C-ENG  | 2-26
+HDR  | Page 1 of 2
+CAPS | MINNESOTA HEALTH CARE PROGRAMS (MHCP)
+H?   | Early Intensive Developmental and Behavioral Intervention
+P    | (EIDBI) Qualified Supervising Professionals (QSP)
+H?   | Assurance Statement
+H?   | Provider information
+CAPS | PROVIDER NAME  | NPI
+CAPS | STREET ADDRESS
+CAPS | CITY  | STATE  | ZIP CODE  | PHONE NUMBER
+P    | Complete, initial and sign this form to enroll as a qualified supervising professional (QSP) for Early Intensi
+P    | Developmental and Behavioral Intervention (EIDBI) services. This form is an addendum to the Fee-for-Service (F
+P    | only or FFS and Managed Care Organization In-Network Provider Agreement (DHS-4138) (PDF) for Minnesota Health
+P    | Care Programs (MHCP).
+P    | Keep documentation for auditing purposes that shows your compliance with the following requirements. You must
+P    | keep a signed copy of this form on record. Fax this completed form, along with all other required MHCP provide
+P    | enrollment documents, to 651-431-7462 or upload through the online Minnesota Provider Screening and Enrollment
+P    | (MPSE) Portal.
+P    | Agencies cannot be reimbursed for services provided without a QSP. QSPs are responsible to update their
+P    | affiliations immediately upon separation from an agency by submitting the MHCP Individual Provider Profile
+P    | Change (DHS-3535) (PDF) to end the affiliation.
+H?   | Your application
+P    | If DHS approves your application to enroll as a QSP, you will be authorized to clinically supervise staff who 
+P    | EIDBI services and assume full professional responsibility for services provided by Level I, II or III EIDBI p
+P    | approved as a QSP, you will also be authorized to provide the following services: EIDBI intervention, observat
+P    | direction of Level I, II or III providers, family or caregiver training and counseling, coordinated care confe
+P    | individual treatment plan (ITP) development and monitoring.
+H?   | License and certifications
+P    | You must be an employee of an EIDBI agency and attest to at least one of the following to become a QSP for EID
+P    | services. Initial and attach a copy of your current license to this form. Electronic initials accepted.
+P    | I am a licensed mental health professional under Minnesota Statutes, 245.4871, subdivision 27, clauses (1)
+P    | to (6).
+P    | I am a licensed behavior analyst under Minnesota Statutes, 148.99861, subdivision 7
+P    | (Laws of Minnesota 2024, chapter 127, article 19, section 1.)
+H?   | I am a developmental or behavioral pediatrician
+H?   | Experience and training
+P    | You must also attest by initialing the following to enroll as an EIDBI QSP provider.
+P    | I have at least 2,000 hours of supervised clinical experience or training in examining or treating people with
+P    | ASD or a related condition or equivalent documented coursework at the graduate level by an accredited
+P    | university in ASD diagnostics, ASD developmental and behavioral treatment strategies, and typical child
+P    | development.
+SKIP | -- 1 of 2 --
+HDR  | DHS-7120C-ENG 2-26 | Page 2 of 2
+H?   | DHS-recognized advanced certifications and licenses
+P    | Initial any licenses or DHS-recognized advanced certifications you have, if applicable, and attach a copy of y
+P    | current certificates and licenses to this form.
+H?   | Applied Behavior Analysis Licenses
+P    | Licensed Board-Certified Behavior Analyst;  | LICENSE NUMBER:
+P    | Licensed Board-Certified Behavior Analyst-Doctoral; LICENSE NUMBER:
+H?   | Advanced certifications
+P    | The following certifications alone do not qualify the individual as a QSP.
+H?   | Applied Behavior Analysis (ABA)
+H?   | Board-Certified Assistant Behavior Analyst
+H?   | Qualified Behavior Analyst Certification; LBA required
+H?   | DIR/Floortime
+P    | Provider with Level 3 certification or DIR/Floortime Advanced Certificate
+P    | Provider with Level 4 certification or DIR/Floortime Expert Training Leader Certificate
+H?   | Early Start Denver Model (ESDM)
+H?   | Certified trainer
+H?   | Parent coach trainer
+H?   | Senior trainer
+H?   | Relationship Development Intervention (RDI)
+H?   | RDI Certified Consultant
+P    | By signing this form, you are assuring that you will take full responsibility for all EIDBI services that are 
+P    | your supervision. You assure that all services under your supervision will be provided by qualified staff work
+P    | compliance with all applicable service standards, including standards described in the EIDBI Benefit Policy Ma
+P    | By initialing the requirements and signing this form, I, the named QSP applicant, attest to the accuracy of al
+P    | information on this form. I will notify MHCP Provider Eligibility and Compliance of any changes to this inform
+P    | and follow the Ongoing Reporting Requirements to ensure my information is accurate and up to date.
+P    | Check if signing electronically:
+P    | I am signing this form electronically. My name as typed in the signature field is my legally binding signature
+P    | understand that my electronic signature has the same legal effect and can be enforced in the same way as a
+P    | handwritten signature. (Minnesota Statutes, 325L.02(h), 325L.05 and 325L.08)
+H?   | QSP APPLICANT NAME (please print)  | TITLE
+CAPS | SIGNATURE  | DATE
+P    | For initial enrollment, upload this signed assurance statement with required Individual Provider Enrollment
+P    | Application (DHS-4016) (PDF) and Fee-for-Service (FFS) only or FFS and Managed Care Organization In-Network
+P    | Provider Agreement (DHS-4138) (PDF) documents and proof of all applicable licenses and certifications, through
+P    | the online Minnesota Provider Screening and Enrollment (MPSE) Portal or fax to 651-431-7462.
+P    | To change service levels, upload this signed assurance statement and appropriate supporting documents through
+P    | the online Minnesota Provider Screening and Enrollment (MPSE) Portal or fax to 651-431-7462.
+SKIP | -- 2 of 2 --
+
+### Level 1 7120 D.pdf
+HDR  | DHS-7120D-ENG  | 7-25
+HDR  | Page 1 of 3
+CAPS | MINNESOTA HEALTH CARE PROGRAMS (MHCP)
+H?   | Early Intensive Developmental and Behavioral Intervention
+P    | (EIDBI) Level I Provider Assurance Statement
+H?   | Provider information
+CAPS | PROVIDER NAME  | NPI
+CAPS | STREET ADDRESS
+CAPS | CITY  | STATE  | ZIP CODE  | PHONE NUMBER
+P    | Complete, initial and sign this form to enroll as a Level I provider for Early Intensive Developmental and Beh
+P    | Intervention (EIDBI) services. This form is an addendum to the Fee-for-Service (FFS) only or FFS and Managed C
+P    | Organization In-Network Provider Agreement (DHS-4138) (PDF) for Minnesota Health Care Programs (MHCP).
+P    | Keep documentation for auditing purposes that shows your compliance with the following requirements. You must
+P    | also keep a signed copy of this form on record.
+P    | Upload this form through the online Minnesota Provider Screening and Enrollment (MPSE) Portal or fax this
+P    | completed form, along with all other required MHCP provider enrollment documents, to 651-431-7462.
+H?   | Your application
+P    | You will be authorized to provide the following services if DHS approves your application to enroll as a Level
+P    | provider:
+UL   | • EIDBI intervention, observation and direction
+UL   | • Family or caregiver training and counseling
+UL   | • Coordinated care conferences
+UL   | • Individual treatment plan (ITP) development and progress monitoring under the supervision of an EIDBI qualif
+P    | supervising professional (QSP)
+H?   | Experience and training
+P    | Initial all education, experience and training qualifications that apply to you. Electronic initials accepted.
+P    | copy of your degrees, applicable licenses or certifications to this form. Note: You do not need to submit a co
+P    | certifications, degrees or transcripts if you are submitting a license.
+P    | All Level I EIDBI provider applicants must be an employee of an EIDBI agency and attest to the following exper
+P    | training requirement (initial).
+P    | I have at least 2,000 hours of supervised clinical experience or training in examining or treating people with
+P    | autism spectrum disorder (ASD) or related conditions; or equivalent documented coursework at the
+P    | graduate level by an accredited university in ASD diagnostics, ASD developmental and behavioral
+P    | treatment strategies and typical child development; or an equivalent combination of documented
+P    | coursework or hours of experience.
+SKIP | -- 1 of 3 --
+HDR  | DHS-7120D-ENG 7-25 | Page 2 of 3
+P    | All Level I EIDBI provider applicants must also attest to meeting at least one of the following requirements (
+P    | least one of the following):
+P    | I have a doctoral or master’s degree in behavioral health, child development or related fields including, but
+P    | not limited to, mental health, special education, social work, psychology, speech pathology or occupational
+P    | therapy from an accredited college or university.
+P    | I am a Board-Certified Behavior Analyst (BCBA), a Board-Certified Behavior Analyst – Doctoral (BCBA-D), or
+P    | a qualified behavior analyst (QBA).
+P    | I have a bachelor’s degree in a behavioral health, child development or related field including, but not
+P    | limited to, mental health, special education, social work, psychology, speech pathology or occupational
+P    | therapy, from an accredited college or university and advanced certifications in a treatment modality
+P    | recognized by DHS.
+P    | I am a Board-Certified Assistant Behavior Analyst (BCaBA) with 4,000 hours of supervised clinical experience
+P    | that meets all registration, supervision, and continuing education requirements of the certification.
+H?   | OR
+P    | If you do not meet the preceding criteria under the Experience and training heading of this form, you may also
+P    | to be a Level I EIDBI provider. Initial all that apply:
+P    | I have completed or I am currently enrolled in a master’s degree program in one of the behavioral health,
+P    | child development or allied fields (such as, but not limited to, mental health, special education, social work
+P    | psychology, speech pathology, or occupational therapy) from an accredited college or university.
+P    | I have or will receive observation and direction from a qualified supervising professional (QSP) at least once
+P    | per month until meeting the required 2,000 hours of supervised clinical experience.
+P    | I intend to provide EIDBI services via telehealth and I have at least 2,000 hours of supervised clinical
+P    | experience and I meet the criteria to provide EIDBI services via telehealth.
+H?   | OR
+P    | If you do not have a master’s degree, you may also apply to be a Level I EIDBI provider. Initial:
+P    | I have at least 6,000 hours of clinical experience providing early intervention services in the treatment
+P    | modality the EIDBI provider agency I’m employed by uses. I have a bachelor’s degree in a related field and
+P    | have completed the required training for Level III providers.
+H?   | DHS-recognized certifications or licenses
+P    | Initial any DHS-recognized advanced certifications you have, if applicable, and attach a copy of your current 
+P    | or other certificates to this form.
+H?   | Applied Behavior Analysis (ABA)
+H?   | Board-Certified Assistant Behavior Analyst
+P    | Licensed Behavior Analyst;  | LICENSE NUMBER:
+P    | Licensed Behavior Analyst-Doctoral;  | LICENSE NUMBER:
+H?   | Qualified Behavior Analyst Certification
+P    | Developmental, Individual Difference, Relationship-Based (DIR)/Floortime
+P    | Provider with Level 3 certification or DIR/ Floortime Advanced Certificate
+P    | Provider with Level 4 certification or DIR/ Floortime Expert Training Leader Certificate
+H?   | Early Start Denver Model (ESDM)
+H?   | Certified trainer
+H?   | Parent coach trainer
+SKIP | -- 2 of 3 --
+HDR  | DHS-7120D-ENG 7-25 | Page 3 of 3
+H?   | Senior trainer
+H?   | Relationship Development Intervention (RDI)
+H?   | RDI Certified Consultant
+P    | By initialing the requirements and signing this form, I, the Level I provider applicant, attest to the accurac
+P    | information on this form. Indicate the effective date that you would like to start billing as a Level I provid
+P    | be able to bill for services on or after this date as a Level I provider after DHS approves the application. I
+P    | previously enrolled at a lower level, you will no longer be able to bill for services at the lower level after
+P    | date listed.
+P    | Check if signing electronically:
+P    | I am signing this form electronically. My name as typed in the signature field is my legally binding signature
+P    | understand that my electronic signature has the same legal effect and can be enforced in the same way as a
+P    | handwritten signature. (Minnesota Statutes, 325L.02(h), 325L.05 and 325L.08)
+H?   | EIDBI LEVEL I PROVIDER NAME (please print)  | TITLE
+CAPS | SIGNATURE  | EFFECTIVE DATE
+P    | Upload this signed provider assurance statement through the Minnesota Provider Screening and Enrollment (MPSE)
+P    | portal or fax to 651-431-7462. Include your completed MHCP provider enrollment application packet and other
+P    | required documents if you are not enrolled with MHCP. Refer to the EIDBI Provider Enrollment Criteria and Form
+P    | section of the MHCP Provider Manual. Keep signed copies for your records.
+P    | To change service levels, upload this signed assurance statement and appropriate supporting documents through
+P    | the online Minnesota Provider Screening and Enrollment (MPSE) Portal or fax to 651-431-7462.
+SKIP | -- 3 of 3 --
+
+### Level II 7120 E.pdf
+HDR  | DHS-7120E-ENG  | 8-25
+HDR  | Page 1 of 3
+CAPS | MINNESOTA HEALTH CARE PROGRAMS (MHCP)
+H?   | Early Intensive Developmental and Behavioral Intervention
+P    | (EIDBI) Level II Provider Assurance Statement
+H?   | Provider information
+H?   | INDIVIDUAL PROVIDER NAME  | NPI or UMPI
+CAPS | STREET ADDRESS
+CAPS | CITY  | STATE  | ZIP CODE  | PHONE NUMBER
+P    | Complete, initial and sign this form to enroll as a Level II provider for EIDBI services. This form is an adde
+P    | Fee-for-Service (FFS) only or FFS and Managed Care Organization In-Network Provider Agreement (DHS-4138) (PDF)
+P    | for Minnesota Health Care Programs (MHCP).
+P    | Keep documentation for auditing purposes that shows your compliance with the following requirements. You must
+P    | also keep a signed copy of this form on record.
+P    | Upload this completed form through the online Minnesota Provider Screening and Enrollment (MPSE) Portal or fax
+P    | this completed form, along with all other required MHCP provider enrollment documents, to 651-431-7462.
+H?   | Your application
+P    | You will be authorized to provide or participate in the following if DHS approves your application to enroll a
+P    | EIDBI provider:
+UL   | • EIDBI intervention, observation and direction
+UL   | • Family and caregiver training and counseling
+UL   | • Coordinated care conferences
+UL   | • Individual treatment plan (ITP) development and progress monitoring under the supervision of an EIDBI qualif
+P    | supervising professional (QSP)
+H?   | Experience and training
+P    | Initial all experience and training qualifications that apply to you. Electronic initials accepted. Attach a c
+P    | degrees, applicable certifications, transcripts and any other necessary documentation to this form. All Level 
+P    | applicants must be employees of all EIDBI agencies you are affiliated to.
+P    | Bachelor’s degree applicants: If you have a bachelor’s degree, attest and provide documentation to applicable
+P    | qualifications in this section (initial):
+P    | I have a bachelor’s degree in a behavioral health or child development science or related field including,
+P    | but not limited to, mental health, special education, social work, psychology, speech pathology or
+P    | occupational therapy, from an accredited college or university.
+P    | All Level II EIDBI provider applicants with a bachelor’s degree must also attest to at least one of the follow
+P    | requirements by initialing:
+P    | I have at least 1,000 hours of supervised clinical experience or training in examining or treating people with
+P    | ASD or a related condition, or equivalent documented coursework at the graduate level by an accredited
+P    | university in the areas of ASD diagnostics, ASD developmental and behavioral treatment strategies and
+P    | typical child development, or a combination of coursework or hours or experience.
+SKIP | -- 1 of 3 --
+HDR  | DHS-7120E-ENG 8-25 | Page 2 of 3
+P    | I am a Board Certified Assistant Behavior Analyst (BCaBA), certified by the Behavior Analyst Certification
+P    | Board (BACB).
+P    | I am a Registered Behavior Technician (RBT) as defined by the Behavior Analyst Certification Board (BACB).
+P    | I am certified in one of the other treatment modalities recognized by DHS. (Indicate certification in the DHS-
+P    | recognized certifications section of the form.)
+P    | I will receive observation and direction from a qualified supervising professional (QSP) or Level I treatment
+P    | provider at least twice per month until meeting 1,000 hours of supervised clinical experience.
+P    | Non-bachelor’s degree applicants: Providers without a completed bachelor’s degree may also apply to be a Level
+P    | EIDBI provider if you attest and provide documentation that you meet at least one of the following requirement
+P    | this section (initial):
+P    | I am currently enrolled in a bachelor’s degree program in one of the behavioral or child development
+P    | sciences or allied fields including, but not limited to, mental health, special education, social work,
+P    | psychology, speech pathology, or occupational therapy from an accredited college or university. I will also
+P    | receive observation and direction from a QSP or Level I treatment provider at least twice per month until
+P    | meeting 1,000 hours of supervised clinical experience.
+P    | I have an associate’s degree in a behavioral health or child development science or related field including,
+P    | but not limited to, mental health, special education, social work, psychology, speech pathology, or
+P    | occupational therapy from an accredited college or university; and at least 2,000 hours of supervised clinical
+P    | experience in delivering treatment to people with ASD or a related condition. You may include hours
+P    | worked as a mental health behavioral aide or Level III treatment provider in the required hours of
+P    | experience.
+P    | I have at least 4,000 hours of supervised clinical experience in delivering treatment to people with ASD or a
+P    | related condition. You may include hours worked as a mental health behavioral aide or Level III treatment
+P    | provider in the required hours of experience.
+P    | I am a graduate student in a behavioral science, child development science, or related field and I receive
+P    | clinical supervision by a QSP affiliated with an agency to meet the clinical training requirements for
+P    | experience and training with people with ASD or a related condition.
+P    | I am at least 18 years old and fluent in a non-English language or certified by a tribal government and have
+P    | completed the Level III EIDBI training requirements. I will receive observation and direction from a QSP or
+P    | Level I EIDBI provider at least once a week until I meet the requirement of 1,000 hours of supervised clinical
+P    | experience.
+P    | I am at least 18 years old and have completed initial certification in the treatment modality the EIDBI
+P    | provider agency I’m employed by uses and have completed the Level III EIDBI provider training
+P    | requirements. Refer to the Level II provider qualifications, roles and responsibilities webpage for more
+P    | information. I will receive observation and direction from an advanced certification provider at least once
+P    | per week until meeting 1,000 hours of supervised clinical experience.
+H?   | DHS-recognized certifications
+P    | Initial all DHS-recognized certifications you have, if applicable, and attach a copy of your current certifica
+P    | form.
+H?   | Applied Behavior Analysis (ABA)
+P    | Licensed Behavior Analyst-Doctoral;  | LICENSE NUMBER:
+P    | Licensed Behavior Analyst;  | LICENSE NUMBER:
+H?   | Board-Certified Assistant Behavior Analyst
+H?   | Registered Behavior Technician
+SKIP | -- 2 of 3 --
+HDR  | DHS-7120E-ENG 8-25 | Page 3 of 3
+P    | Developmental Individual Differences Relationship-Based Model (DIR/Floortime)
+P    | (write in)
+H?   | Early Start Denver Model (ESDM)
+P    | (write in)
+H?   | Relationship Development Intervention (RDI)
+P    | (write in)
+P    | By initialing the requirements and signing this form, I, the Level II provider applicant, attest to the accura
+P    | information on this form. Indicate the effective date that you would like to start billing as a Level II provi
+P    | be able to bill for services on or after this date as a Level II provider after DHS approves the application. 
+P    | previously enrolled at a lower level, you will no longer be able to bill for services at the lower level after
+P    | date listed.
+P    | Check if signing electronically:
+P    | I am signing this form electronically. My name as typed in the signature field is my legally binding signature
+P    | understand that my electronic signature has the same legal effect and can be enforced in the same way as a
+P    | handwritten signature. (Minnesota Statutes, 325L.02(h), 325L.05 and 325L.08)
+H?   | EIDBI LEVEL II INDIVIDUAL NAME (please print)  | TITLE
+CAPS | SIGNATURE  | DATE
+P    | For initial enrollment, upload this signed assurance statement with the required Individual Provider Enrollmen
+P    | Application (DHS-4016) (PDF) and Fee-for-Service (FFS) only or FFS and Managed Care Organization In-Network
+P    | Provider Agreement (DHS-4138) (PDF) documents through the online Minnesota Provider Screening and Enrollment
+P    | (MPSE) Portal or fax to 651-431-7462.
+P    | To change service levels, upload this signed assurance statement and appropriate supporting documents through
+P    | the online Minnesota Provider Screening and Enrollment (MPSE) Portal or fax to 651-431-7462.
+SKIP | -- 3 of 3 --
+
+### Level 3 7120F.pdf
+HDR  | DHS-7120F-ENG  | 8-25
+HDR  | Page 1 of 2
+CAPS | MINNESOTA HEALTH CARE PROGRAMS (MHCP)
+H?   | Early Intensive Developmental and Behavioral Intervention
+P    | (EIDBI) Level III Provider Assurance Statement
+H?   | Provider information
+H?   | PROVIDER NAME  | NPI or UMPI
+CAPS | STREET ADDRESS
+CAPS | CITY  | STATE  | ZIP CODE  | PHONE NUMBER
+P    | Complete, initial and sign this form to enroll as a qualified Level III provider for Early Intensive Developme
+P    | Behavioral Intervention (EIDBI) services. This form is an addendum to the Fee-for-Service (FFS) only or FFS an
+P    | Managed Care Organization In-Network Provider Agreement (DHS-4138) (PDF) for Minnesota Health Care Programs
+CAPS | (MHCP).
+P    | Keep documentation for auditing purposes that shows your compliance with the following requirements. You must
+P    | keep a signed copy of this form on record.
+P    | Upload this form through the online Minnesota Provider Screening and Enrollment (MPSE) Portal or fax this
+P    | completed form, along with all other required MHCP provider enrollment documents, to 651-431-7462.
+P    | Refer to the EIDBI section of the MHCP Provider Manual for more information.
+H?   | Your application
+P    | You will be authorized to provide EIDBI under the supervision of an EIDBI qualified supervising professional (
+P    | Minnesota Department of Human Services (DHS) approves your application to enroll as a Level III EIDBI provider
+H?   | Experience and training
+P    | DHS requires all required Level III training to be completed within six months of enrollment or date of hire d
+P    | statewide shortage of qualified EIDBI Level III providers. Providers do not need to meet this requirement befo
+P    | enrollment.
+P    | You must be an employee of all EIDBI agencies you are affiliated to. Attest to enroll as an EIDBI Level III pr
+P    | initialing the following education, experience and training qualifications that apply to you. Electronic initi
+P    | accepted. Attach all applicable degrees and certifications.
+P    | I am at least 18 years old.
+P    | I will complete the DHS EIDBI Level III training requirements within six months.
+P    | I have a high school diploma or general equivalency diploma (GED) or at least one of the following:
+P    | 1) I am fluent in a non-English language or an individual certified by a tribal nation.
+P    | 2) I have one year of experience as a primary personal care assistant, community health worker,
+P    | waiver service provider, or special education assistant to a person with ASD or a related
+P    | condition within the previous five years.
+SKIP | -- 1 of 2 --
+HDR  | DHS-7120F-ENG 8-25 | Page 2 of 2
+P    | By initialing the requirements and signing this form, I, the named EIDBI Level III provider applicant, attest 
+P    | accuracy of all information on this form.
+P    | Check if signing electronically:
+P    | I am signing this form electronically. My name as typed in the signature field is my legally binding signature
+P    | my electronic signature has the same legal effect and can be enforced in the same way as a handwritten signatu
+P    | (Minnesota Statutes 325L.02(h), 325L.05 and 325L.08)
+H?   | EIDBI LEVEL III INDIVIDUAL NAME (please print)  | TITLE
+CAPS | SIGNATURE  | DATE
+P    | Upload this signed provider assurance statement through the Minnesota Provider Screening and Enrollment (MPSE)
+P    | portal or fax to 651-431-7462. Include your completed MHCP provider enrollment application packet and other
+P    | required documents if you are not enrolled with MHCP. Refer to the EIDBI Provider Enrollment Criteria and Form
+P    | section of the MHCP Provider Manual. Keep signed copies for your records.
+SKIP | -- 2 of 2 --
+
+### 4138 Blank.pdf
+HDR  | DHS-4138-ENG  | 5-24
+HDR  | Page 1 of 5
+H?   | Electronic initials accepted. AUTHORIZED INITIALS
+P    | PROVIDER NAME  | NPI or UMPI  | PROVIDER TYPE
+CAPS | MINNESOTA HEALTH CARE PROGRAMS (MHCP)
+H?   | Fee-for-Service (FFS) only or FFS and Managed Care
+H?   | Organization In-Network Provider Agreement
+P    | Use this form if you or your entity provide services to MHCP fee-for-service (FFS) members OR you are a provid
+P    | providing services to MHCP FFS members AND you are an in-network provider with a Managed Care Organization
+P    | (MCO) to provide services to MHCP managed care members.
+P    | As a participating provider in Minnesota Health Care Programs (MHCP) administered by the Minnesota Department
+P    | of Human Services (DHS), the provider agrees to:
+P    | 1.  | Furnish DHS, the Secretary of the U.S. Department of Health and Human Services, or the Minnesota Medicai
+P    | Fraud Control Unit with such information as it may request regarding payments claimed for services provided
+P    | under these programs.
+P    | 2.  | Comply with all federal and state statutes and rules relating to the delivery of services to individuals
+P    | submission of claims for such services.
+P    | 3.  | Provide to DHS or contracted managed care organization (MCO) its national provider identifier (NPI) and 
+P    | its NPI on all claims, if the provider is eligible for an NPI.
+P    | 4.  | Comply with all provisions of Minnesota Statutes, 62J.536, which requires electronic transmission of cla
+P    | eligibility and other transactions, using DHS' secure, HIPAA-compliant, automated transaction tool MN–ITS, or
+P    | the contracted MCO’s tool, or a HIPAA-compliant tool approved by the MCO.
+P    | 5.  | Accept as payment in full, amounts paid according to schedules established by DHS, except where DHS
+P    | authorizes payment by the member.
+P    | 6.  | Enroll in electronic funds transfer (EFT) if the provider is a pay-to provider and if DHS requests that.
+P    | 7.  | Ensure, when required by law, that a health service program administered by DHS or by the contracted MCO
+P    | the payer of last resort by determining the legal and financial liabilities of third parties to pay for covere
+P    | services, and pursuing such third-party payments.
+P    | 8.  | Assume full responsibility for the accuracy of claims submitted to DHS or by the contracted MCO accordin
+P    | the certification requirements of the Code of Federal Regulations, title 42, section 455.18 and Minnesota
+P    | Statutes, 256B.27, subdivision 2.
+P    | 9.  | Submit claims at no more than the provider's usual and customary fee to the general public and only afte
+P    | medical care or service has been provided, according to Minnesota Rules, 9505.0450, subpart 1.
+P    | 10. Except for claims for services under a waiver program, submit claims only for services, supplies, and equi
+P    | that are medically necessary as defined at Minnesota Rules, 9505.0175, subpart 25, and that meet professionall
+P    | recognized standards of health care that the provider knows or has reason to know are properly reimbursable
+P    | under federal and state statutes and rules.
+P    | 11. Make full disclosure of ownership and control information as required by the Code of Federal Regulations, 
+P    | 42, sections 455.100 - 455.106, and upon request, full disclosure of business transactions, as is required by 
+P    | Code of Federal Regulations, title 42, section 455.105.
+SKIP | -- 1 of 5 --
+HDR  | DHS-4138-ENG 5-24 | Page 2 of 5
+H?   | Electronic initials accepted. AUTHORIZED INITIALS
+P    | PROVIDER NAME  | NPI or UMPI  | PROVIDER TYPE
+P    | 12. Make full disclosure of persons convicted of program crimes as required by the Code of Federal Regulations
+P    | title 42, section 455.106.
+P    | 13. Ensure that the provider, all of its owners, managers, employees and contractors are not excluded from
+P    | participation in Medicare, Medicaid or other federal health care programs, by searching the Office of Inspecto
+P    | General List of Excluded Individuals and Entities (LEIE). The provider must conduct this search at the time of
+P    | enrollment, before hiring new employees or entering into a contract with a contractor, and monthly to see
+P    | changes since the last search. The provider must immediately report any exclusion information discovered to
+P    | DHS and any contracted MCOs.
+P    | 14. Verify member eligibility before rendering services.
+P    | 15. Comply with all federal statutes, implementing regulations and guidance prohibiting discrimination on the
+P    | basis of race, color, national origin, sex, age, religion and disability in any program or activity receiving 
+P    | financial assistance from the Department of Health and Human Services.
+P    | 16. Provide member services of the same scope and quality as would be provided to the general public, within
+P    | MHCP guidelines, according to section 1902(a)(10)(B) – (E) of the Social Security Act.
+P    | 17.  | Comply with the provisions of any fully executed addendum required by DHS, which is incorporated with t
+P    | Provider Agreement (that is, the addendum becomes part of the original Provider Agreement).
+P    | 18. Ensure that its employees and contractors comply with all MHCP requirements and any contracted MCO
+P    | requirements, including any requirements added post-enrollment.
+P    | 19. Comply with the advance directive requirements if the provider is a hospital, nursing facility, a provider
+P    | health care, personal care assistance services, or hospice, as required by the Code of Federal Regulations, ti
+P    | 42, sections 489.102 and 417.436.
+P    | 20. Maintain records that fully disclose the extent of services provided to MHCP members for a period of five 
+P    | after the initial date of billing DHS or a contracted MCO, according to Minnesota Rules, 9505.2160 – 9505.2245
+P    | or for the duration of contested case proceedings, whichever is longer.
+P    | 21. Ensure proper handling and safeguarding by the provider’s employees, contractors, and authorized agents of
+P    | protected information collected, created, used, maintained, or disclosed on behalf of DHS. For the purposes of
+P    | this agreement, "protected information" means data subject to any of the laws described in 21.A. This
+P    | responsibility includes:
+P    | A. Ensuring that employees and agents of the provider comply with and are properly trained about:
+P    | (1) The Minnesota Government Data Practices Act (MGDPA), Minnesota Statutes, Chapter 13, in particular
+P    | 13.46 Welfare Data;
+P    | (2) The Minnesota Medical Records Act, Minnesota Statutes, 144.291 – 144.298;
+P    | (3) The federal Health Insurance Portability and Accountability Act (HIPAA) including, but not limited to, the
+P    | requirements of the Privacy Rule and Security Regulations, the Code of Federal Regulations, title 45,
+P    | sections 160 and 164;
+P    | (4) Federal law and regulations that govern the use and disclosure of substance abuse treatment records,
+P    | United States Code, title 42, 290dd-2 and the Code of Federal Regulations, title 42, sections 2.1 – 2.67; and
+P    | (5) Any other applicable state and federal statutes, rules, and regulations affecting the collection, storage,
+P    | use and dissemination of private or confidential information.
+SKIP | -- 2 of 5 --
+HDR  | DHS-4138-ENG 5-24 | Page 3 of 5
+H?   | Electronic initials accepted. AUTHORIZED INITIALS
+P    | PROVIDER NAME  | NPI or UMPI  | PROVIDER TYPE
+P    | B. Ensuring, consistent with the laws stated in 21.A, that the provider's employees, contractors, and authoriz
+P    | agents:
+P    | (1) Do not use or further disclose protected information created, collected, received, stored, used,
+P    | maintained or disseminated in the course or performance of this agreement other than as necessary to
+P    | perform their obligations under this agreement, or as required by law, either during the period of this
+P    | agreement or after (respectively, the Code of Federal Regulations, title 45, sections 164.502(b) and
+P    | 164.514(d), and Minnesota Statutes, 13.05, subdivision 3).
+P    | (2) Use appropriate administrative, physical, and technical safeguards to prevent use or disclosure of the
+P    | protected information other than as provided for by this agreement and to ensure the confidentiality,
+P    | integrity, and availability of any protected health information that it creates, receives, maintains, or
+P    | transmits on behalf of DHS.
+P    | (3) Do not transmit protected health information (PHI) over the internet or any other unsecure or open
+P    | communication channel unless such information is encrypted or otherwise safeguarded using
+P    | procedures no less stringent than those described in the Code of Federal Regulations, title 45, section
+P    | 164.312. If the provider stores or maintains PHI in encrypted form, the provider shall, at DHS' request,
+P    | promptly provide  | DHS with the key or keys to decrypt such information. The provider shall not forward
+P    | previously encrypted data to any other party, unless otherwise required by this agreement.
+P    | (4) Mitigate, to the extent practicable, any harmful effects known to the provider of a use, disclosure, or
+P    | breach of security with respect to protected information by the provider in violation of this agreement.
+P    | (5) Make the required notifications upon discovery of a breach, as defined in the Code of Federal
+P    | Regulations, title 45, section 164.402, of unsecured PHI to DHS, to each individual whose unsecured PHI
+P    | has been breached, and, when the breach involves the unsecured PHI of more than 500 people, to the
+P    | media of a state or jurisdiction. Refer to Code of Federal Regulations, title 45, sections 164.400 – 164.414.
+P    | 22. Accept and be bound by the terms and conditions of DHS' Electronic Data Interchange (EDI) Trading Partner
+P    | Addendum to Provider Agreement when billing electronically. The provider acknowledges that any
+P    | organization or individual that submits claims on its behalf will abide by the EDI Trading Partner Agreement a
+P    | an agent of the provider. The provider authorizes the agent to bind the provider to the terms of the EDI Tradi
+P    | Partner Agreement. The provider will give each EDI trading partner an individual login ID and password.
+P    | 23. For provider entities receiving or making Medicaid payments totaling at least $5 million annually, establi
+P    | written policies and procedures for the education of all employees, contractors and agents, that includes
+P    | information about the False Claims Act and other provisions named in section 1902(a)(68)(A) of the Social
+P    | Security Act.
+P    | 24. Determine the applicability to the provider of any other state or federal laws and ensure compliance with 
+P    | laws.
+P    | 25. Cooperate with DHS or contracted MCO audit or review procedures.
+P    | 26. Execute any required assurance statements and provide certification or licensure information if required b
+P    | for a particular provider type. The provider also agrees to notify DHS of any changes to its certification or
+P    | licensure status.
+P    | 27. Comply with Minnesota Statutes, 256B.0644 as a requirement of participation in other state health care
+P    | programs. The provider agrees to provide active caseload data upon DHS' request and at least 10 days before
+P    | limiting acceptance of new MHCP members.
+SKIP | -- 3 of 5 --
+HDR  | DHS-4138-ENG 5-24 | Page 4 of 5
+H?   | Electronic initials accepted. AUTHORIZED INITIALS
+P    | PROVIDER NAME  | NPI or UMPI  | PROVIDER TYPE
+P    | 28. Refund any overpayments made to the provider by DHS or the MCO, including those resulting from payments
+P    | made by Medicare, third party payers, billing errors, fraudulent billing, and from increased interim payments
+P    | made pursuant to DHS' plan for continuity of operations during times of pandemic and crisis.
+P    | 29. Notify DHS no later than 30 days before the effective date of a sale, merger, or transfer of an enrolled e
+P    | according to Minnesota Rules, 9505.0195, subpart 8. Failure to notify DHS may result in the sale or transfer n
+P    | becoming effective with DHS for any purpose, including claims processing, payment of claims and claims
+P    | adjustments. The provider also agrees to notify DHS whether it intends to transfer its NPI or its Federal Empl
+P    | Identification Number (FEIN) to the new owner and to complete any documentation or addenda DHS requires,
+P    | including a Provider Entity Sale or Transfer Addendum (DHS-5550) (PDF). The provider acknowledges that upon
+P    | sale, merger or transfer of the enrolled entity, DHS will recognize the effective date of the sale or transfer
+P    | date from which all claims payments or adjustments will be assigned to the new owner, without regard to date
+P    | of service, date of submission to DHS, or adjudication date, including those resulting from a later audit or
+P    | reprocessed claims. Any intent on the part of the provider or purchaser to the contrary must be addressed in t
+P    | purchase agreement and transfer documents and is the responsibility of the provider and purchaser to enforce.
+P    | DHS retains the right to pursue monetary recovery, or civil or criminal actions against the seller or transfer
+P    | Nothing in this agreement negates the obligation of the new owner to contact DHS by the effective date of sale
+P    | merger or transfer.
+P    | 30. Accept that this agreement may be immediately terminated for either of the following:
+P    | A. At the discretion of DHS if it determines that the provider has violated a material term of the agreement,
+P    | including but not limited to:
+P    | (1) Noncompliance by the provider with the HIPAA Privacy Rule and Security Standards. If termination is not
+P    | feasible, DHS shall report the breach to the secretary of Department of Health and Human Services.
+P    | (2) Failure of the provider to sign a new agreement within 30 days of a request from DHS, in accordance with
+P    | Minnesota Rules, 9505.0195, subpart 5.
+P    | B. Upon sale or transfer of the enrolled provider.
+P    | 31. Ensure that upon termination of this agreement, the provider shall continue to:
+P    | A. Extend all of the protections of this agreement to all of the protected information DHS provides to the
+P    | provider, or created or received by the provider on behalf of DHS, that the provider still maintains in any
+P    | form, including information that is in the hands of the contractors and agents of the provider, and limit its
+P    | further use and disclosure.
+P    | B. Maintain all other records of claims submitted for a minimum of five years, consistent with paragraph 20 of
+P    | this agreement.
+P    | 32. Accept that any ambiguity in this agreement will be resolved to permit DHS to comply with HIPAA, MGDPA, an
+P    | other applicable state and federal statutes, rules, and regulations affecting the collection, storage, use and
+P    | dissemination of private or confidential information and other state and federals laws and regulations.
+SKIP | -- 4 of 5 --
+HDR  | DHS-4138-ENG 5-24 | Page 5 of 5
+H?   | Signature requirements for this Provider Agreement
+H?   | Individual providers
+UL   | • Type your name, NPI or Unique Minnesota Provider Identifier (UMPI), and the provider type on the first page 
+P    | agreement. This information will automatically populate to pages 2 and 3 after you enter it.
+UL   | • Initial each page of this Provider Agreement.
+UL   | • Write the name and title of the person signing and sign the last page of this agreement.
+H?   | Organizational providers
+UL   | • Type your organization name, organization NPI or Unique Minnesota Provider Identifier (UMPI), and the provid
+P    | type on the first page of this agreement. This information will automatically populate to pages 2 and 3 after 
+P    | enter it.
+UL   | • An administrator, manager, director or other person authorized to sign must initial each page.
+UL   | • Write the name and title of the person signing, and sign the last page of this agreement. This person must a
+P    | disclosed on the Disclosure of Ownership and Control Interest of an Entity (DHS-5259) (PDF).
+P    | Check if signing electronically:
+P    | I am signing this form electronically. My name as typed in the signature field is my legally binding signature
+P    | understand that my electronic signature has the same legal effect and can be enforced in the same way as a
+P    | handwritten signature. (Minnesota Statutes, 325L.02(h), 325L.05 and 325L.08)
+CAPS | NAME OF PERSON SIGNING (TYPE OR PRINT)  | TITLE
+CAPS | SIGNATURE  | DATE
+P    | Keep a copy of the Provider Agreement for your files and upload the original form, along with all other
+P    | required documentation, using the online Minnesota Provider Screening and Enrollment (MPSE) portal, or fax to 
+P    | appropriate number as follows:
+UL   | • Personal care provider organizations, fax to 651-431-7465.
+UL   | • Home and community-based waiver providers, fax to 651-431-7493.
+UL   | • All other provider types, fax to 651-431-7462.
+SKIP | -- 5 of 5 --
+
+### CMDE 7120A.pdf
+HDR  | DHS-7120A-ENG  | 11-25
+HDR  | Page 1 of 3
+CAPS | MINNESOTA HEALTH CARE PROGRAMS (MHCP)
+H?   | Early Intensive Developmental and Behavioral Intervention
+P    | (EIDBI) Comprehensive Multi-Disciplinary Evaluation
+P    | (CMDE) Provider Assurance Statement
+H?   | Provider information
+CAPS | PROVIDER NAME  | NPI
+P    | Complete, initial and sign this form to enroll as a qualified CMDE provider of Early Intensive Developmental a
+P    | Behavioral Intervention (EIDBI) services or a mental health practitioner clinical trainee who may complete the
+P    | under the supervision of an enrolled mental health professional supervisor. This form is an addendum to the Fe
+P    | Service (FFS) only or FFS and Managed Care Organization In-Network Provider Agreement (DHS-4138) (PDF) for
+P    | Minnesota Health Care Programs (MHCP).
+P    | Keep documentation for auditing purposes that shows your compliance with the following requirements. You must
+P    | keep a signed copy of this form on record. Fax this completed form, along with all other required MHCP provide
+P    | enrollment documents, to 651-431-7462 or upload through the online Minnesota Provider Screening and Enrollment
+P    | (MPSE) Portal.
+P    | Refer to the EIDBI Benefit section of the MHCP Provider Manual for more information.
+H?   | CMDE provider application
+P    | Minnesota Department of Human Services (DHS) will authorize you to receive MA reimbursement for providing
+P    | CMDEs that help determine a person’s medical necessity for EIDBI services if DHS approves your application to 
+P    | as a qualified CMDE provider.
+P    | You must complete the section labeled CMDE clinical trainee provider section if you want to be a CMDE clinical
+P    | trainee.
+H?   | License
+P    | You must attest to being at least one of the following to be a qualified CMDE provider for EIDBI services. Ini
+P    | that apply (electronic initials accepted) and attach a copy of your current licenses to this form.
+P    | I am a licensed mental health professional.
+P    | I am a licensed physician.
+P    | I am a licensed advanced practice registered nurse (APRN).
+H?   | Experience and training
+P    | You must attest to both of the following to enroll as an EIDBI CMDE provider (initial each one):
+P    | I have at least 2,000 hours of clinical experience in the evaluation or treatment of people with ASD or a
+P    | related condition or equivalent documented coursework at the graduate level by an accredited university in
+P    | the following content areas: ASD or a related condition diagnosis, ASD or a related condition treatment
+P    | strategies, or child development.
+P    | I will diagnose, evaluate or provide treatment within my scope of practice and professional license.
+SKIP | -- 1 of 3 --
+HDR  | DHS-7120A-ENG 11-25 | Page 2 of 3
+H?   | Background study
+P    | You must attest that you have completed and cleared a background study through one of the following methods
+P    | (initial one):
+P    | A background check through the NETStudy 2.0 system of an EIDBI agency with which you are affiliated.
+CAPS | BACKGROUND STUDY NUMBER OR REQUEST ID
+P    | or
+P    | A background check outside of NETStudy 2.0 kept in your own personnel records.
+H?   | CMDE clinical trainee provider section
+P    | A clinical trainee must meet one of the following (initial one):
+P    | Is enrolled in an accredited graduate program to prepare the staff person for independent licensure as a
+P    | mental health professional and who is participating in a practicum or internship with the license holder
+P    | through the individual’s graduate program; or
+P    | Has completed an accredited graduate program to prepare the staff person for independent licensure as a
+P    | mental health professional and who is compliant with the requirements of the applicable health-related
+P    | licensing board, including requirements for supervised practice.
+P    | You must resubmit this application and attest to the requirements of a CMDE provider listed on this form after
+P    | complete your mental health professional licensure or board certification requirements.
+P    | By initialing the requirements and signing this form, I, the CMDE provider, attest to the accuracy of all info
+P    | this form. I will notify MHCP Provider Eligibility and Compliance of any changes to this information and follo
+P    | Ongoing Reporting Requirements to ensure my contact information is accurate and up to date in the Minnesota
+P    | Health Care Programs (MHCP) Provider and Minnesotahelp.info directories.
+P    | Indicate the effective date that you would like to start billing as a CMDE provider. After DHS approves the ap
+P    | you will be able to bill for services on or after this date as a CMDE provider. If you were previously enrolle
+P    | level, you will no longer be able to bill for services at the lower level after the effective date listed.
+P    | Check if signing electronically:
+P    | I am signing this form electronically. My name as typed in the signature field is my legally binding signature
+P    | understand that my electronic signature has the same legal effect and can be enforced in the same way as a
+P    | handwritten signature. (Minnesota Statutes, 325L.02(h), 325L.05 and 325L.08)
+H?   | CMDE APPLICANT NAME (please print)  | TITLE
+CAPS | EMAIL ADDRESS OF CMDE APPLICANT
+CAPS | SIGNATURE  | EFFECTIVE DATE
+CAPS | STREET ADDRESS
+CAPS | CITY  | STATE  | ZIP CODE  | PHONE NUMBER
+SKIP | -- 2 of 3 --
+HDR  | DHS-7120A-ENG 11-25 | Page 3 of 3
+P    | For initial enrollment, upload this signed Provider Assurance Statement with required Individual Provider Enro
+P    | Application (DHS-4016) (PDF) and Fee-for-Service (FFS) only or FFS and Managed Care Organization In-Network
+P    | Provider Agreement (DHS-4138) (PDF) documents through the online Minnesota Provider Screening and Enrollment
+P    | (MPSE) Portal or fax to 651-431-7462.
+P    | To change service levels, upload this signed Assurance Statement and appropriate supporting documents through
+P    | the online Minnesota Provider Screening and Enrollment (MPSE) Portal or fax to 651-431-7462.
+SKIP | -- 3 of 3 --
+
+### Agency 7120B.pdf
+HDR  | DHS-7120B-ENG  | 7-25
+HDR  | Page 1 of 4
+CAPS | MINNESOTA HEALTH CARE PROGRAMS (MHCP)
+H?   | Early Intensive Developmental and Behavioral Intervention
+P    | (EIDBI) Provider Agency Assurance Statement
+H?   | Provider information
+CAPS | PROVIDER (AGENCY) NAME  | NPI
+CAPS | STREET ADDRESS
+CAPS | CITY  | STATE  | ZIP CODE
+CAPS | AGENCY CONTACT PERSON NAME  | PHONE NUMBER  | FAX NUMBER
+P    | Complete, initial and sign this form to enroll as a provider agency for Early Intensive Developmental and Beha
+P    | Intervention (EIDBI) services. An agency officer with authority to bind the agency must complete this form. Th
+P    | is an addendum to the Fee-for-Service (FFS) only or FFS and Managed Care Organization In-Network Provider
+P    | Agreement (DHS-4138) (PDF) for Minnesota Health Care Programs (MHCP).
+P    | Keep documentation for auditing purposes that shows your compliance with the following requirements. You must
+P    | keep a signed copy of this form on record.
+P    | Upload this form through the online Minnesota Provider Screening and Enrollment (MPSE) Portal or fax this
+P    | completed form, along with all other required MHCP provider enrollment documents, to 651-431-7462
+P    | By initialing each requirement and signing this form, I, the agency officer named on this form, assure my agen
+P    | comply with all the following requirements. Electronic initials accepted.
+P    | Employ at least one qualified supervising professional (QSP) at all times to avoid billing disruptions. QSP
+P    | changes must be submitted via a new EIDBI Provider Agency Assurance Statement (DHS-7120B) (PDF), and
+P    | updating the organization’s Owners/Authorized Persons information in the MPSE portal to add the new
+P    | QSP as a Managing Employee.
+P    | Demonstrate that while enrolled or seeking enrollment as an MHCP provider, the agency did not have a
+P    | lead agency contract or provider agreement discontinued because of a conviction of fraud. Also, the agency
+P    | did not have an owner, board member or manager fail a state or federal criminal background check or
+P    | appear on the list of excluded individuals or entities maintained by the federal Department of Human
+P    | Services Office of Inspector General.
+P    | Demonstrate compliance with federal and state laws for EIDBI services, including full compliance with all
+P    | rights and responsibilities.
+P    | Comply with any data requests consistent with the Minnesota Government Data Practices Act, sections
+P    | (Minnesota Statutes, 256B.27 and Minnesota Statutes, 256B.064).
+P    | Have an office located in Minnesota or a border state of Iowa, North Dakota, South Dakota or Wisconsin.
+P    | Have established business practices, including written policies and procedures, internal controls and a
+P    | system that demonstrates the organization’s ability to deliver quality EIDBI services.
+P    | Have a limited English proficiency (LEP) plan in compliance with title VI of the Civil Rights Act of 1964, 42
+P    | U.S.C. sections 2000d–2000d-7.
+SKIP | -- 1 of 4 --
+HDR  | DHS-7120B-ENG 7-25 | Page 2 of 4
+P    | Have documented personnel policies, including a process to ensure and document both of the following:
+P    | 1. All EIDBI providers complete DHS-required training in culturally appropriate practices (Minnesota
+H?   | Statutes, 256B.0949); and
+P    | 2. Established business practices including written policies and procedures, internal controls, and a
+P    | system that demonstrates the organization's ability to deliver quality EIDBI services.
+P    | Conduct a criminal background study using NETStudy 2.0 on all individuals, including sub-contractors,
+P    | volunteers and temporary staff, who have direct contact with the person or the person's legal
+P    | representative.
+P    | An agency officer must initial one or more of the following treatment modalities that your agency will be prov
+H?   | Applied Behavior Analysis (ABA)
+H?   | Developmental Individualized Relationship-based Model (DIR/Floortime)
+H?   | Early Start Denver Model (ESDM)
+H?   | Relationship Development Intervention (RDI)
+H?   | Documentation of Advance Certification
+P    | The treatment modality or modalities you selected must correspond to a QSP or Level I providers affiliated wit
+P    | agency who have proof of advanced certification. Attach all documentation for advance certification providers 
+P    | with your agency application. An agency officer must initial to indicate one or both of the following provider
+P    | advance certification.
+H?   | Our QSP has advance certification
+H?   | OR
+P    | A Level I EIDBI provider employed by our agency has advance certification
+H?   | DHS-recognized certifications or licenses
+P    | An agency officer must initial any DHS-recognized advanced certifications the advanced certification holder ha
+P    | attach a copy of the current license or other certificates to this form.
+H?   | Applied Behavior Analysis (ABA)
+H?   | Board-Certified Assistant Behavior Analyst
+P    | Licensed Behavior Analyst;  | LICENSE NUMBER:
+P    | Licensed Behavior Analyst-Doctoral;  | LICENSE NUMBER:
+P    | Qualified Behavior Analyst Certification;
+H?   | DIR/Floortime
+P    | Provider with Level 3 certification or DIR/Floortime Advanced Certificate
+P    | Provider with Level 4 certification or DIR/Floortime Expert Training Leader Certificate
+H?   | Early Start Denver Model (ESDM)
+H?   | Certified trainer
+H?   | Parent coach trainer
+H?   | Senior trainer
+H?   | Relationship Development Intervention (RDI)
+H?   | RDI Certified Consultant
+SKIP | -- 2 of 4 --
+HDR  | DHS-7120B-ENG 7-25 | Page 3 of 4
+H?   | Advanced certification holder
+P    | Check if signing electronically:
+P    | I am signing this form electronically. My name as typed in the signature field is my legally binding signature
+P    | understand that my electronic signature has the same legal effect and can be enforced in the same way as a
+P    | handwritten signature. (Minnesota Statutes, 325L.02(h), 325L.05 and 325L.08)
+P    | NAME OF INDIVIDUAL WHO HOLDS ADVANCED CERTIFICATION (please print)  | NPI
+CAPS | SIGNATURE OF INDIVIDUAL WHO HOLDS ADVANCED CERTIFICATION  | EMAIL ADDRESS  | DATE
+H?   | Agency officer
+P    | By initialing the requirements and signing this form, I, the agency officer named on this form with authority 
+P    | the agency, attest to the accuracy of all information on this form. I will notify MHCP Provider Eligibility an
+P    | Compliance of any changes to this information and follow information under Reporting Changes to ensure my
+P    | contact information is accurate and up to date. An officer with authority to bind the entity (such as a CEO or
+P    | president), a QSP and an individual who holds advanced certification must sign this form. The agency officer d
+P    | need to be a QSP.
+P    | Check if signing electronically:
+P    | I am signing this form electronically. My name as typed in the signature field is my legally binding signature
+P    | understand that my electronic signature has the same legal effect and can be enforced in the same way as a
+P    | handwritten signature. (Minnesota Statutes, 325L.02(h), 325L.05 and 325L.08)
+H?   | AUTHORIZED OFFICER NAME (please print)  | TITLE
+CAPS | SIGNATURE  | DATE
+CAPS | AGENCY NAME  | NPI
+H?   | Qualified supervising professional (QSP)
+P    | By initialing the requirements and signing this form, I, the agency QSP named on this form, acknowledge and ce
+P    | all the following:
+P    | I understand the QSP qualifications, roles and responsibilities as described in the EIDBI laws and policies.
+P    | I meet the QSP qualifications and will work within my scope of practice and professional licensure.
+P    | I am employed by the EIDBI agency and aware of my responsibilities and duties as a QSP supervising all
+P    | EIDBI services provided by an EIDBI agency.
+P    | Check if signing electronically:
+P    | I am signing this form electronically. My name as typed in the signature field is my legally binding signature
+P    | understand that my electronic signature has the same legal effect and can be enforced in the same way as a
+P    | handwritten signature. (Minnesota Statutes, 325L.02(h), 325L.05 and 325L.08)
+H?   | NAME OF QUALIFIED SUPERVISING PROFESSIONAL (please print)  | NPI
+CAPS | SIGNATURE OF QUALIFIED SUPERVISING PROFESSIONAL  | DATE
+SKIP | -- 3 of 4 --
+HDR  | DHS-7120B-ENG 7-25 | Page 4 of 4
+P    | For initial enrollment, upload this signed assurance statement with required Individual Provider Enrollment
+P    | Application (DHS-4016) (PDF) and Fee-for-Service (FFS) only or FFS and Managed Care Organization In-Network
+P    | Provider Agreement (DHS-4138) (PDF) documents through the online Minnesota Provider Screening and Enrollment
+P    | (MPSE) Portal or fax to 651-431-7462. Keep signed copies for your records.
+P    | To change service levels, upload this signed assurance statement and appropriate supporting documents through
+P    | the online Minnesota Provider Screening and Enrollment (MPSE) Portal or fax to 651-431-7462. Keep signed copie
+P    | your records.
+SKIP | -- 4 of 4 --

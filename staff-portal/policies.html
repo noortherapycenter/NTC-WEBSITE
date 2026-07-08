@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Policy &amp; Procedure Manual — Admin Portal — Noor Therapy Center</title>
+<link rel="icon" href="../favicon.ico" sizes="any"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portal.css"/>
+<script src="portal.js" data-root=".."></script>
+<style>
+  .manual { display: grid; grid-template-columns: 292px 1fr; gap: 28px; align-items: start; }
+
+  /* ---- Nav tree ---- */
+  .nav-tree {
+    position: sticky; top: 82px;
+    max-height: calc(100vh - 106px); overflow-y: auto;
+    background: #fff; border: 1.5px solid var(--line); border-radius: 16px;
+    padding: 14px 12px 16px;
+  }
+  .nav-tree .pol-search {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--cream); border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 2px 6px 2px 12px; margin: 2px 4px 12px; color: var(--muted);
+  }
+  .nav-tree .pol-search:focus-within { border-color: var(--green); }
+  .nav-tree .pol-search svg { flex-shrink: 0; }
+  .nav-tree .pol-search input {
+    flex: 1; min-width: 0; border: none; outline: none; background: none;
+    font-family: inherit; font-size: 12.5px; font-weight: 600; color: var(--ink); padding: 7px 0;
+  }
+  .nav-group + .nav-group { margin-top: 4px; }
+  .nav-group > button {
+    width: 100%; display: flex; align-items: center; gap: 8px;
+    border: none; background: none; cursor: pointer; text-align: left;
+    font-family: inherit; font-size: 10.5px; font-weight: 800;
+    letter-spacing: 0.13em; text-transform: uppercase; color: var(--muted);
+    padding: 9px 8px 7px; border-radius: 8px;
+  }
+  .nav-group > button:hover { color: var(--ink); }
+  .nav-group > button .dot { width: 8px; height: 8px; border-radius: 999px; flex-shrink: 0; }
+  .nav-group > button .chev { margin-left: auto; transition: transform .15s ease; }
+  .nav-group.open > button .chev { transform: rotate(90deg); }
+  .nav-group ul { list-style: none; margin: 0; padding: 0 0 4px; display: none; }
+  .nav-group.open ul { display: block; }
+  .nav-group li a {
+    display: flex; align-items: baseline; gap: 8px;
+    padding: 6.5px 8px 6.5px 10px; margin: 1px 0 1px 6px;
+    border-left: 2px solid var(--line); border-radius: 0 8px 8px 0;
+    text-decoration: none; color: var(--muted);
+    font-size: 12.5px; font-weight: 600; line-height: 1.35;
+  }
+  .nav-group li a .num { font-size: 10px; font-weight: 800; color: var(--muted); opacity: .75; flex-shrink: 0; width: 16px; }
+  .nav-group li a:hover { color: var(--ink); background: #f6f1e2; }
+  .nav-group li a.active { color: var(--green-dark); border-left-color: var(--green); background: #eef7ea; font-weight: 700; }
+  .nav-none { display: none; font-size: 12px; color: var(--muted); padding: 10px 12px; }
+
+  /* ---- Main pane ---- */
+  .pol-actions { display: flex; gap: 10px; margin: 0 0 16px; flex-wrap: wrap; align-items: center; }
+  .pol-actions[hidden] { display: none; }
+  .pol-actions button {
+    font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1.5px solid var(--line); background: #fff; color: var(--ink);
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .pol-actions button:hover { border-color: var(--green); }
+  .pol-actions button.primary { background: var(--green); border-color: var(--green); color: #fff; }
+  .pol-actions button.primary:hover { background: var(--green-dark); }
+
+  article.policy { background: #fff; border: 1.5px solid var(--line); border-radius: 18px; padding: 40px 48px 38px; min-height: 420px; }
+  .policy .kicker { font-size: 11px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
+  .policy h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 10px; }
+  .policy .pol-meta { font-size: 12px; color: var(--muted); padding-bottom: 16px; margin-bottom: 8px; border-bottom: 1.5px solid var(--line); display: flex; gap: 18px; flex-wrap: wrap; }
+  .policy .pol-meta strong { color: var(--ink); }
+  .policy h2 { font-size: 16.5px; font-weight: 800; letter-spacing: -0.01em; margin: 26px 0 8px; padding-top: 18px; border-top: 1.5px solid #f0ecdd; }
+  .policy h2:first-of-type { border-top: none; padding-top: 8px; }
+  .policy h3 { font-size: 14px; font-weight: 800; margin: 18px 0 6px; }
+  .policy p { font-size: 13.5px; line-height: 1.7; color: #2c3826; margin: 0 0 10px; text-wrap: pretty; }
+  .policy ul, .policy ol { margin: 4px 0 12px; padding-left: 21px; }
+  .policy li { font-size: 13.5px; line-height: 1.65; color: #2c3826; margin-bottom: 4px; }
+  .sig-block { margin-top: 34px; border-top: 2px solid var(--ink); padding-top: 14px; }
+  .sig-block h2 { border-top: none; padding-top: 0; margin-top: 0; }
+  .sig-block p { font-size: 12.5px; }
+  .sig-grid { display: grid; grid-template-columns: 1.2fr 1.2fr 0.6fr; gap: 26px; margin-top: 30px; }
+  .sig-grid .f .ln { border-bottom: 1.3px solid var(--ink); height: 30px; }
+  .sig-grid .f label { font-size: 9.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); }
+
+  /* ---- Cover (nothing selected) ---- */
+  .cover .kicker { font-size: 11.5px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--green); margin-bottom: 6px; }
+  .cover h1 { font-size: 30px; }
+  .cover p.lede { font-size: 14.5px; color: var(--muted); line-height: 1.6; max-width: 560px; }
+  .cover .toc { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 26px; }
+  .cover .toc a {
+    display: flex; align-items: center; gap: 10px;
+    border: 1.5px solid var(--line); border-radius: 12px; padding: 13px 15px;
+    text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 700;
+  }
+  .cover .toc a:hover { border-color: var(--green); }
+  .cover .toc .dot { width: 9px; height: 9px; border-radius: 999px; flex-shrink: 0; }
+  .cover .toc small { display: block; color: var(--muted); font-weight: 500; font-size: 11.5px; }
+  .pol-loading { color: var(--muted); font-size: 13.5px; padding: 30px 0; }
+
+  .mob-nav-btn { display: none; }
+
+  @media (max-width: 900px) {
+    .manual { grid-template-columns: 1fr; }
+    .nav-tree { position: static; max-height: none; display: none; }
+    .manual.nav-open .nav-tree { display: block; }
+    .mob-nav-btn {
+      display: inline-flex; align-items: center; gap: 7px; margin-bottom: 14px;
+      font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+      border-radius: 999px; padding: 9px 16px; border: 1.5px solid var(--line); background: #fff; color: var(--ink);
+    }
+    article.policy { padding: 26px 22px; }
+    .sig-grid { grid-template-columns: 1fr; gap: 18px; }
+    .cover .toc { grid-template-columns: 1fr; }
+  }
+
+  @media screen {
+    html[data-theme="dark"] .nav-tree { background: #1d2316; }
+    html[data-theme="dark"] .nav-tree .pol-search { background: #14180f; }
+    html[data-theme="dark"] .nav-group li a:hover { background: #232b1a; }
+    html[data-theme="dark"] .nav-group li a.active { background: rgba(76,194,91,.14); }
+    html[data-theme="dark"] .mob-nav-btn { background: #1d2316; color: var(--ink); }
+    html[data-theme="dark"] .policy h2 { border-top-color: #2f3826; }
+  }
+
+  @media print {
+    .topbar, .pol-actions, .portal-foot, .nav-tree, .mob-nav-btn { display: none !important; }
+    body { background: #fff; }
+    .wrap { padding: 0; max-width: 100%; }
+    .manual { display: block; }
+    article.policy { border: none; border-radius: 0; padding: 0; max-width: 100%; }
+    .policy h2 { break-after: avoid; }
+    .sig-block { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <img src="noor-mark.png" alt="Noor Therapy Center"/>
+      <span class="t"><strong>Noor Therapy Center</strong><span>Admin Portal</span></span>
+    </a>
+    <nav>
+      <a href="forms.html">Forms</a>
+      <a href="policies.html" class="active">Policies</a>
+      <a href="handbook.html">Handbook</a>
+      <a href="onboarding.html">Onboarding</a>
+      <a href="links.html">Links</a>
+    </nav>
+    <button class="lock" type="button">Lock</button>
+  </div>
+</header>
+
+<main class="wrap" style="padding-top:30px">
+  <button class="mob-nav-btn" type="button" id="mob-nav">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"></path></svg>
+    Browse policies
+  </button>
+
+  <div class="manual" id="manual">
+    <aside class="nav-tree" id="nav-tree" data-screen-label="Policy nav tree">
+      <div class="pol-search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+        <input type="search" id="pol-q" placeholder="Search policies…" autocomplete="off"/>
+      </div>
+      <div id="tree"></div>
+      <div class="nav-none" id="nav-none">No policies match.</div>
+    </aside>
+
+    <section id="pane" data-screen-label="Policy content">
+      <div class="pol-actions" id="pol-actions" hidden>
+        <button type="button" id="pol-home">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+          Manual home
+        </button>
+        <span style="flex:1"></span>
+        <button type="button" id="pol-dl" class="primary">Download PDF (with signature space)</button>
+        <button type="button" id="pol-print">Print</button>
+      </div>
+      <article class="policy" id="content"></article>
+    </section>
+  </div>
+</main>
+
+<footer class="portal-foot">
+  <span class="dots">
+    <span style="background:#2aa63a"></span><span style="background:#f18a2c"></span><span style="background:#2f6fd6"></span><span style="background:#9b51c7"></span><span style="background:#e5396a"></span>
+  </span>
+  <span>Noor Therapy Center · Admin Portal · Internal use only</span>
+</footer>
+
+<script>
+(function () {
+  var GROUPS = [
+    { name: "Clients & Clinical", color: "#2aa63a", items: [
+      ["01", "Eligibility & Intake Procedures", "Eligibility and Intake"],
+      ["02", "Treatment Planning & Progress Monitoring", "Treatment Planning and Progress Monitoring"],
+      ["03", "Discharge & Transition Planning", "Discharge and Transition Planning"],
+      ["04", "Client Supervision & Elopement Prevention", "Client Supervision and Elopement Prevention"],
+      ["05", "Behavior Intervention & Prohibited Procedures", "Behavior Intervention and Prohibited Procedures"],
+      ["06", "Family Communication & Parent Training", "Family Communication and Parent Training"],
+      ["23", "Complaint & Grievance Procedures", "Grievance Policy"]
+    ]},
+    { name: "Staffing & Supervision", color: "#9b51c7", items: [
+      ["07", "Documentation of Staff Qualifications", "Documentation of Staff Qualifications"],
+      ["08", "Required Staff Training", "Required Staff Training"],
+      ["09", "Clinical Supervision Procedures", "Clinical Supervision Procedures"]
+    ]},
+    { name: "Documentation & Records", color: "#2f6fd6", items: [
+      ["10", "Documentation of Service Activities", "Documentation of Service Activities"],
+      ["11", "Documentation of Service Quality", "Documentation of Service Quality"],
+      ["12", "Records Management: Retention, Corrections & EHR", "Records Management and EHR"]
+    ]},
+    { name: "Billing & Program Integrity", color: "#f18a2c", items: [
+      ["13", "Appropriate Submission of Claims", "Appropriate Submission of Claims"],
+      ["14", "Service Verification Procedures", "Service Verification"],
+      ["15", "Fraud, Waste & Abuse Prevention", "Fraud Waste and Abuse Prevention"],
+      ["16", "Internal Audits", "Internal Audits"]
+    ]},
+    { name: "Privacy & Compliance", color: "#2aa63a", items: [
+      ["17", "HIPAA Compliance Procedures", "HIPAA Privacy and Security"],
+      ["18", "Release of Information", "Release of Information"]
+    ]},
+    { name: "Safety & Reporting", color: "#e5396a", items: [
+      ["19", "Incident Reporting & Response", "Incident Reporting"],
+      ["20", "Emergency Procedures", "Emergency Procedures"],
+      ["21", "Maltreatment of Minors — Mandated Reporting", "Maltreatment of Minors"],
+      ["22", "Maltreatment of Vulnerable Adults — Mandated Reporting", "Maltreatment of Vulnerable Adults"]
+    ]}
+  ];
+
+  var tree = document.getElementById("tree");
+  var content = document.getElementById("content");
+  var actions = document.getElementById("pol-actions");
+  var noneMsg = document.getElementById("nav-none");
+  var manual = document.getElementById("manual");
+  var cache = {};
+
+  function slug(file) { return file.toLowerCase().replace(/[^a-z0-9]+/g, "-"); }
+  var bySlug = {};
+  GROUPS.forEach(function (g) { g.items.forEach(function (it) { bySlug[slug(it[2])] = it; }); });
+
+  /* Build tree */
+  GROUPS.forEach(function (g, gi) {
+    var div = document.createElement("div");
+    div.className = "nav-group open";
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.innerHTML = '<span class="dot" style="background:' + g.color + '"></span>' + g.name +
+      '<svg class="chev" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"></path></svg>';
+    btn.addEventListener("click", function () { div.classList.toggle("open"); });
+    var ul = document.createElement("ul");
+    g.items.forEach(function (it) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = "#" + slug(it[2]);
+      a.innerHTML = '<span class="num">' + it[0] + "</span><span>" + it[1] + "</span>";
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    div.appendChild(btn);
+    div.appendChild(ul);
+    tree.appendChild(div);
+  });
+
+  /* Search filter */
+  document.getElementById("pol-q").addEventListener("input", function () {
+    var v = this.value.trim().toLowerCase();
+    var any = false;
+    Array.prototype.forEach.call(tree.children, function (grp) {
+      var shown = 0;
+      grp.querySelectorAll("li").forEach(function (li) {
+        var hit = !v || li.textContent.toLowerCase().indexOf(v) !== -1;
+        li.style.display = hit ? "" : "none";
+        if (hit) shown++;
+      });
+      grp.style.display = shown ? "" : "none";
+      if (shown) { any = true; if (v) grp.classList.add("open"); }
+    });
+    noneMsg.style.display = any ? "none" : "block";
+  });
+
+  function setActive(s) {
+    var active = null;
+    tree.querySelectorAll("a").forEach(function (a) {
+      var hit = a.getAttribute("href") === "#" + s;
+      a.classList.toggle("active", hit);
+      if (hit) active = a;
+    });
+    if (active) {
+      var pane = document.getElementById("nav-tree");
+      var grp = active.closest(".nav-group");
+      if (grp) grp.classList.add("open");
+      if (pane.scrollHeight > pane.clientHeight) {
+        var pr = pane.getBoundingClientRect();
+        var ar = active.getBoundingClientRect();
+        var target = pane.scrollTop + (ar.top - pr.top) - pane.clientHeight / 2 + ar.height / 2;
+        pane.scrollTo({ top: Math.max(0, target), behavior: "smooth" });
+      }
+    }
+  }
+
+  function showCover() {
+    actions.hidden = true;
+    setActive("");
+    var toc = GROUPS.map(function (g) {
+      var first = g.items[0];
+      return '<a href="#' + slug(first[2]) + '"><span class="dot" style="background:' + g.color + '"></span><span>' + g.name +
+        '<small>' + g.items.length + (g.items.length === 1 ? " policy" : " policies") + "</small></span></a>";
+    }).join("");
+    content.innerHTML =
+      '<div class="cover">' +
+      '<div class="kicker">Policies &amp; Procedures</div>' +
+      "<h1>Policy &amp; Procedure Manual</h1>" +
+      '<p class="lede">The agency\u2019s EIDBI policies, all in one place. Pick a policy from the list to read it here \u2014 use the download button on any policy to print or save it with a signature space.</p>' +
+      '<div class="toc">' + toc + "</div></div>";
+  }
+
+  function showPolicy(s) {
+    var it = bySlug[s];
+    if (!it) { showCover(); return; }
+    setActive(s);
+    manual.classList.remove("nav-open");
+    actions.hidden = false;
+    if (cache[s]) { content.innerHTML = cache[s]; return; }
+    content.innerHTML = '<div class="pol-loading">Loading\u2026</div>';
+    fetch("policies/" + it[2] + ".html")
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(function (html) {
+        var doc = new DOMParser().parseFromString(html, "text/html");
+        var art = doc.querySelector("article.policy");
+        cache[s] = art ? art.innerHTML : "<p>Could not load this policy.</p>";
+        if (location.hash.replace(/^#/, "") === s) content.innerHTML = cache[s];
+      })
+      .catch(function () {
+        content.innerHTML = '<p style="font-size:13.5px">Could not load this policy. <a href="policies/' + it[2] + '.html">Open it directly</a>.</p>';
+      });
+  }
+
+  function route() {
+    var s = location.hash.replace(/^#/, "");
+    if (s && bySlug[s]) { showPolicy(s); window.scrollTo(0, 0); }
+    else showCover();
+  }
+  window.addEventListener("hashchange", route);
+  route();
+
+  /* Actions */
+  document.getElementById("pol-home").addEventListener("click", function () {
+    location.hash = "";
+  });
+  document.getElementById("pol-dl").addEventListener("click", function () {
+    var sb = content.querySelector("#sig-block");
+    if (sb) sb.hidden = false;
+    setTimeout(function () { window.print(); }, 80);
+  });
+  document.getElementById("pol-print").addEventListener("click", function () {
+    var sb = content.querySelector("#sig-block");
+    if (sb) sb.hidden = true;
+    setTimeout(function () { window.print(); }, 80);
+  });
+  document.getElementById("mob-nav").addEventListener("click", function () {
+    manual.classList.toggle("nav-open");
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,921 @@
+
+
+@@@FILE Documentation of Staff Qualifications.docx
+[P] Mohammed Mohamed
+[P] Bright Minds Therapy, L.L.C. (DBA: Noor Therapy Center)
+[P] 1001 Cliff Rd E Ste 400
+[P] Burnsville, MN 55337
+[P] Effective: January 01, 2026
+[P] DOCUMENTATION OF STAFF QUALIFICATION
+[H2] 1. Policy
+[P] Bright Minds Therapy, L.L.C. DBA Noor Therapy Center (“Noor Therapy Center”) ensures that all staff providing Early Intensive Developmental and Behavioral Intervention (EIDBI) services meet all applicable qualification requirements as defined by the Minnesota Department of Human Services (DHS), EIDBI service standards, and relevant state and federal regulations.
+[P] All staff qualifications must be verified, documented, and maintained prior to the provision of any services. Noor Therapy Center strictly prohibits any individual from providing services without verified credentials, completed background studies, and required documentation on file.
+[P] The organization maintains complete, accurate, and up-to-date personnel records to demonstrate compliance with DHS licensing, audit, and program integrity requirements.
+[H2] 2. Purpose
+[P] The purpose of this policy is to:
+[LI] Ensure compliance with DHS EIDBI provider qualification requirements
+[LI] Verify that all staff meet minimum standards for their role
+[LI] Maintain accurate and complete personnel records
+[LI] Protect client safety and service quality
+[LI] Ensure readiness for audits, reviews, and licensing requirements
+[H2] 3. Scope
+[P] This policy applies to all individuals employed or contracted by Noor Therapy Center, including:
+[LI] All provider levels (Level I, Level II, Level III)
+[LI] Qualified Supervising Professional (QSP) / Advanced Clinical Practitioner (ACH)
+[LI] Administrative and billing staff
+[H2] 4. Procedure
+[H3] 4.1 Pre-Employment and Pre-Service Verification
+[P] Prior to hire and before any service delivery, Noor Therapy Center verifies that all staff meet required qualifications for their role.
+[P] Verification includes:
+[LI] Review of education and degree requirements
+[LI] Confirmation of certifications (if applicable)
+[LI] Verification of relevant experience
+[LI] Completion of required background studies
+[P] No staff member may begin work or provide services until all required qualifications have been verified and documented.
+[H3] 4.2 Required Documentation for Personnel Files
+[P] Each employee must have a complete personnel file containing, at minimum, the following documentation:
+[P] 1. Identification and Employment Records
+[LI] Completed job application or resume
+[LI] Proof of identity and employment eligibility
+[P] 2. Education and Credential Verification
+[LI] Copies of diplomas or transcripts verifying degree completion
+[LI] Certification documentation (if applicable, e.g., RBT, BCBA, etc.)
+[LI] Verification of credentials through appropriate certifying bodies
+[P] 3. DHS and Background Study Requirements
+[LI] Completed NETStudy 2.0 background study with eligible or set-aside determination
+[LI] Documentation of clearance prior to providing services
+[P] 4. Required Training Documentation
+[LI] Proof of completion of all required initial training
+[LI] Certificates for DHS/TrainLink trainings (e.g., EIDBI 101, Cultural Responsiveness)
+[LI] Mandated reporter training documentation
+[P] 5. Health and Safety Requirements (if applicable)
+[LI] CPR and First Aid certification (if required for role)
+[LI] Any additional health or safety clearances required by DHS
+[P] 6. Supervision and Role Documentation
+[LI] Documentation of assigned roles (L1, L2, L3)
+[LI] Supervision structure and assigned supervisor
+[LI] Evidence of supervision requirements being met (as applicable)
+[H3] 4.3 Credential Verification and Monitoring
+[P] Noor Therapy Center ensures that all credentials remain valid and up to date.
+[LI] Credentials are verified through primary sources (e.g., licensing boards, certification registries)
+[LI] Expiration dates are tracked and monitored
+[LI] Staff are notified in advance of upcoming expirations
+[P] Staff are responsible for maintaining active credentials and providing updated documentation prior to expiration.
+[P] Failure to maintain active credentials will result in immediate suspension from service delivery.
+[H3] 4.4 Role-Based Qualification Requirements
+[P] All staff must meet DHS-defined qualifications for their assigned role, including:
+[LI] L1, L2, L3 Providers Must meet minimum education and training requirements and operate under supervision of QSP
+[LI] QSP/ACH (Kelly Ann Clark): Must meet DHS requirements for Qualified Supervising Professionals, including oversight of clinical services and supervision
+[P] Noor Therapy Center ensures that staff only perform duties within their defined scope of practice.
+[H3] 4.5 Restrictions on Service Delivery
+[P] Staff are prohibited from providing services if:
+[LI] Required documentation is missing or incomplete
+[LI] Background study clearance has not been obtained
+[LI] Credentials have expired or cannot be verified
+[LI] Required training has not been completed
+[P] Any lapse in qualification status results in immediate removal from service delivery until resolved.
+[H3] 4.6 Record Maintenance and Security
+[LI] Personnel files are maintained in a secure and confidential manner
+[LI] Access is limited to authorized personnel only
+[LI] Records may be stored electronically and/or physically, with appropriate safeguards
+[P] All records must be readily available for review during audits or licensing inspections.
+[H3] 4.7 Record Retention
+[P] All personnel and qualification records will be retained for a minimum of 7 years after termination of employment, in accordance with Minnesota DHS requirements.
+[H2] 5. Responsibility
+[LI] Clinical Director (Kelly Ann Clark): Ensures clinical staff meet qualification and supervision requirements
+[LI] Billing Manager / Administration (Mohammed Mohamed): Oversees verification, tracking, and maintenance of personnel records
+[LI] Staff Members: Responsible for providing accurate documentation and maintaining active credentials
+[H2] 6. Compliance and Enforcement
+[P] Failure to comply with qualification requirements may result in:
+[LI] Immediate suspension from service delivery
+[LI] Corrective action or retraining
+[LI] Disciplinary action, up to and including termination
+[P] Serious violations may be reported to:
+[LI] Minnesota Department of Human Services (DHS)
+[LI] Licensing and regulatory agencies
+
+@@@FILE Documentation of Service Activities.docx
+[P] Mohammed Mohamed
+[P] Bright Minds Therapy, L.L.C. (DBA: Noor Therapy Center)
+[P] 1001 Cliff Rd E Ste 400
+[P] Burnsville, MN 55337
+[P] Effective: January 01, 2026
+[P] DOCUMENTATION OF SERVICE ACTIVITY
+[H2] 1. Policy
+[P] Bright Minds Therapy, L.L.C. DBA Noor Therapy Center (“Noor Therapy Center”) requires that all service activities provided under Early Intensive Developmental and Behavioral Intervention (EIDBI) are documented accurately, completely, and in a timely manner in accordance with Minnesota Department of Human Services (DHS) requirements, EIDBI service standards, and Medicaid billing regulations.
+[P] All documentation must clearly reflect the services delivered, support medical necessity, and align with the client’s approved Individual Treatment Plan (ITP). Documentation serves as the legal and clinical record of services provided and must be sufficient to support billing, audits, and quality assurance.
+[P] Failure to properly document services may result in denied claims, recoupment of funds, and disciplinary action.
+[H2] 2. Purpose
+[P] The purpose of this policy is to:
+[LI] Ensure compliance with DHS EIDBI documentation requirements
+[LI] Establish standardized expectations for service documentation
+[LI] Support accurate billing and claims submission
+[LI] Promote high-quality clinical care and continuity of services
+[LI] Maintain audit-ready records at all times
+[H2] 3. Scope
+[P] This policy applies to all staff responsible for documenting services, including:
+[LI] Behavior Technicians (BTs)
+[LI] Level 1 Providers
+[LI] Qualified Supervising Professional (QSP/ACH)
+[H2] 4. Procedure
+[H3] 4.1 General Documentation Standards
+[P] All documentation must be:
+[LI] Accurate – Reflecting the actual services provided
+[LI] Complete – Including all required elements
+[LI] Objective – Based on observable and measurable behavior
+[LI] Timely – Completed within required timeframes
+[LI] Legible and professional – Free of vague or subjective language
+[P] Documentation must be entered into Passage Health, the organization’s designated electronic health record system.
+[H3] 4.2 Required Components of Session Notes
+[P] Each service session must include a corresponding case note that contains, at minimum:
+[LI] Client name and identifying information
+[LI] Date of service
+[LI] Exact start and end times (no rounding or estimation)
+[LI] Total duration of service
+[LI] Location of service (in-home, clinic, office, etc.)
+[LI] Type of service provided (e.g., 97153, 97155, 97156)
+[LI] Name and credential level of the provider
+[LI] Goals and objectives targeted during the session
+[LI] Description of interventions implemented
+[LI] Objective data collected (e.g., frequency, duration, accuracy)
+[LI] Client response to interventions
+[LI] Any significant events, behaviors, or incidents
+[LI] Plan for next session or ongoing treatment
+[P] All entries must align with the approved ITP and reflect medically necessary services.
+[H3] 4.3 Timeliness of Documentation
+[LI] Session notes must be completed on the same day of service whenever possible
+[LI] All notes must be completed within 24 hours of service delivery
+[LI] Late entries must be clearly identified and justified
+[P] Failure to complete documentation within required timelines may result in:
+[LI] Delayed or denied billing
+[LI] Increased supervision
+[LI] Disciplinary action
+[H3] 4.4 Data Collection and Integrity
+[P] Staff are required to collect and maintain accurate data during each session.
+[LI] Data must be recorded in real time whenever possible
+[LI] Data must align with treatment goals and intervention plans
+[LI] Data must be stored securely within Passage Health or approved systems
+[P] The organization may implement periodic checks for:
+[LI] Data accuracy
+[LI] Consistency across providers
+[H3] 4.5 Supervision and Observation & Direction (O&D) Documentation
+[P] All supervision activities must be documented in accordance with EIDBI requirements.
+[LI] Observation & Direction (O&D) must be documented for each occurrence
+[LI] Documentation must include:
+[LI] Type of supervision provided
+[LI] Activities conducted (e.g., modeling, feedback, protocol modification)
+[LI] Staff performance and response
+[LI] O&D must occur in proportion to approximately 20% of the client’s direct service hours
+[P] Supervision documentation must clearly support clinical oversight and staff development.
+[H3] 4.6 Alignment with Billing Requirements
+[P] All documentation must directly support claims submitted for reimbursement.
+[LI] Units billed must match documented time
+[LI] Services billed must match services documented
+[LI] Provider credentials must align with the service delivered
+[P] Any discrepancy between documentation and billing may result in claim denial or recoupment.
+[H3] 4.7 Documentation of Significant Events
+[P] Staff must document any significant or unusual events, including but not limited to:
+[LI] Aggressive or self-injurious behavior
+[LI] Elopement or safety concerns
+[LI] Injuries or incidents
+[LI] Emergency situations
+[P] Such documentation must be factual, objective, and include actions taken.
+[H3] 4.8 Record Maintenance and Security
+[LI] All documentation is maintained securely within Passage Health
+[LI] Access to records is restricted to authorized personnel only
+[LI] All documentation must comply with HIPAA and confidentiality requirements
+[H3] 4.9 Record Retention
+[P] All service documentation will be retained for a minimum of 7 years, in accordance with Minnesota DHS requirements.
+[H2] 5. Responsibility
+[LI] Clinical Staff (L1, L2, L3 Providers): Responsible for accurate, timely, and complete documentation
+[LI] Clinical Director (Kelly Ann Clark): Oversees documentation standards, audits, and compliance
+[LI] Billing Manager (Mohammed Mohamed): Ensures documentation supports claims and billing accuracy
+[H2] 6. Compliance and Enforcement
+[P] Failure to comply with documentation requirements may result in:
+[LI] Delayed or denied billing
+[LI] Corrective action plans
+[LI] Increased supervision
+[LI] Disciplinary action, up to and including termination
+[P] Serious violations may be reported to DHS or regulatory agencies.
+
+@@@FILE APPROPRIATE SUBMISSION OF CLAIMS.docx
+[P] Mohammed Mohamed
+[P] Bright Minds Therapy, L.L.C. (DBA: Noor Therapy Center)
+[P] 1001 Cliff Rd E Ste 400
+[P] Burnsville, MN 55337
+[P] Effective: January 01, 2026
+[P] APPROPRIATE SUBMISSION OF CLAIMS
+[H2] 1. Policy
+[P] Bright Minds Therapy, L.L.C. DBA Noor Therapy Center (“Noor Therapy Center”) is committed to ensuring that all claims submitted for Early Intensive Developmental and Behavioral Intervention (EIDBI) services are accurate, complete, timely, and compliant with all applicable federal regulations, Minnesota Department of Human Services (DHS) requirements, and Minnesota Medicaid (Medical Assistance) guidelines.
+[P] All billing must reflect services that are:
+[LI] Medically necessary
+[LI] Authorized through an approved Individual Treatment Plan (ITP)
+[LI] Delivered by qualified staff within their scope of practice
+[LI] Fully supported by clinical documentation
+[P] Noor Therapy Center strictly prohibits fraudulent, abusive, or improper billing practices, including but not limited to:
+[LI] Billing for services not rendered
+[LI] Falsifying documentation
+[LI] Upcoding or unbundling services
+[LI] Duplicate billing
+[LI] Billing beyond authorized units
+[LI] Misrepresenting provider credentials or service delivery
+[P] All staff are expected to adhere to ethical billing practices and maintain full compliance with EIDBI standards. Violations of this policy may result in disciplinary action, up to and including termination, and may be reported to appropriate regulatory authorities.
+[H2] 2. Purpose
+[P] The purpose of this policy is to:
+[LI] Ensure compliance with DHS EIDBI billing requirements
+[LI] Promote accuracy and integrity in all claims submissions
+[LI] Prevent fraud, waste, and abuse
+[LI] Establish clear roles, responsibilities, and procedures for billing activities
+[LI] Support audit readiness and documentation integrity
+[H2] 3. Scope
+[P] This policy applies to:
+[LI] Clinical staff responsible for documentation of services
+[LI] The Billing Manager/Owner (Mohammed Mohamed)
+[LI] The Clinical Director (Kelly Ann Clark)
+[LI] Any administrative staff involved in claims processing, submission, or reconciliation
+[H2] 4. Procedure
+[H3] 4.1 Verification of Client Eligibility and Authorization
+[P] Prior to the delivery of any service, Noor Therapy Center ensures that:
+[LI] The client has active Minnesota Medicaid (Medical Assistance) eligibility
+[LI] A current and approved Individual Treatment Plan (ITP) is on file
+[LI] Services to be delivered are authorized under EIDBI guidelines
+[P] Authorization and eligibility verification is completed prior to initiating services and reviewed periodically to ensure continued compliance.
+[H3] 4.2 Documentation Requirements
+[P] All billed services must be supported by accurate and complete documentation entered into Passage Health, the organization’s designated electronic health record system.
+[P] Each session note must include, at minimum:
+[LI] Client name and identifying information
+[LI] Date of service
+[LI] Exact start and end times (no rounding or estimation)
+[LI] Location of service (in-home, center, etc.)
+[LI] Service type and corresponding CPT code
+[LI] Name and credential level of the provider
+[LI] Detailed description of interventions implemented
+[LI] Objective data collected
+[LI] Client response to intervention
+[LI] Plan for next session
+[P] Documentation must:
+[LI] Be completed on the same day
+[LI] Be completed within 24 hours at maximum
+[LI] Be accurate, legible, and reflect the actual service delivered
+[P] Incomplete, late, or inaccurate documentation may result in delayed billing, denial of claims, or corrective action.
+[H3] 4.3 Billing and Claims Submission Process
+[LI] All clinical documentation is entered into Passage Health and reviewed prior to billing.
+[LI] Claims are submitted electronically through Waystar clearinghouse.
+[LI] The Billing Manager (Mohammed Mohamed) is responsible for:
+[LI] Reviewing all claims prior to submission
+[LI] Ensuring alignment between documentation and billed services
+[LI] Verifying correct use of CPT codes, modifiers, and units
+[LI] Confirming that services billed do not exceed authorized limits
+[P] Only services that are properly documented and verified may be submitted for reimbursement.
+[H3] 4.4 Timeliness of Claims Submission
+[P] Noor Therapy Center adheres to all Minnesota Medicaid and EIDBI billing timelines.
+[LI] Claims are submitted on a routine billing cycle (weekly or bi-weekly)
+[LI] Claims must be submitted within payer-required timeframes
+[LI] Denials are reviewed within 5 business days of receipt
+[LI] Appeals and corrected claims are submitted promptly in accordance with payer requirements
+[P] Failure to meet submission timelines may result in loss of reimbursement.
+[H3] 4.5 Internal Auditing and Monitoring
+[P] To ensure ongoing compliance, Noor Therapy Center implements the following audit processes:
+[LI] Weekly claim reviews conducted by the Billing Manager
+[LI] Monthly reconciliation audits, comparing:
+[LI] Claims submitted
+[LI] Session logs
+[LI] Clinical documentation in Passage Health
+[P] Audits are conducted in coordination with the Clinical Director to ensure both clinical and billing accuracy.
+[P] Any discrepancies identified during audits are documented and addressed immediately.
+[H3] 4.6 Error Identification, Correction, and Refunds
+[P] If an error is identified in a submitted claim:
+[LI] A corrected claim will be submitted promptly
+[LI] Any overpayments will be refunded in accordance with payer requirements
+[LI] The error will be documented, including:
+[LI] Nature of the error
+[LI] Root cause
+[LI] Corrective action taken
+[P] Repeated errors may result in additional staff training, increased monitoring, or disciplinary action.
+[H3] 4.7 Staff Training and Accountability
+[P] All staff involved in documentation or billing must receive training on:
+[LI] Documentation standards
+[LI] EIDBI service requirements
+[LI] Ethical billing practices
+[LI] Use of Passage Health
+[P] Staff are responsible for ensuring that their documentation supports the services billed.
+[P] Failure to comply with documentation and billing requirements may result in:
+[LI] Suspension of billing privileges
+[LI] Additional supervision or retraining
+[LI] Disciplinary action
+[H3] 4.8 Record Retention
+[P] All records related to claims submission, including:
+[LI] Clinical documentation
+[LI] Claims and billing records
+[LI] Remittance advice (EOBs)
+[LI] Audit records
+[P] will be securely maintained for a minimum of 7 years, in accordance with Minnesota DHS requirements.
+[H2] 5. Responsibility
+[LI] Billing Manager (Mohammed Mohamed): Oversees claims submission, auditing, and compliance
+[LI] Clinical Director (Kelly Ann Clark): Ensures clinical documentation supports billing and aligns with ITPs
+[LI] Clinical Staff: Responsible for accurate, timely, and complete documentation
+[LI] Administrative Staff: Support verification, tracking, and record maintenance
+[H2] 6. Compliance and Enforcement
+[P] Failure to comply with this policy may result in corrective action, including:
+[LI] Retraining
+[LI] Increased supervision
+[LI] Suspension of duties
+[LI] Termination of employment
+[P] Serious violations may be reported to:
+[LI] Minnesota Department of Human Services (DHS)
+[LI] Medicaid Program Integrity
+[H2] 7. Review and Revision
+[P] This policy will be reviewed annually or as required by changes in DHS, EIDBI, or Medicaid regulations.
+
+@@@FILE Required Staff Training.docx
+[P] Mohammed Mohamed
+[P] Bright Minds Therapy, L.L.C. (DBA: Noor Therapy Center)
+[P] 1001 Cliff Rd E Ste 400
+[P] Burnsville, MN 55337
+[P] Effective: January 01, 2026
+[P] REQUIRED STAFF TRAINING
+[H2] 1. Policy
+[P] Bright Minds Therapy, L.L.C. DBA Noor Therapy Center (“Noor Therapy Center”) is committed to ensuring that all staff are properly trained, competent, and qualified to deliver Early Intensive Developmental and Behavioral Intervention (EIDBI) services in accordance with Minnesota Department of Human Services (DHS) requirements, applicable federal and state regulations, and best practices in Applied Behavior Analysis (ABA).
+[P] All staff must complete required training prior to providing services and participate in ongoing training and supervision to maintain competency. Training is designed to ensure that services are delivered safely, ethically, and effectively in an in-home setting.
+[P] No staff member may provide services independently until all required training and competency requirements have been met and documented.
+[H2] 2. Purpose
+[P] The purpose of this policy is to:
+[LI] Ensure compliance with DHS EIDBI training requirements
+[LI] Promote safe and effective service delivery
+[LI] Establish standardized training expectations for all staff
+[LI] Maintain staff competency in clinical, ethical, and operational areas
+[LI] Support ongoing professional development and quality improvement
+[H2] 3. Scope
+[P] This policy applies to:
+[LI] All provider levels (L1, L2, & L3)
+[LI] Qualified Supervising Professional (QSP) / Advanced Certification Holder (ACH)
+[LI] Administrative and billing staff (as applicable to their roles)
+[H2] 4. Procedure
+[H3] 4.1 Pre-Service (Initial) Training Requirements
+[P] All newly hired staff must complete all required training prior to engaging in any direct or indirect service delivery, including observation, shadowing, or documentation activities. This requirement ensures that all staff meet Minnesota Department of Human Services (DHS) and EIDBI standards for competency, safety, and compliance.
+[P] Staff are strictly prohibited from providing any services until all required training has been completed, verified, and documented in their personnel file.
+[P] Required Initial Training Includes, at Minimum:
+[P] 1. HIPAA and Client Confidentiality
+[LI] Protection of Protected Health Information (PHI)
+[LI] Secure handling, storage, and transmission of client records
+[LI] Confidential communication practices in home and community settings
+[P] 2. Mandated Reporting – Minors and Vulnerable Adults
+[LI] Maltreatment of minors (child abuse and neglect)
+[LI] Maltreatment of vulnerable adults, including abuse, neglect, and exploitation
+[LI] Legal obligations as a mandated reporter under Minnesota law
+[LI] Procedures for immediate reporting and documentation
+[LI] Understanding timelines and reporting channels
+[P] 3. ABA Ethics and Professional Conduct
+[LI] Adherence to ethical standards in Applied Behavior Analysis
+[LI] Maintaining professional boundaries with clients and families
+[LI] Avoidance of dual relationships and conflicts of interest
+[LI] Appropriate conduct in home-based service environments
+[P] 4. Documentation and Case Note Standards
+[LI] Accurate, objective, and timely documentation practices
+[LI] Requirements for entering notes in Passage Health
+[LI] Alignment of documentation with billing and authorization requirements
+[LI] Ensuring documentation reflects services delivered
+[P] 5. Behavior Intervention and Safety Procedures
+[LI] Implementation of individualized behavior intervention plans
+[LI] De-escalation strategies and crisis prevention techniques
+[LI] Safe response to challenging behaviors
+[LI] Maintaining safety for clients, staff, and caregivers in the home
+[P] 6. Emergency Procedures (In-Home Setting)
+[LI] Responding to medical emergencies
+[LI] Fire safety and environmental hazards
+[LI] Emergency communication and escalation procedures
+[LI] Use of emergency contacts and reporting protocols
+[P] 7. EIDBI-Specific Required Training (TrainLink & DHS-Aligned)
+[P] All staff must complete required foundational EIDBI trainings, including but not limited to:
+[LI] EIDBI 101 for Providers
+[LI] Overview of EIDBI services, structure, and expectations
+[LI] Roles and responsibilities within the EIDBI model
+[LI] Cultural Responsiveness Training
+[LI] Delivering culturally responsive and respectful care
+[LI] Understanding diverse family systems and backgrounds
+[LI] Addressing cultural considerations in service delivery
+[LI] Coordinating Services for a Child with Autism
+[LI] Collaboration with caregivers and interdisciplinary teams
+[LI] Supporting continuity of care
+[LI] Understanding systems of care and service coordination
+[P] These trainings must be completed through DHS-approved platforms (e.g., TrainLink) or equivalent approved training sources.
+[P] 8. Overview of EIDBI Services and Provider Roles
+[LI] Understanding EIDBI service types (e.g., direct services, O&D, caregiver training)
+[LI] Scope of practice for each provider level
+[LI] Expectations for supervision and service delivery
+[H3] 4.2 Ongoing and Annual Training Requirements
+[P] All staff are required to complete ongoing training to maintain competency and compliance.
+[LI] Annual training is required for all core topics, including:
+[LI] HIPAA and confidentiality
+[LI] Mandated reporting
+[LI] Ethics
+[LI] Documentation standards
+[LI] Additional training is provided based on:
+[LI] Updates to DHS or EIDBI requirements
+[LI] Identified areas of improvement
+[LI] Client-specific clinical needs
+[P] Failure to complete required training may result in removal from service delivery until requirements are met.
+[H3] 4.3 Supervision and Clinical Training
+[P] Ongoing supervision is a critical component of staff training and competency.
+[LI] Weekly supervision is provided by the QSP/ACH (Kelly Ann Clark)
+[LI] Supervision includes:
+[LI] Direct observation of service delivery
+[LI] Performance feedback
+[LI] Coaching on intervention implementation
+[LI] Review of data collection and documentation
+[LI] Observation & Direction (O&D) is conducted in alignment with EIDBI expectations and proportionate to approximately 20% of direct service hours
+[P] Supervision ensures staff are implementing interventions correctly and maintaining clinical integrity.
+[H3] 4.4 Competency Assessment
+[P] Staff competency is evaluated on an ongoing basis through:
+[LI] Direct observation by the QSP/ACH
+[LI] Review of session notes and documentation
+[LI] Performance feedback and supervision sessions
+[P] Staff must demonstrate competency in:
+[LI] Implementation of behavior intervention plans
+[LI] Accurate data collection
+[LI] Professional conduct and communication
+[LI] Compliance with documentation standards
+[P] If a staff member does not meet competency expectations:
+[LI] Additional training will be provided
+[LI] Increased supervision will be implemented
+[LI] Continued deficiencies may result in disciplinary action
+[H3] 4.5 Training Documentation
+[P] Noor Therapy Center maintains detailed records of all staff training.
+[P] Training records include:
+[LI] Training topic
+[LI] Date of completion
+[LI] Method of training (e.g., in-person, virtual)
+[LI] Trainer name
+[LI] Proof of completion (certificate, attendance log, or competency checklist)
+[P] All training documentation is maintained in the employee’s personnel file and is available for audit or review.
+[H3] 4.6 Responsibility and Oversight
+[LI] Clinical Director (Kelly Ann Clark):
+[LI] Oversees clinical training content
+[LI] Ensures training aligns with EIDBI and ABA standards
+[LI] Provides supervision and competency evaluation
+[LI] Administrative Oversight:
+[LI] Tracks training completion
+[LI] Maintains training records
+[LI] Ensures staff compliance with training requirements
+[LI] Staff Members:
+[LI] Responsible for completing all required training
+[LI] Must actively participate in supervision and competency development
+[H3] 4.7 Non-Compliance
+[P] Failure to comply with training requirements may result in:
+[LI] Suspension from providing services
+[LI] Additional training or supervision requirements
+[LI] Disciplinary action, up to and including termination
+[P] Staff will not be permitted to continue service delivery until all training deficiencies are resolved.
+[H2] 5. Record Retention
+[P] All training records will be securely maintained for a minimum of 7 years, in accordance with Minnesota DHS requirements.
+[H2] 6. Compliance and Enforcement
+[P] Noor Therapy Center enforces strict adherence to training requirements to ensure client safety, service quality, and regulatory compliance.
+[P] Non-compliance may be subject to internal disciplinary action and may be reported if required under regulatory guidelines.
+
+@@@FILE Documentation of Service Quality.docx
+[P] Mohammed Mohamed
+[P] Bright Minds Therapy, L.L.C. (DBA: Noor Therapy Center)
+[P] 1001 Cliff Rd E Ste 400
+[P] Burnsville, MN 55337
+[P] Effective: January 01, 2026
+[P] DOCUMENTATION OF SERVICE QUALITY
+[H2] 1. Policy
+[P] Bright Minds Therapy, L.L.C. DBA Noor Therapy Center (“Noor Therapy Center”) maintains a structured and measurable quality assurance system to ensure that all Early Intensive Developmental and Behavioral Intervention (EIDBI) services are clinically effective, ethically delivered, and compliant with Minnesota Department of Human Services (DHS) standards.
+[P] Service quality must be continuously monitored, evaluated, and documented using objective data, supervision records, and outcome-based measures. All services must demonstrate:
+[LI] Ongoing medical necessity
+[LI] Measurable client progress
+[LI] Fidelity to treatment protocols
+[LI] Appropriate supervision and clinical oversight
+[P] All quality-related activities must be documented in a manner that supports internal monitoring, payer review, and DHS audit requirements.
+[H2] 2. Purpose
+[P] The purpose of this policy is to:
+[LI] Establish a structured system for documenting and evaluating service quality
+[LI] Ensure services result in measurable and meaningful client outcomes
+[LI] Provide evidence of clinical oversight and supervision
+[LI] Identify and correct deficiencies in service delivery
+[LI] Maintain audit-ready documentation demonstrating compliance
+[H2] 3. Scope
+[P] This policy applies to all staff involved in service delivery, supervision, and oversight, including:
+[LI] All provider levels (L1, L2, & L3)
+[LI] Qualified Supervising Professional (QSP/ACH)
+[LI] Clinical Director
+[LI] Administrative oversight responsible for audits and compliance
+[H2] 4. Procedure
+[H3] 4.1 Core Quality Metrics and Indicators
+[P] Noor Therapy Center utilizes defined, measurable indicators to evaluate service quality. These indicators must be documented and reviewed regularly.
+[P] 1. Client Outcome and Progress Monitoring
+[LI] Progress toward goals identified in the Individual Treatment Plan (ITP)
+[LI] Rate of skill acquisition (e.g., percentage accuracy, independence levels)
+[LI] Reduction in maladaptive behaviors (e.g., frequency, duration, intensity)
+[LI] Data trends demonstrating improvement, stagnation, or regression
+[P] All client progress must be supported by objective data collected during sessions and reviewed on an ongoing basis.
+[P] 2. Treatment Fidelity
+[LI] Degree to which interventions are implemented as written in the treatment plan
+[LI] Consistency across providers delivering services
+[LI] Accuracy of prompting, reinforcement, and data collection procedures
+[P] Fidelity is assessed through:
+[LI] Direct observation during supervision (O&D)
+[LI] Review of session notes and data
+[LI] Feedback provided to staff
+[P] 3. Supervision and Oversight Compliance
+[LI] Documentation of Observation & Direction (O&D) activities
+[LI] Alignment with EIDBI expectations (approximately 20% of direct service hours)
+[LI] Evidence of coaching, modeling, and feedback provided to staff
+[P] Supervision must demonstrate active clinical involvement and oversight.
+[P] 4. Documentation Quality and Timeliness
+[LI] Completion of session notes within required timeframe (same day or within 24 hours)
+[LI] Accuracy and completeness of documentation
+[LI] Alignment between documentation, ITP goals, and billed services
+[P] 5. Incident and Safety Monitoring
+[LI] Documentation of significant behaviors (e.g., aggression, self-injury, elopement)
+[LI] Documentation of injuries or safety concerns
+[LI] Evidence of appropriate response and follow-up actions
+[P] 6. Caregiver Engagement and Feedback
+[LI] Documentation of caregiver participation and training
+[LI] Feedback provided by caregivers regarding services
+[LI] Evidence of responsiveness to caregiver concerns
+[H3] 4.2 Routine Quality Review Process
+[P] Noor Therapy Center implements structured review intervals to monitor service quality:
+[P] Weekly Case Reviews
+[P] Conducted by the QSP/ACH and/or Clinical Director, including:
+[LI] Review of client data and progress trends
+[LI] Evaluation of goal effectiveness
+[LI] Identification of necessary treatment modifications
+[P] Documentation must include a summary of findings and any recommended changes.
+[P] Ongoing Supervision Reviews (Weekly)
+[LI] Conducted during Observation & Direction (O&D) sessions
+[LI] Includes direct observation of staff performance
+[LI] Provides immediate feedback and coaching
+[P] All supervision activities must be documented.
+[P] Quarterly Quality Oversight Review
+[LI] Review of aggregated client outcomes across the organization
+[LI] Identification of trends (e.g., documentation issues, lack of progress)
+[LI] Evaluation of compliance with supervision and service delivery standards
+[P] Findings must be documented and reviewed by leadership.
+[H3] 4.3 Data Collection, Analysis, and Clinical Decision-Making
+[LI] All clinical decisions must be based on objective data
+[LI] Data must be reviewed regularly to determine:
+[LI] Whether progress is occurring
+[LI] Whether goals require modification
+[LI] Whether interventions remain effective
+[P] When data indicates lack of progress:
+[LI] Treatment plans must be reviewed and adjusted
+[LI] Changes must be documented and justified
+[H3] 4.4 Documentation of Quality Assurance Activities
+[P] The following must be documented and maintained:
+[LI] Supervision and O&D notes
+[LI] Monthly case review summaries
+[LI] Progress monitoring reports
+[LI] Data summaries and graphs (if applicable)
+[LI] Fidelity checks (if conducted)
+[LI] Incident reports and follow-up documentation
+[P] Documentation must clearly demonstrate:
+[LI] Active clinical oversight
+[LI] Ongoing evaluation of effectiveness
+[LI] Adjustments made based on data
+[H3] 4.5 Corrective Action Process
+[P] When quality concerns are identified, Noor Therapy Center will initiate a corrective action process.
+[P] Triggers for Corrective Action Include:
+[LI] Lack of client progress
+[LI] Inconsistent or inaccurate documentation
+[LI] Failure to meet supervision requirements
+[LI] Staff performance concerns
+[P] Corrective Actions May Include:
+[LI] Additional staff training
+[LI] Increased supervision or observation
+[LI] Revision of treatment plans
+[LI] Documentation retraining
+[P] Each corrective action must include:
+[LI] Description of the issue
+[LI] Root cause analysis
+[LI] Action plan
+[LI] Timeline for resolution
+[LI] Follow-up evaluation
+[P] All corrective actions must be documented and tracked to completion.
+[H3] 4.6 Continuous Quality Improvement (CQI)**
+[P] Noor Therapy Center utilizes a Continuous Quality Improvement (CQI) approach to enhance service delivery.
+[LI] Quality data is used to inform training, supervision, and clinical practices
+[LI] Trends are reviewed to identify systemic improvements
+[LI] Policies and procedures may be updated based on findings
+[P] CQI efforts must be documented and reviewed by leadership.
+[H3] 4.7 Record Maintenance and Retention
+[P] All documentation related to service quality, including audits, reviews, and corrective actions, will be:
+[LI] Maintained securely
+[LI] Accessible for internal and external review
+[LI] Retained for a minimum of 7 years
+[H2] 5. Responsibility
+[LI] Clinical Director (Kelly Ann Clark): Oversees all quality assurance processes, reviews outcomes, and ensures compliance
+[LI] QSP/ACH: Conducts supervision, evaluates data, and ensures fidelity of treatment
+[LI] Clinical Staff: Implements services and collects accurate data
+[LI] Administrative Oversight (Mohammed Mohamed): Supports audits, tracking, and compliance monitoring
+[H2] 6. Compliance and Enforcement
+[P] Failure to meet service quality standards may result in:
+[LI] Corrective action plans
+[LI] Increased supervision
+[LI] Retraining requirements
+[LI] Disciplinary action
+[P] Serious or repeated violations may be reported to DHS or regulatory authorities.
+
+@@@FILE Grievance Policy.docx
+[P] Mohammed Mohamed
+[P] Bright Minds Therapy, L.L.C. (DBA: Noor Therapy Center)
+[P] 1001 Cliff Rd E Ste 400
+[P] Burnsville, MN 55337
+[P] Effective: January 01, 2026
+[P] GRIEVANCE POLICY
+[H2] 1. Policy
+[P] Bright Minds Therapy, L.L.C. DBA Noor Therapy Center (“Noor Therapy Center”) is committed to providing high quality, ethical, and respectful services. All clients and caregivers have the right to voice concerns, file complaints, and submit grievances regarding any aspect of services without fear of retaliation.
+[P] Noor Therapy Center ensures that all grievances are handled promptly, fairly, confidentially, and in accordance with Minnesota Department of Human Services (DHS) requirements. The organization maintains a structured grievance process that promotes transparency, accountability, and continuous improvement.
+[P] No individual shall be subject to retaliation, discrimination, or adverse treatment for filing a grievance in good faith.
+[H2] 2. Purpose
+[P] The purpose of this policy is to
+[LI] Ensure a clear and accessible process for submitting grievances
+[LI] Ensure timely and fair resolution of concerns
+[LI] Protect the rights of clients and caregivers
+[LI] Maintain compliance with DHS and EIDBI requirements
+[LI] Identify trends and improve service quality
+[H2] 3. Scope
+[P] This policy applies to grievances related to, but not limited to
+[LI] Quality of services provided
+[LI] Staff conduct or professionalism
+[LI] Billing or administrative concerns
+[LI] Communication issues
+[LI] Safety or ethical concerns
+[P] This policy applies to
+[LI] Clients receiving services
+[LI] Parents or legal guardians
+[LI] Caregivers
+[LI] Staff members submitting internal concerns
+[H2] 4. Procedure
+[H3] 4.1 Methods for Submitting a Grievance
+[P] Grievances may be submitted through the following method
+[LI] Email: info@noortherapycenter.com
+[P] Grievances may be submitted at any time and should include
+[LI] Name of the individual submitting the grievance (optional if anonymous)
+[LI] Description of the concern
+[LI] Date or dates of the incident if applicable
+[LI] Any supporting information
+[P] Anonymous grievances will be accepted. However, lack of identifying information may limit the ability to fully investigate.
+[H3] 4.2 Acknowledgment of Grievance
+[LI] All grievances will be acknowledged within 3 business days of receipt
+[LI] Acknowledgment will include confirmation that the grievance has been received and is under review
+[H3] 4.3 Investigation Process
+[P] All grievances will be reviewed and investigated by designated leadership, including
+[LI] CEO Mohammed Mohamed
+[LI] Clinical Director Kelly Ann Clark
+[P] The investigation process may include
+[LI] Review of documentation such as case notes and supervision records
+[LI] Interviews with involved staff or individuals
+[LI] Review of relevant policies and procedures
+[P] Investigations will be conducted in a fair, objective, and timely manner
+[H3] 4.4 Resolution Timeline
+[LI] Noor Therapy Center aims to resolve all grievances within 30 calendar days
+[LI] If additional time is required, the individual who submitted the grievance will be notified and provided with an updated timeline
+[H3] 4.5 Outcome and Notification
+[P] Upon completion of the investigation
+[LI] A determination will be made based on findings
+[LI] Appropriate corrective actions will be implemented if necessary
+[LI] The individual who submitted the grievance will be notified of the outcome to the extent permitted by confidentiality laws
+[H3] 4.6 Corrective Actions
+[P] If a grievance is substantiated, corrective actions may include
+[LI] Staff retraining
+[LI] Increased supervision or oversight
+[LI] Policy or procedure updates
+[LI] Disciplinary action if applicable
+[P] All corrective actions must be documented and tracked to completion
+[H3] 4.7 Appeal Process
+[P] If the individual submitting the grievance is not satisfied with the outcome, they may request an appeal
+[LI] Appeals will be reviewed by an alternate member of leadership not directly involved in the initial investigation
+[LI] A final determination will be made and documented
+[H3] 4.8 Documentation and Recordkeeping
+[P] All grievances must be documented and maintained, including
+[LI] Original complaint
+[LI] Date received
+[LI] Investigation steps taken
+[LI] Findings and outcome
+[LI] Corrective actions implemented
+[P] All grievance records will be securely maintained and retained for a minimum of 7 years in accordance with Minnesota DHS requirements
+[H2] 5. Responsibility
+[LI] CEO, Mohammed Mohamed oversees grievance intake, tracking, and resolution
+[LI] Clinical Director Kelly Ann Clark supports investigation and clinical oversight
+[LI] All staff are responsible for cooperating with grievance investigations and maintaining professionalism
+[H2] 6. Compliance and Enforcement
+[LI] Failure to comply with this policy may result in corrective action, retraining, or disciplinary measures
+[LI] Serious concerns may be reported to the Minnesota Department of Human Services or other regulatory authorities if required
+
+@@@FILE Maltreatment of Vulnerable Adults Mandated Reporting.docx
+[P] Mohammed Mohamed
+[P] Bright Minds Therapy, L.L.C.
+[P] DBA: Noor Therapy Center
+[P] 6250 Excelsior Blvd Ste 102
+[P] St. Louis Park, MN 55416
+[P] Last Updated: May 24, 2026
+[P] MALTREATMENT OF VULNERABLE ADULTS MANDATED REPORTING
+[H1] 1. Purpose Statement
+[P] The purpose of this policy is to establish standards and procedures for recognizing, reporting, documenting, and responding to suspected maltreatment of vulnerable adults receiving services through Bright Minds Therapy, L.L.C. DBA Noor Therapy Center (“Noor Therapy Center”).
+[P] This policy exists to:
+[LI] Protect vulnerable adults from abuse, neglect, financial exploitation, and harm
+[LI] Ensure compliance with Minnesota mandated reporting laws and DHS requirements
+[LI] Establish staff responsibilities for reporting suspected maltreatment
+[LI] Promote immediate intervention and protective action
+[LI] Maintain safe, ethical, and trauma-informed service environments
+[LI] Ensure organizational accountability and compliance with state regulations
+[H1] 2. Scope
+[P] This policy applies to all Noor Therapy Center employees, contractors, interns, trainees, volunteers, and service providers who provide services to vulnerable adults, including but not limited to:
+[LI] Behavioral Technicians (BTs)
+[LI] Level 1, Level 2, and Level 3 providers
+[LI] Qualified Supervising Professionals (QSPs)
+[LI] Clinical Director
+[LI] Administrative staff
+[LI] Telehealth providers
+[LI] Support staff with access to client information
+[P] This policy applies in all service settings, including:
+[LI] Client homes
+[LI] Community-based services
+[LI] Clinic-based services
+[LI] Telehealth services
+[LI] Transportation or transitional settings
+[LI] Any environment where services are provided
+[P] This policy applies whenever staff witness, suspect, receive disclosure of, or have reason to believe that a vulnerable adult has experienced maltreatment.
+[H1] 3. Definitions
+[P] Definitions referenced in this policy follow Minnesota Statutes sections 626.557 and 626.5572.
+[H2] Vulnerable Adult
+[P] A vulnerable adult is an individual age 18 or older who:
+[LI] Receives services from a licensed facility or provider; or
+[LI] Possesses physical, mental, emotional, or developmental impairments that limit the individual’s ability to protect themselves from maltreatment.
+[H2] Maltreatment
+[P] “Maltreatment” includes:
+[LI] Abuse
+[LI] Neglect
+[LI] Financial exploitation
+[H2] Abuse
+[P] Any act that causes physical pain, injury, emotional distress, sexual abuse, unreasonable confinement, or deprivation of services necessary to maintain physical or mental health.
+[H2] Neglect
+[P] Failure or omission by a caregiver or service provider to provide care, supervision, food, clothing, shelter, health care, or services necessary to maintain the vulnerable adult’s health or safety.
+[H2] Financial Exploitation
+[P] The unauthorized or improper use of a vulnerable adult’s funds, property, assets, or resources.
+[H2] Mandated Reporter
+[P] A mandated reporter is an individual legally required to report suspected maltreatment of a vulnerable adult under Minnesota law.
+[H1] 4. Policy Statement
+[P] Noor Therapy Center maintains a zero-tolerance policy regarding maltreatment of vulnerable adults.
+[P] All staff are mandated reporters and are legally required to immediately report known or suspected maltreatment of vulnerable adults in accordance with Minnesota law.
+[P] Reports must be made immediately, and no later than 24 hours after the incident or suspicion arises.
+[P] Staff are not responsible for investigating or proving maltreatment before making a report. Reasonable suspicion alone requires reporting.
+[P] Noor Therapy Center prohibits retaliation against any individual who makes a good-faith report or participates in an investigation.
+[P] Failure to comply with this policy may result in disciplinary action, termination, licensing consequences, and/or criminal penalties.
+[H1] 5. Roles and Responsibilities
+[H2] All Staff
+[P] All employees and contractors are responsible for:
+[LI] Recognizing signs of maltreatment
+[LI] Immediately reporting suspected maltreatment
+[LI] Maintaining confidentiality
+[LI] Completing required training
+[LI] Cooperating with investigations
+[LI] Following documentation requirements
+[H2] Direct Service Providers
+[P] Direct care and service staff are responsible for:
+[LI] Monitoring client safety during services
+[LI] Reporting concerns observed during home, clinic, telehealth, or community sessions
+[LI] Responding appropriately to immediate safety concerns
+[LI] Completing factual documentation
+[H2] Clinical Director/QSP
+[P] The Clinical Director/QSP is responsible for:
+[LI] Providing policy oversight
+[LI] Supporting staff with reporting procedures
+[LI] Monitoring staff compliance
+[LI] Conducting or assigning internal reviews
+[LI] Ensuring corrective actions are implemented
+[LI] Maintaining policy accessibility
+[H2] Administrative Leadership
+[P] Administrative leadership is responsible for:
+[LI] Maintaining training records
+[LI] Supporting DHS compliance requirements
+[LI] Monitoring policy implementation
+[LI] Maintaining documentation standards
+[H1] 6. Procedures and Guidelines
+[H2] 6.1 Recognition of Maltreatment
+[P] Staff must remain alert to indicators of abuse, neglect, or exploitation, including but not limited to:
+[LI] Unexplained injuries
+[LI] Sudden behavioral or emotional changes
+[LI] Fearfulness around caregivers
+[LI] Unsafe living conditions
+[LI] Malnutrition or poor hygiene
+[LI] Lack of necessary medical care
+[LI] Unusual financial transactions or missing belongings
+[LI] Isolation or unreasonable restraint
+[LI] Signs of emotional abuse or intimidation
+[H2] 6.2 Immediate Safety Response
+[P] If a vulnerable adult is in immediate danger:
+[LI] Staff must immediately call 911
+[LI] Staff must prioritize client safety
+[LI] Emergency procedures must be followed
+[H2] 6.3 External Reporting Requirements
+[P] If you are a mandated reporter and know or suspect maltreatment of a vulnerable adult, you must report it immediately and no later than 24 hours.
+[H3] Minnesota Adult Abuse Reporting Center (MAARC)
+[P] Phone: 844-880-1574
+[P] Reports may also be made internally to:
+[P] Kelly Ann Clark, Clinical Director/QSP
+[P] If the person listed above is involved in the alleged or suspected maltreatment, reports must be made to:
+[P] Agency Ownership or Designated Administrative Leadership
+[H2] 6.4 Internal Reporting Process
+[P] When an internal report is received, the Clinical Director/QSP is responsible for determining whether the report must be forwarded to the Minnesota Adult Abuse Reporting Center (MAARC).
+[P] If the Clinical Director/QSP is involved in the alleged maltreatment, Agency Ownership or Designated Administrative Leadership will assume responsibility for determining whether the report must be forwarded.
+[P] Any required external report must be forwarded within 24 hours.
+[P] If a staff member reports internally, they will receive written notice within two working days indicating whether the report was forwarded to MAARC. The notice must protect the reporter’s identity and inform the reporter that they may independently contact MAARC if dissatisfied with the internal determination.
+[H2] 6.5 Documentation Requirements
+[P] Staff must document:
+[LI] Objective observations
+[LI] Date and time of observations
+[LI] Date and time the report was made
+[LI] Agency contacted
+[LI] Name of intake worker, if available
+[LI] Report or reference number, if available
+[LI] Protective actions taken
+[P] Documentation must remain factual and free from assumptions or personal opinions.
+[H2] 6.6 Confidentiality
+[P] All reports and related documentation are confidential.
+[P] Information may only be shared with:
+[LI] Investigative agencies
+[LI] DHS licensing representatives
+[LI] Authorized Noor Therapy Center leadership
+[LI] Individuals directly involved in the investigation process
+[P] Unauthorized disclosure of information is prohibited.
+[H2] 6.7 Internal Review
+[P] When Noor Therapy Center has reason to know that an internal or external report of alleged or suspected maltreatment has been made, the organization will complete an internal review within 30 calendar days.
+[P] The review will evaluate whether:
+[LI] Related policies and procedures were followed
+[LI] Policies and procedures were adequate
+[LI] Additional staff training is needed
+[LI] The event is similar to past incidents
+[LI] Corrective action is necessary to protect vulnerable adults
+[H2] 6.8 Primary and Secondary Persons Responsible for Internal Review
+[P] The internal review will be completed by:
+[P] Kelly Ann Clark, Clinical Director/QSP
+[P] If this individual is involved in the alleged or suspected maltreatment, the review will be completed by:
+[P] Agency Ownership or Designated Administrative Leadership
+[H2] 6.9 Documentation of Internal Review
+[P] Noor Therapy Center will document completion of all internal reviews and make documentation immediately accessible to the Commissioner upon request.
+[H2] 6.10 Corrective Action Plan
+[P] Based on the results of the internal review, Noor Therapy Center will develop, document, and implement corrective action plans designed to:
+[LI] Correct current lapses
+[LI] Improve safety practices
+[LI] Prevent future incidents
+[LI] Improve staff compliance and performance
+[H1] 7. Staff Training
+[P] The license holder shall ensure that each new mandated reporter receives orientation within 72 hours of first providing direct-contact services to a vulnerable adult and annually thereafter.
+[P] Training shall include:
+[LI] Reporting requirements under Minnesota Statutes sections 626.557 and 626.5572
+[LI] Requirements under Minnesota Statutes section 245A.65
+[LI] Noor Therapy Center’s abuse prevention plan
+[LI] Internal policies and procedures
+[LI] Recognition of abuse, neglect, and financial exploitation
+[LI] Confidentiality and documentation requirements
+[P] The organization will document completion of all training and maintain records in personnel files.
+[P] This policy will remain readily accessible to staff in accordance with Minnesota Statutes section 245A.04, subdivision 14.
+[H1] 8. Compliance and Enforcement
+[P] Failure to comply with this policy may result in:
+[LI] Corrective action
+[LI] Suspension
+[LI] Termination of employment or contract
+[LI] Reporting to licensing or regulatory agencies
+[LI] Criminal penalties under Minnesota law
+[LI] Disqualification from positions involving direct client contact
+[P] Compliance will be monitored through:
+[LI] Training audits
+[LI] Documentation reviews
+[LI] Internal reviews
+[LI] Supervision and quality assurance activities
+[LI] DHS licensing reviews
+[H1] 9. Exceptions
+[P] There are no exceptions to mandated reporting requirements under this policy.
+[P] Consultation with supervisors or leadership may occur but may never delay a required report.
+[H1] 10. Legal and Regulatory References
+[P] This policy is based upon and governed by:
+[LI] Minnesota Statutes section 626.557
+[LI] Minnesota Statutes section 626.5572
+[LI] Minnesota Statutes section 245A.65
+[LI] Minnesota Statutes section 245A.04 subdivision 14
+[LI] DHS-7634B-ENG 1-18
+[LI] Minnesota DHS licensing requirements
+[LI] Applicable state and federal confidentiality laws
+[P] Additional information is available at:
+[P] Minnesota Adult Protection
+[H1] 11. Review and Revision Information
+[P] Item
+[P] Information
+[P] Policy Title
+[P] Maltreatment of Vulnerable Adults Mandated Reporting Policy
+[P] Program
+[P] Early Intensive Developmental and Behavioral Intervention (EIDBI)
+[P] Effective Date
+[P] May 24, 2026
+[P] Review Frequency
+[P] Annually or as regulations change
+[P] Approved By
+[P] Mohammed Mohamed, CEO
+[P] Policy Owner
+[P] Bright Minds Therapy, LLC (DBA: Noor Therapy Center)
+[P] Version
+[P] 1.0
+[P] Last Revised
+[P] May 24, 2026

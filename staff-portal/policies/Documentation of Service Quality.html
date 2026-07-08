@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Documentation of Service Quality — Policy — Noor Therapy Center</title>
+<link rel="icon" href="../../favicon.ico" sizes="any"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../portal.css"/>
+<script src="../portal.js" data-root="../.."></script>
+<style>
+  .pol-actions { display: flex; gap: 10px; margin: 0 0 20px; flex-wrap: wrap; align-items: center; }
+  .pol-actions button {
+    font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1.5px solid var(--line); background: #fff; color: var(--ink);
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .pol-actions button:hover { border-color: var(--green); }
+  .pol-actions button.primary { background: var(--green); border-color: var(--green); color: #fff; }
+  .pol-actions button.primary:hover { background: var(--green-dark); }
+  article.policy { background: #fff; border: 1.5px solid var(--line); border-radius: 18px; padding: 44px 52px 40px; max-width: 860px; }
+  .policy .kicker { font-size: 11px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
+  .policy h1 { font-size: 27px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 10px; }
+  .policy .pol-meta { font-size: 12px; color: var(--muted); padding-bottom: 16px; margin-bottom: 8px; border-bottom: 1.5px solid var(--line); display: flex; gap: 18px; flex-wrap: wrap; }
+  .policy .pol-meta strong { color: var(--ink); }
+  .policy h2 { font-size: 16.5px; font-weight: 800; letter-spacing: -0.01em; margin: 26px 0 8px; padding-top: 18px; border-top: 1.5px solid #f0ecdd; }
+  .policy h2:first-of-type { border-top: none; padding-top: 8px; }
+  .policy h3 { font-size: 14px; font-weight: 800; margin: 18px 0 6px; }
+  .policy p { font-size: 13.5px; line-height: 1.7; color: #2c3826; margin: 0 0 10px; text-wrap: pretty; }
+  .policy ul, .policy ol { margin: 4px 0 12px; padding-left: 21px; }
+  .policy li { font-size: 13.5px; line-height: 1.65; color: #2c3826; margin-bottom: 4px; }
+  .sig-block { margin-top: 34px; border-top: 2px solid var(--ink); padding-top: 14px; }
+  .sig-block h2 { border-top: none; padding-top: 0; margin-top: 0; }
+  .sig-block p { font-size: 12.5px; }
+  .sig-grid { display: grid; grid-template-columns: 1.2fr 1.2fr 0.6fr; gap: 26px; margin-top: 30px; }
+  .sig-grid .f .ln { border-bottom: 1.3px solid var(--ink); height: 30px; }
+  .sig-grid .f label { font-size: 9.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); }
+  @media (max-width: 700px) { article.policy { padding: 26px 22px; } .sig-grid { grid-template-columns: 1fr; gap: 18px; } }
+  @media print {
+    .topbar, .pol-actions, .portal-foot { display: none !important; }
+    body { background: #fff; }
+    .wrap { padding: 0; max-width: 100%; }
+    article.policy { border: none; border-radius: 0; padding: 0; max-width: 100%; }
+    .policy h2 { break-after: avoid; }
+    .sig-block { break-inside: avoid; }
+  }</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html">
+      <img src="../noor-mark.png" alt="Noor Therapy Center"/>
+      <span class="t"><strong>Noor Therapy Center</strong><span>Admin Portal</span></span>
+    </a>
+    <nav>
+      <a href="../forms.html">Forms</a>
+      <a href="../policies.html" class="active">Policies</a>
+      <a href="../handbook.html">Handbook</a>
+      <a href="../onboarding.html">Onboarding</a>
+      <a href="../links.html">Links</a>
+    </nav>
+    <button class="lock" type="button">Lock</button>
+  </div>
+</header>
+
+<main class="wrap" style="padding-top:26px">
+  <div class="pol-actions">
+    <button type="button" id="pol-back">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+      Back
+    </button>
+    <span style="flex:1"></span>
+    <button type="button" id="pol-dl" class="primary">Download PDF (with signature space)</button>
+    <button type="button" id="pol-print">Print</button>
+  </div>
+
+  <article class="policy">
+    <div class="kicker">Policies &amp; Procedures · Documentation &amp; Records</div>
+    <h1>Documentation of Service Quality</h1>
+    <div class="pol-meta">
+      <span><strong>Policy P-11</strong></span>
+      <span>Effective: January 01, 2026</span>
+      <span>Bright Minds Therapy, L.L.C. (DBA Noor Therapy Center)</span>
+    </div>
+    <h2>1. Policy</h2><p>Bright Minds Therapy, L.L.C. DBA Noor Therapy Center (“Noor Therapy Center”) maintains a structured and measurable quality assurance system to ensure that all Early Intensive Developmental and Behavioral Intervention (EIDBI) services are clinically effective, ethically delivered, and compliant with Minnesota Department of Human Services (DHS) standards.</p><p>Service quality must be continuously monitored, evaluated, and documented using objective data, supervision records, and outcome-based measures. All services must demonstrate:</p><ul><li>Ongoing medical necessity</li><li>Measurable client progress</li><li>Fidelity to treatment protocols</li><li>Appropriate supervision and clinical oversight</li></ul><p>All quality-related activities must be documented in a manner that supports internal monitoring, payer review, and DHS audit requirements.</p><h2>2. Purpose</h2><p>The purpose of this policy is to:</p><ul><li>Establish a structured system for documenting and evaluating service quality</li><li>Ensure services result in measurable and meaningful client outcomes</li><li>Provide evidence of clinical oversight and supervision</li><li>Identify and correct deficiencies in service delivery</li><li>Maintain audit-ready documentation demonstrating compliance</li></ul><h2>3. Scope</h2><p>This policy applies to all staff involved in service delivery, supervision, and oversight, including:</p><ul><li>All provider levels (L1, L2, &amp; L3)</li><li>Qualified Supervising Professional (QSP/ACH)</li><li>Clinical Director</li><li>Administrative oversight responsible for audits and compliance</li></ul><h2>4. Procedure</h2><h3>4.1 Core Quality Metrics and Indicators</h3><p>Noor Therapy Center utilizes defined, measurable indicators to evaluate service quality. These indicators must be documented and reviewed regularly.</p><p>1. Client Outcome and Progress Monitoring</p><ul><li>Progress toward goals identified in the Individual Treatment Plan (ITP)</li><li>Rate of skill acquisition (e.g., percentage accuracy, independence levels)</li><li>Reduction in maladaptive behaviors (e.g., frequency, duration, intensity)</li><li>Data trends demonstrating improvement, stagnation, or regression</li></ul><p>All client progress must be supported by objective data collected during sessions and reviewed on an ongoing basis.</p><p>2. Treatment Fidelity</p><ul><li>Degree to which interventions are implemented as written in the treatment plan</li><li>Consistency across providers delivering services</li><li>Accuracy of prompting, reinforcement, and data collection procedures</li></ul><p>Fidelity is assessed through:</p><ul><li>Direct observation during supervision (O&amp;D)</li><li>Review of session notes and data</li><li>Feedback provided to staff</li></ul><p>3. Supervision and Oversight Compliance</p><ul><li>Documentation of Observation &amp; Direction (O&amp;D) activities</li><li>Alignment with EIDBI expectations (approximately 20% of direct service hours)</li><li>Evidence of coaching, modeling, and feedback provided to staff</li></ul><p>Supervision must demonstrate active clinical involvement and oversight.</p><p>4. Documentation Quality and Timeliness</p><ul><li>Completion of session notes within required timeframe (same day or within 24 hours)</li><li>Accuracy and completeness of documentation</li><li>Alignment between documentation, ITP goals, and billed services</li></ul><p>5. Incident and Safety Monitoring</p><ul><li>Documentation of significant behaviors (e.g., aggression, self-injury, elopement)</li><li>Documentation of injuries or safety concerns</li><li>Evidence of appropriate response and follow-up actions</li></ul><p>6. Caregiver Engagement and Feedback</p><ul><li>Documentation of caregiver participation and training</li><li>Feedback provided by caregivers regarding services</li><li>Evidence of responsiveness to caregiver concerns</li></ul><h3>4.2 Routine Quality Review Process</h3><p>Noor Therapy Center implements structured review intervals to monitor service quality:</p><p>Weekly Case Reviews</p><p>Conducted by the QSP/ACH and/or Clinical Director, including:</p><ul><li>Review of client data and progress trends</li><li>Evaluation of goal effectiveness</li><li>Identification of necessary treatment modifications</li></ul><p>Documentation must include a summary of findings and any recommended changes.</p><p>Ongoing Supervision Reviews (Weekly)</p><ul><li>Conducted during Observation &amp; Direction (O&amp;D) sessions</li><li>Includes direct observation of staff performance</li><li>Provides immediate feedback and coaching</li></ul><p>All supervision activities must be documented.</p><p>Quarterly Quality Oversight Review</p><ul><li>Review of aggregated client outcomes across the organization</li><li>Identification of trends (e.g., documentation issues, lack of progress)</li><li>Evaluation of compliance with supervision and service delivery standards</li></ul><p>Findings must be documented and reviewed by leadership.</p><h3>4.3 Data Collection, Analysis, and Clinical Decision-Making</h3><ul><li>All clinical decisions must be based on objective data</li><li>Data must be reviewed regularly to determine:</li><li>Whether progress is occurring</li><li>Whether goals require modification</li><li>Whether interventions remain effective</li></ul><p>When data indicates lack of progress:</p><ul><li>Treatment plans must be reviewed and adjusted</li><li>Changes must be documented and justified</li></ul><h3>4.4 Documentation of Quality Assurance Activities</h3><p>The following must be documented and maintained:</p><ul><li>Supervision and O&amp;D notes</li><li>Monthly case review summaries</li><li>Progress monitoring reports</li><li>Data summaries and graphs (if applicable)</li><li>Fidelity checks (if conducted)</li><li>Incident reports and follow-up documentation</li></ul><p>Documentation must clearly demonstrate:</p><ul><li>Active clinical oversight</li><li>Ongoing evaluation of effectiveness</li><li>Adjustments made based on data</li></ul><h3>4.5 Corrective Action Process</h3><p>When quality concerns are identified, Noor Therapy Center will initiate a corrective action process.</p><p>Triggers for Corrective Action Include:</p><ul><li>Lack of client progress</li><li>Inconsistent or inaccurate documentation</li><li>Failure to meet supervision requirements</li><li>Staff performance concerns</li></ul><p>Corrective Actions May Include:</p><ul><li>Additional staff training</li><li>Increased supervision or observation</li><li>Revision of treatment plans</li><li>Documentation retraining</li></ul><p>Each corrective action must include:</p><ul><li>Description of the issue</li><li>Root cause analysis</li><li>Action plan</li><li>Timeline for resolution</li><li>Follow-up evaluation</li></ul><p>All corrective actions must be documented and tracked to completion.</p><h3>4.6 Continuous Quality Improvement (CQI)**</h3><p>Noor Therapy Center utilizes a Continuous Quality Improvement (CQI) approach to enhance service delivery.</p><ul><li>Quality data is used to inform training, supervision, and clinical practices</li><li>Trends are reviewed to identify systemic improvements</li><li>Policies and procedures may be updated based on findings</li></ul><p>CQI efforts must be documented and reviewed by leadership.</p><h3>4.7 Record Maintenance and Retention</h3><p>All documentation related to service quality, including audits, reviews, and corrective actions, will be:</p><ul><li>Maintained securely</li><li>Accessible for internal and external review</li><li>Retained for a minimum of 7 years</li></ul><h2>5. Responsibility</h2><ul><li>Clinical Director (Kelly Ann Clark): Oversees all quality assurance processes, reviews outcomes, and ensures compliance</li><li>QSP/ACH: Conducts supervision, evaluates data, and ensures fidelity of treatment</li><li>Clinical Staff: Implements services and collects accurate data</li><li>Administrative Oversight (Mohammed Mohamed): Supports audits, tracking, and compliance monitoring</li></ul><h2>6. Compliance and Enforcement</h2><p>Failure to meet service quality standards may result in:</p><ul><li>Corrective action plans</li><li>Increased supervision</li><li>Retraining requirements</li><li>Disciplinary action</li></ul><p>Serious or repeated violations may be reported to DHS or regulatory authorities.</p>
+    <section class="sig-block" id="sig-block" hidden>
+      <h2>Acknowledgement / Approval</h2>
+      <p>By signing below, I confirm that I have read and understand this policy and agree to comply with it.</p>
+      <div class="sig-grid">
+        <div class="f"><div class="ln"></div><label>Name &amp; Title (print)</label></div>
+        <div class="f"><div class="ln"></div><label>Signature</label></div>
+        <div class="f"><div class="ln"></div><label>Date</label></div>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer class="portal-foot">
+  <span class="dots">
+    <span style="background:#2aa63a"></span><span style="background:#f18a2c"></span><span style="background:#2f6fd6"></span><span style="background:#9b51c7"></span><span style="background:#e5396a"></span>
+  </span>
+  <span>Noor Therapy Center · Admin Portal · Internal use only</span>
+</footer>
+
+<script>
+document.getElementById('pol-back').addEventListener('click', function () {
+  if (history.length > 1) history.back(); else location.href = '../policies.html';
+});
+document.getElementById('pol-dl').addEventListener('click', function () {
+  document.getElementById('sig-block').hidden = false;
+  setTimeout(function () { window.print(); }, 80);
+});
+document.getElementById('pol-print').addEventListener('click', function () {
+  document.getElementById('sig-block').hidden = true;
+  setTimeout(function () { window.print(); }, 80);
+});
+</script>
+
+<script src="../policy-search.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Discharge &amp; Transition Planning — Policy — Noor Therapy Center</title>
+<link rel="icon" href="../../favicon.ico" sizes="any"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../portal.css"/>
+<script src="../portal.js" data-root="../.."></script>
+<style>
+  .pol-actions { display: flex; gap: 10px; margin: 0 0 20px; flex-wrap: wrap; align-items: center; }
+  .pol-actions button {
+    font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1.5px solid var(--line); background: #fff; color: var(--ink);
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .pol-actions button:hover { border-color: var(--green); }
+  .pol-actions button.primary { background: var(--green); border-color: var(--green); color: #fff; }
+  .pol-actions button.primary:hover { background: var(--green-dark); }
+  article.policy { background: #fff; border: 1.5px solid var(--line); border-radius: 18px; padding: 44px 52px 40px; max-width: 860px; }
+  .policy .kicker { font-size: 11px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
+  .policy h1 { font-size: 27px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 10px; }
+  .policy .pol-meta { font-size: 12px; color: var(--muted); padding-bottom: 16px; margin-bottom: 8px; border-bottom: 1.5px solid var(--line); display: flex; gap: 18px; flex-wrap: wrap; }
+  .policy .pol-meta strong { color: var(--ink); }
+  .policy h2 { font-size: 16.5px; font-weight: 800; letter-spacing: -0.01em; margin: 26px 0 8px; padding-top: 18px; border-top: 1.5px solid #f0ecdd; }
+  .policy h2:first-of-type { border-top: none; padding-top: 8px; }
+  .policy h3 { font-size: 14px; font-weight: 800; margin: 18px 0 6px; }
+  .policy p { font-size: 13.5px; line-height: 1.7; color: #2c3826; margin: 0 0 10px; text-wrap: pretty; }
+  .policy ul, .policy ol { margin: 4px 0 12px; padding-left: 21px; }
+  .policy li { font-size: 13.5px; line-height: 1.65; color: #2c3826; margin-bottom: 4px; }
+  .sig-block { margin-top: 34px; border-top: 2px solid var(--ink); padding-top: 14px; }
+  .sig-block h2 { border-top: none; padding-top: 0; margin-top: 0; }
+  .sig-block p { font-size: 12.5px; }
+  .sig-grid { display: grid; grid-template-columns: 1.2fr 1.2fr 0.6fr; gap: 26px; margin-top: 30px; }
+  .sig-grid .f .ln { border-bottom: 1.3px solid var(--ink); height: 30px; }
+  .sig-grid .f label { font-size: 9.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); }
+  @media (max-width: 700px) { article.policy { padding: 26px 22px; } .sig-grid { grid-template-columns: 1fr; gap: 18px; } }
+  @media print {
+    .topbar, .pol-actions, .portal-foot { display: none !important; }
+    body { background: #fff; }
+    .wrap { padding: 0; max-width: 100%; }
+    article.policy { border: none; border-radius: 0; padding: 0; max-width: 100%; }
+    .policy h2 { break-after: avoid; }
+    .sig-block { break-inside: avoid; }
+  }</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html">
+      <img src="../noor-mark.png" alt="Noor Therapy Center"/>
+      <span class="t"><strong>Noor Therapy Center</strong><span>Admin Portal</span></span>
+    </a>
+    <nav>
+      <a href="../forms.html">Forms</a>
+      <a href="../policies.html" class="active">Policies</a>
+      <a href="../handbook.html">Handbook</a>
+      <a href="../onboarding.html">Onboarding</a>
+      <a href="../links.html">Links</a>
+    </nav>
+    <button class="lock" type="button">Lock</button>
+  </div>
+</header>
+
+<main class="wrap" style="padding-top:26px">
+  <div class="pol-actions">
+    <button type="button" id="pol-back">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+      Back
+    </button>
+    <span style="flex:1"></span>
+    <button type="button" id="pol-dl" class="primary">Download PDF (with signature space)</button>
+    <button type="button" id="pol-print">Print</button>
+  </div>
+
+  <article class="policy">
+    <div class="kicker">Policies &amp; Procedures · Clients &amp; Clinical</div>
+    <h1>Discharge &amp; Transition Planning</h1>
+    <div class="pol-meta">
+      <span><strong>Policy P-03</strong></span>
+      <span>Effective: July 2026</span>
+      <span>Bright Minds Therapy, L.L.C. (DBA Noor Therapy Center)</span>
+    </div>
+    
+<h2>1. Purpose</h2>
+<p>To ensure clients leave services in a planned, supported way — whether they have met their goals, aged out, moved, or transitioned to another provider.</p>
+<h2>2. Policy</h2>
+<ul>
+<li>Discharge planning begins at admission: the ITP identifies anticipated discharge criteria and transition goals.</li>
+<li>Planned discharge occurs when goals are met, when a less intensive service level is appropriate, when the client ages out of EIDBI eligibility, or at the family's request.</li>
+<li>Noor Therapy Center does not abandon clients: when the agency initiates discharge (e.g., inability to meet needs, persistent non-participation, safety concerns), the family receives written notice with reasonable transition time and referrals to alternative providers.</li>
+<li>A written discharge/transition summary is completed for every discharge and provided to the family and, with a signed release, to receiving providers.</li>
+</ul>
+<h2>3. Procedure</h2>
+<ol>
+<li><strong>Plan:</strong> review discharge criteria at every ITP review; discuss upcoming transitions (school entry, aging out) with the family well in advance.</li>
+<li><strong>Prepare:</strong> fade services per the plan; train caregivers and receiving programs on effective strategies.</li>
+<li><strong>Summarize:</strong> the QSP completes a discharge summary within 30 days: services provided, progress on goals, recommendations, and referrals.</li>
+<li><strong>Close:</strong> end authorizations correctly, complete final billing, and file the record per the retention schedule.</li>
+</ol>
+    <section class="sig-block" id="sig-block" hidden>
+      <h2>Acknowledgement / Approval</h2>
+      <p>By signing below, I confirm that I have read and understand this policy and agree to comply with it.</p>
+      <div class="sig-grid">
+        <div class="f"><div class="ln"></div><label>Name &amp; Title (print)</label></div>
+        <div class="f"><div class="ln"></div><label>Signature</label></div>
+        <div class="f"><div class="ln"></div><label>Date</label></div>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer class="portal-foot">
+  <span class="dots">
+    <span style="background:#2aa63a"></span><span style="background:#f18a2c"></span><span style="background:#2f6fd6"></span><span style="background:#9b51c7"></span><span style="background:#e5396a"></span>
+  </span>
+  <span>Noor Therapy Center · Admin Portal · Internal use only</span>
+</footer>
+
+<script>
+document.getElementById('pol-back').addEventListener('click', function () {
+  if (history.length > 1) history.back(); else location.href = '../policies.html';
+});
+document.getElementById('pol-dl').addEventListener('click', function () {
+  document.getElementById('sig-block').hidden = false;
+  setTimeout(function () { window.print(); }, 80);
+});
+document.getElementById('pol-print').addEventListener('click', function () {
+  document.getElementById('sig-block').hidden = true;
+  setTimeout(function () { window.print(); }, 80);
+});
+</script>
+
+<script src="../policy-search.js"></script>
+</body>
+</html>

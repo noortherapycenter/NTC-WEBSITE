@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Documentation of Service Activities — Policy — Noor Therapy Center</title>
+<link rel="icon" href="../../favicon.ico" sizes="any"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../portal.css"/>
+<script src="../portal.js" data-root="../.."></script>
+<style>
+  .pol-actions { display: flex; gap: 10px; margin: 0 0 20px; flex-wrap: wrap; align-items: center; }
+  .pol-actions button {
+    font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+    border-radius: 999px; padding: 9px 16px; border: 1.5px solid var(--line); background: #fff; color: var(--ink);
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .pol-actions button:hover { border-color: var(--green); }
+  .pol-actions button.primary { background: var(--green); border-color: var(--green); color: #fff; }
+  .pol-actions button.primary:hover { background: var(--green-dark); }
+  article.policy { background: #fff; border: 1.5px solid var(--line); border-radius: 18px; padding: 44px 52px 40px; max-width: 860px; }
+  .policy .kicker { font-size: 11px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
+  .policy h1 { font-size: 27px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 10px; }
+  .policy .pol-meta { font-size: 12px; color: var(--muted); padding-bottom: 16px; margin-bottom: 8px; border-bottom: 1.5px solid var(--line); display: flex; gap: 18px; flex-wrap: wrap; }
+  .policy .pol-meta strong { color: var(--ink); }
+  .policy h2 { font-size: 16.5px; font-weight: 800; letter-spacing: -0.01em; margin: 26px 0 8px; padding-top: 18px; border-top: 1.5px solid #f0ecdd; }
+  .policy h2:first-of-type { border-top: none; padding-top: 8px; }
+  .policy h3 { font-size: 14px; font-weight: 800; margin: 18px 0 6px; }
+  .policy p { font-size: 13.5px; line-height: 1.7; color: #2c3826; margin: 0 0 10px; text-wrap: pretty; }
+  .policy ul, .policy ol { margin: 4px 0 12px; padding-left: 21px; }
+  .policy li { font-size: 13.5px; line-height: 1.65; color: #2c3826; margin-bottom: 4px; }
+  .sig-block { margin-top: 34px; border-top: 2px solid var(--ink); padding-top: 14px; }
+  .sig-block h2 { border-top: none; padding-top: 0; margin-top: 0; }
+  .sig-block p { font-size: 12.5px; }
+  .sig-grid { display: grid; grid-template-columns: 1.2fr 1.2fr 0.6fr; gap: 26px; margin-top: 30px; }
+  .sig-grid .f .ln { border-bottom: 1.3px solid var(--ink); height: 30px; }
+  .sig-grid .f label { font-size: 9.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); }
+  @media (max-width: 700px) { article.policy { padding: 26px 22px; } .sig-grid { grid-template-columns: 1fr; gap: 18px; } }
+  @media print {
+    .topbar, .pol-actions, .portal-foot { display: none !important; }
+    body { background: #fff; }
+    .wrap { padding: 0; max-width: 100%; }
+    article.policy { border: none; border-radius: 0; padding: 0; max-width: 100%; }
+    .policy h2 { break-after: avoid; }
+    .sig-block { break-inside: avoid; }
+  }</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html">
+      <img src="../noor-mark.png" alt="Noor Therapy Center"/>
+      <span class="t"><strong>Noor Therapy Center</strong><span>Admin Portal</span></span>
+    </a>
+    <nav>
+      <a href="../forms.html">Forms</a>
+      <a href="../policies.html" class="active">Policies</a>
+      <a href="../handbook.html">Handbook</a>
+      <a href="../onboarding.html">Onboarding</a>
+      <a href="../links.html">Links</a>
+    </nav>
+    <button class="lock" type="button">Lock</button>
+  </div>
+</header>
+
+<main class="wrap" style="padding-top:26px">
+  <div class="pol-actions">
+    <button type="button" id="pol-back">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+      Back
+    </button>
+    <span style="flex:1"></span>
+    <button type="button" id="pol-dl" class="primary">Download PDF (with signature space)</button>
+    <button type="button" id="pol-print">Print</button>
+  </div>
+
+  <article class="policy">
+    <div class="kicker">Policies &amp; Procedures · Documentation &amp; Records</div>
+    <h1>Documentation of Service Activities</h1>
+    <div class="pol-meta">
+      <span><strong>Policy P-10</strong></span>
+      <span>Effective: January 01, 2026</span>
+      <span>Bright Minds Therapy, L.L.C. (DBA Noor Therapy Center)</span>
+    </div>
+    <h2>1. Policy</h2><p>Bright Minds Therapy, L.L.C. DBA Noor Therapy Center (“Noor Therapy Center”) requires that all service activities provided under Early Intensive Developmental and Behavioral Intervention (EIDBI) are documented accurately, completely, and in a timely manner in accordance with Minnesota Department of Human Services (DHS) requirements, EIDBI service standards, and Medicaid billing regulations.</p><p>All documentation must clearly reflect the services delivered, support medical necessity, and align with the client’s approved Individual Treatment Plan (ITP). Documentation serves as the legal and clinical record of services provided and must be sufficient to support billing, audits, and quality assurance.</p><p>Failure to properly document services may result in denied claims, recoupment of funds, and disciplinary action.</p><h2>2. Purpose</h2><p>The purpose of this policy is to:</p><ul><li>Ensure compliance with DHS EIDBI documentation requirements</li><li>Establish standardized expectations for service documentation</li><li>Support accurate billing and claims submission</li><li>Promote high-quality clinical care and continuity of services</li><li>Maintain audit-ready records at all times</li></ul><h2>3. Scope</h2><p>This policy applies to all staff responsible for documenting services, including:</p><ul><li>Behavior Technicians (BTs)</li><li>Level 1 Providers</li><li>Qualified Supervising Professional (QSP/ACH)</li></ul><h2>4. Procedure</h2><h3>4.1 General Documentation Standards</h3><p>All documentation must be:</p><ul><li>Accurate – Reflecting the actual services provided</li><li>Complete – Including all required elements</li><li>Objective – Based on observable and measurable behavior</li><li>Timely – Completed within required timeframes</li><li>Legible and professional – Free of vague or subjective language</li></ul><p>Documentation must be entered into Passage Health, the organization’s designated electronic health record system.</p><h3>4.2 Required Components of Session Notes</h3><p>Each service session must include a corresponding case note that contains, at minimum:</p><ul><li>Client name and identifying information</li><li>Date of service</li><li>Exact start and end times (no rounding or estimation)</li><li>Total duration of service</li><li>Location of service (in-home, clinic, office, etc.)</li><li>Type of service provided (e.g., 97153, 97155, 97156)</li><li>Name and credential level of the provider</li><li>Goals and objectives targeted during the session</li><li>Description of interventions implemented</li><li>Objective data collected (e.g., frequency, duration, accuracy)</li><li>Client response to interventions</li><li>Any significant events, behaviors, or incidents</li><li>Plan for next session or ongoing treatment</li></ul><p>All entries must align with the approved ITP and reflect medically necessary services.</p><h3>4.3 Timeliness of Documentation</h3><ul><li>Session notes must be completed on the same day of service whenever possible</li><li>All notes must be completed within 24 hours of service delivery</li><li>Late entries must be clearly identified and justified</li></ul><p>Failure to complete documentation within required timelines may result in:</p><ul><li>Delayed or denied billing</li><li>Increased supervision</li><li>Disciplinary action</li></ul><h3>4.4 Data Collection and Integrity</h3><p>Staff are required to collect and maintain accurate data during each session.</p><ul><li>Data must be recorded in real time whenever possible</li><li>Data must align with treatment goals and intervention plans</li><li>Data must be stored securely within Passage Health or approved systems</li></ul><p>The organization may implement periodic checks for:</p><ul><li>Data accuracy</li><li>Consistency across providers</li></ul><h3>4.5 Supervision and Observation &amp; Direction (O&amp;D) Documentation</h3><p>All supervision activities must be documented in accordance with EIDBI requirements.</p><ul><li>Observation &amp; Direction (O&amp;D) must be documented for each occurrence</li><li>Documentation must include:</li><li>Type of supervision provided</li><li>Activities conducted (e.g., modeling, feedback, protocol modification)</li><li>Staff performance and response</li><li>O&amp;D must occur in proportion to approximately 20% of the client’s direct service hours</li></ul><p>Supervision documentation must clearly support clinical oversight and staff development.</p><h3>4.6 Alignment with Billing Requirements</h3><p>All documentation must directly support claims submitted for reimbursement.</p><ul><li>Units billed must match documented time</li><li>Services billed must match services documented</li><li>Provider credentials must align with the service delivered</li></ul><p>Any discrepancy between documentation and billing may result in claim denial or recoupment.</p><h3>4.7 Documentation of Significant Events</h3><p>Staff must document any significant or unusual events, including but not limited to:</p><ul><li>Aggressive or self-injurious behavior</li><li>Elopement or safety concerns</li><li>Injuries or incidents</li><li>Emergency situations</li></ul><p>Such documentation must be factual, objective, and include actions taken.</p><h3>4.8 Record Maintenance and Security</h3><ul><li>All documentation is maintained securely within Passage Health</li><li>Access to records is restricted to authorized personnel only</li><li>All documentation must comply with HIPAA and confidentiality requirements</li></ul><h3>4.9 Record Retention</h3><p>All service documentation will be retained for a minimum of 7 years, in accordance with Minnesota DHS requirements.</p><h2>5. Responsibility</h2><ul><li>Clinical Staff (L1, L2, L3 Providers): Responsible for accurate, timely, and complete documentation</li><li>Clinical Director (Kelly Ann Clark): Oversees documentation standards, audits, and compliance</li><li>Billing Manager (Mohammed Mohamed): Ensures documentation supports claims and billing accuracy</li></ul><h2>6. Compliance and Enforcement</h2><p>Failure to comply with documentation requirements may result in:</p><ul><li>Delayed or denied billing</li><li>Corrective action plans</li><li>Increased supervision</li><li>Disciplinary action, up to and including termination</li></ul><p>Serious violations may be reported to DHS or regulatory agencies.</p>
+    <section class="sig-block" id="sig-block" hidden>
+      <h2>Acknowledgement / Approval</h2>
+      <p>By signing below, I confirm that I have read and understand this policy and agree to comply with it.</p>
+      <div class="sig-grid">
+        <div class="f"><div class="ln"></div><label>Name &amp; Title (print)</label></div>
+        <div class="f"><div class="ln"></div><label>Signature</label></div>
+        <div class="f"><div class="ln"></div><label>Date</label></div>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer class="portal-foot">
+  <span class="dots">
+    <span style="background:#2aa63a"></span><span style="background:#f18a2c"></span><span style="background:#2f6fd6"></span><span style="background:#9b51c7"></span><span style="background:#e5396a"></span>
+  </span>
+  <span>Noor Therapy Center · Admin Portal · Internal use only</span>
+</footer>
+
+<script>
+document.getElementById('pol-back').addEventListener('click', function () {
+  if (history.length > 1) history.back(); else location.href = '../policies.html';
+});
+document.getElementById('pol-dl').addEventListener('click', function () {
+  document.getElementById('sig-block').hidden = false;
+  setTimeout(function () { window.print(); }, 80);
+});
+document.getElementById('pol-print').addEventListener('click', function () {
+  document.getElementById('sig-block').hidden = true;
+  setTimeout(function () { window.print(); }, 80);
+});
+</script>
+
+<script src="../policy-search.js"></script>
+</body>
+</html>
