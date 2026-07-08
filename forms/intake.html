@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>New Client Intake — Noor Therapy Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="online-form.css"/>
+</head>
+<body>
+<div class="page">
+  <form class="sheet" id="intake-form" name="online-intake" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+
+    <input type="hidden" name="form-name" value="online-intake"/>
+    <p class="vh"><label>Skip<input name="bot-field"/></label></p>
+    <input class="vh" type="file" name="submission" tabindex="-1" aria-hidden="true"/>
+
+    <div class="f-masthead">
+      <img class="logo" src="noor-logo.png" alt="Noor Therapy Center"/>
+      <div class="f-meta">
+        <strong>Noor Therapy Center</strong><br/>
+        6250 Excelsior Blvd, Suite 102<br/>
+        St. Louis Park, MN 55416<br/>
+        (612) 703-9022 · info@noortherapycenter.com
+      </div>
+    </div>
+
+    <div class="f-title">
+      <div class="kicker">New Client Intake</div>
+      <h1>Get Your Child Started</h1>
+      <p class="lede">Complete this on your phone and submit — it reaches us as a PDF so we can verify benefits and schedule an assessment. All information is kept strictly confidential. Fields marked <span style="color:#e5396a">*</span> are required.</p>
+    </div>
+
+    <!-- 1. Child -->
+    <div class="section">
+      <div class="section-head"><span class="section-num">1</span><h2>Child's Information</h2></div>
+      <div class="row">
+        <div class="field"><label>Child's first name <span class="req">*</span></label><input type="text" name="childFirst" required/></div>
+        <div class="field"><label>Child's last name <span class="req">*</span></label><input type="text" name="childLast" required/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Date of birth <span class="req">*</span></label><input type="date" name="childDob" required/></div>
+        <div class="field"><label>Primary language at home</label><input type="text" name="homeLanguage"/></div>
+      </div>
+      <div class="row">
+        <div class="field wide"><label>Home address</label><input type="text" name="address" autocomplete="street-address"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>City</label><input type="text" name="city"/></div>
+        <div class="field"><label>State</label><input type="text" name="state"/></div>
+        <div class="field"><label>ZIP</label><input type="text" name="zip" inputmode="numeric"/></div>
+      </div>
+    </div>
+
+    <!-- 2. Parent -->
+    <div class="section c-orange">
+      <div class="section-head"><span class="section-num">2</span><h2>Parent / Guardian</h2></div>
+      <div class="row">
+        <div class="field"><label>Your full name <span class="req">*</span></label><input type="text" name="firstName" required autocomplete="given-name" placeholder="First"/></div>
+        <div class="field"><label>Last name <span class="req">*</span></label><input type="text" name="lastName" required autocomplete="family-name" placeholder="Last"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Relationship to child</label><input type="text" name="relationship" placeholder="e.g. Mother, Father, Guardian"/></div>
+        <div class="field"><label>Mobile phone <span class="req">*</span></label><input type="tel" name="phone" required autocomplete="tel"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Email <span class="req">*</span></label><input type="email" name="email" required autocomplete="email"/></div>
+        <div class="field">
+          <label>Best way to reach you</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="contactMethod" value="Call"/><span class="mark"></span><span>Call</span></label>
+            <label class="opt"><input type="radio" name="contactMethod" value="Text"/><span class="mark"></span><span>Text</span></label>
+            <label class="opt"><input type="radio" name="contactMethod" value="Email"/><span class="mark"></span><span>Email</span></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Insurance -->
+    <div class="section c-blue">
+      <div class="section-head"><span class="section-num">3</span><h2>Insurance</h2></div>
+      <div class="row">
+        <div class="field"><label>Insurance provider <span class="req">*</span></label><input type="text" name="insuranceProvider" required placeholder="e.g. MN Medicaid, BCBS of MN"/></div>
+        <div class="field">
+          <label>Plan type</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="planType" value="Medicaid"/><span class="mark"></span><span>Medicaid</span></label>
+            <label class="opt"><input type="radio" name="planType" value="Private"/><span class="mark"></span><span>Private</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Member / Subscriber ID <span class="req">*</span></label><input type="text" name="memberId" required/></div>
+        <div class="field"><label>Group # (if any)</label><input type="text" name="groupNumber"/></div>
+      </div>
+      <div class="row one">
+        <div class="callout blue">
+          <strong>Noor accepts Minnesota Medicaid</strong> and is credentialing with BCBS of MN, HealthPartners, Medica, and Hennepin Health. We verify your benefits before services begin — at no cost to you.
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Diagnosis -->
+    <div class="section c-purple">
+      <div class="section-head"><span class="section-num">4</span><h2>Diagnosis &amp; Referral</h2></div>
+      <div class="row">
+        <div class="field">
+          <label>Autism (ASD) diagnosis?</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="hasDiagnosis" value="Yes"/><span class="mark"></span><span>Yes</span></label>
+            <label class="opt"><input type="radio" name="hasDiagnosis" value="No"/><span class="mark"></span><span>No</span></label>
+            <label class="opt"><input type="radio" name="hasDiagnosis" value="In process"/><span class="mark"></span><span>In process</span></label>
+          </div>
+        </div>
+        <div class="field"><label>Diagnosing provider / clinic</label><input type="text" name="diagnosingProvider"/></div>
+      </div>
+      <div class="row one">
+        <div class="field wide">
+          <label>Other diagnoses, allergies, or medical conditions we should know about</label>
+          <textarea name="medicalNotes" rows="3"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Goals -->
+    <div class="section c-berry">
+      <div class="section-head"><span class="section-num">5</span><h2>Services &amp; Goals</h2></div>
+      <div class="row one">
+        <div class="field">
+          <label>Services your child currently receives</label>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" name="currentServices" value="ABA"/><span class="mark"></span><span>ABA</span></label>
+            <label class="opt"><input type="checkbox" name="currentServices" value="Speech"/><span class="mark"></span><span>Speech</span></label>
+            <label class="opt"><input type="checkbox" name="currentServices" value="Occupational"/><span class="mark"></span><span>Occupational</span></label>
+            <label class="opt"><input type="checkbox" name="currentServices" value="Physical"/><span class="mark"></span><span>Physical</span></label>
+            <label class="opt"><input type="checkbox" name="currentServices" value="School IEP"/><span class="mark"></span><span>School IEP</span></label>
+            <label class="opt"><input type="checkbox" name="currentServices" value="None"/><span class="mark"></span><span>None</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="row one">
+        <div class="field wide">
+          <label>What are your top goals and concerns? What would success look like for your family?</label>
+          <textarea name="goals" rows="4"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label>Preferred setting</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="setting" value="In-home"/><span class="mark"></span><span>In-home</span></label>
+            <label class="opt"><input type="radio" name="setting" value="Center-based"/><span class="mark"></span><span>Center</span></label>
+            <label class="opt"><input type="radio" name="setting" value="Either"/><span class="mark"></span><span>Either</span></label>
+          </div>
+        </div>
+        <div class="field"><label>Preferred days / times</label><input type="text" name="scheduling" placeholder="e.g. Weekday afternoons"/></div>
+      </div>
+    </div>
+
+    <!-- 6. Consent -->
+    <div class="section">
+      <div class="section-head"><span class="section-num">6</span><h2>Consent</h2></div>
+      <div class="consent">
+        I certify that the information above is accurate to the best of my knowledge. I authorize Noor Therapy Center to verify insurance benefits and to coordinate care with my child's physician and other providers as needed. I understand that a Notice of Privacy Practices (HIPAA) will be provided to me, and that my child's protected health information will be handled confidentially. I understand that completing this form does not by itself begin services.
+      </div>
+      <div class="row" style="margin-top:14px">
+        <div class="field"><label>Type your full name as your electronic signature <span class="req">*</span></label><input type="text" name="signature" required/></div>
+        <div class="field"><label>Date <span class="req">*</span></label><input type="date" name="signDate" required/></div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button type="submit" class="submit-btn">Submit Intake Form</button>
+      <div class="privacy-line no-capture">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Confidential. Sent to Noor Therapy Center as a PDF; a copy downloads to your device.
+      </div>
+    </div>
+
+  </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="online-form.js"></script>
+<script>
+  NoorForm.init({
+    form: '#intake-form',
+    sheet: '#intake-form',
+    netlifyName: 'online-intake',
+    title: 'Client Intake',
+    kicker: 'New Client Intake',
+    label: 'intake form'
+  });
+</script>
+</body>
+</html>

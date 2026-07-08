@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Direct Deposit — Noor Therapy Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="online-form.css"/>
+</head>
+<body>
+<div class="page">
+  <form class="sheet" id="deposit-form" name="online-deposit" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+
+    <input type="hidden" name="form-name" value="online-deposit"/>
+    <p class="vh"><label>Skip<input name="bot-field"/></label></p>
+    <input class="vh" type="file" name="submission" tabindex="-1" aria-hidden="true"/>
+
+    <div class="f-masthead">
+      <img class="logo" src="noor-logo.png" alt="Noor Therapy Center"/>
+      <div class="f-meta">
+        <strong>Noor Therapy Center</strong><br/>
+        6250 Excelsior Blvd, Suite 102<br/>
+        St. Louis Park, MN 55416<br/>
+        (612) 703-9022 · info@noortherapycenter.com
+      </div>
+    </div>
+
+    <div class="f-title">
+      <div class="kicker">Payroll · Direct Deposit</div>
+      <h1>Direct Deposit Setup</h1>
+      <p class="lede">Set up direct deposit from your phone. On submit this is sent to payroll as a PDF. Fields marked <span style="color:#e5396a">*</span> are required.</p>
+    </div>
+
+    <!-- 1. Employee -->
+    <div class="section">
+      <div class="section-head"><span class="section-num">1</span><h2>Employee</h2></div>
+      <div class="row">
+        <div class="field"><label>First name <span class="req">*</span></label><input type="text" name="firstName" required autocomplete="given-name"/></div>
+        <div class="field"><label>Last name <span class="req">*</span></label><input type="text" name="lastName" required autocomplete="family-name"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Job title</label><input type="text" name="jobTitle"/></div>
+        <div class="field"><label>Work email</label><input type="email" name="email" autocomplete="email"/></div>
+      </div>
+      <div class="row one">
+        <div class="field">
+          <label>Request type</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="requestType" value="New enrollment"/><span class="mark"></span><span>New enrollment</span></label>
+            <label class="opt"><input type="radio" name="requestType" value="Change account"/><span class="mark"></span><span>Change account</span></label>
+            <label class="opt"><input type="radio" name="requestType" value="Cancel"/><span class="mark"></span><span>Cancel</span></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Primary account -->
+    <div class="section c-blue">
+      <div class="section-head"><span class="section-num">2</span><h2>Bank Account</h2></div>
+      <div class="row">
+        <div class="field"><label>Bank / credit union name <span class="req">*</span></label><input type="text" name="bankName" required/></div>
+        <div class="field">
+          <label>Account type</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="accountType" value="Checking"/><span class="mark"></span><span>Checking</span></label>
+            <label class="opt"><input type="radio" name="accountType" value="Savings"/><span class="mark"></span><span>Savings</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Routing number (9 digits) <span class="req">*</span></label><input type="text" name="routingNumber" required inputmode="numeric" maxlength="9" placeholder="9 digits"/></div>
+        <div class="field"><label>Account number <span class="req">*</span></label><input type="text" name="accountNumber" required inputmode="numeric"/></div>
+      </div>
+      <div class="row one">
+        <div class="field">
+          <label>Deposit amount for this account</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="depositSplit" value="Entire net pay"/><span class="mark"></span><span>Entire net pay</span></label>
+            <label class="opt"><input type="radio" name="depositSplit" value="Specific amount"/><span class="mark"></span><span>Specific amount</span></label>
+          </div>
+          <div class="hint">If splitting, enter the amount for this account below.</div>
+          <input type="text" name="depositAmount" placeholder="e.g. $500 or 60%" style="max-width:220px;margin-top:2px"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Voided check -->
+    <div class="section c-orange">
+      <div class="section-head"><span class="section-num">3</span><h2>Verify Your Account</h2></div>
+      <div class="callout">
+        <strong>Confirm your numbers.</strong> Please double-check your routing and account numbers against a check or your bank's app before submitting — a single wrong digit can delay your pay. Payroll may ask for a voided check or bank letter to confirm.
+      </div>
+      <div class="row one" style="margin-top:14px">
+        <div class="field">
+          <label>I confirm the account details above are correct <span class="req">*</span></label>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" name="confirmed" value="Confirmed" required/><span class="mark"></span><span>Yes, I've verified my routing &amp; account numbers</span></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Authorization -->
+    <div class="section c-berry">
+      <div class="section-head"><span class="section-num">4</span><h2>Authorization</h2></div>
+      <div class="consent">
+        I authorize Noor Therapy Center and its designated payroll provider to deposit my pay directly into the account indicated above and, if necessary, to reverse or adjust entries made in error. This authorization remains in effect until I provide written notice of cancellation or change with enough time to act on it. I certify that I am an authorized user of the account and that the information provided is accurate.
+      </div>
+      <div class="row" style="margin-top:14px">
+        <div class="field"><label>Type your full name as your electronic signature <span class="req">*</span></label><input type="text" name="signature" required/></div>
+        <div class="field"><label>Date <span class="req">*</span></label><input type="date" name="signDate" required/></div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button type="submit" class="submit-btn">Submit Direct Deposit</button>
+      <div class="privacy-line no-capture">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Sent securely to Noor Therapy Center payroll as a PDF; a copy downloads to your device.
+      </div>
+    </div>
+
+  </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="online-form.js"></script>
+<script>
+  NoorForm.init({
+    form: '#deposit-form',
+    sheet: '#deposit-form',
+    netlifyName: 'online-deposit',
+    title: 'Direct Deposit',
+    kicker: 'Payroll · Direct Deposit',
+    label: 'direct deposit form'
+  });
+</script>
+</body>
+</html>

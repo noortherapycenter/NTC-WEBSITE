@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Time-Off Request — Noor Therapy Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="online-form.css"/>
+</head>
+<body>
+<div class="page">
+  <form class="sheet" id="timeoff-form" name="online-timeoff" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+
+    <input type="hidden" name="form-name" value="online-timeoff"/>
+    <p class="vh"><label>Skip<input name="bot-field"/></label></p>
+    <input class="vh" type="file" name="submission" tabindex="-1" aria-hidden="true"/>
+
+    <div class="f-masthead">
+      <img class="logo" src="noor-logo.png" alt="Noor Therapy Center"/>
+      <div class="f-meta">
+        <strong>Noor Therapy Center</strong><br/>
+        6250 Excelsior Blvd, Suite 102<br/>
+        St. Louis Park, MN 55416<br/>
+        (612) 703-9022 · info@noortherapycenter.com
+      </div>
+    </div>
+
+    <div class="f-title">
+      <div class="kicker">Staff · Scheduling</div>
+      <h1>Time-Off Request</h1>
+      <p class="lede">Submit from your phone — it reaches your supervisor as a PDF. Please request at least two weeks ahead when you can. Fields marked <span style="color:#e5396a">*</span> are required.</p>
+    </div>
+
+    <!-- 1. Employee -->
+    <div class="section">
+      <div class="section-head"><span class="section-num">1</span><h2>Employee</h2></div>
+      <div class="row">
+        <div class="field"><label>First name <span class="req">*</span></label><input type="text" name="firstName" required autocomplete="given-name"/></div>
+        <div class="field"><label>Last name <span class="req">*</span></label><input type="text" name="lastName" required autocomplete="family-name"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Job title</label><input type="text" name="jobTitle"/></div>
+        <div class="field"><label>Department / Program</label><input type="text" name="department"/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Supervisor <span class="req">*</span></label><input type="text" name="supervisor" required/></div>
+        <div class="field"><label>Work email</label><input type="email" name="email" autocomplete="email"/></div>
+      </div>
+    </div>
+
+    <!-- 2. Leave requested -->
+    <div class="section c-orange">
+      <div class="section-head"><span class="section-num">2</span><h2>Leave Requested</h2></div>
+      <div class="row one">
+        <div class="field">
+          <label>Type of leave <span class="req">*</span></label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="leaveType" value="Vacation / PTO" required/><span class="mark"></span><span>Vacation / PTO</span></label>
+            <label class="opt"><input type="radio" name="leaveType" value="Sick"/><span class="mark"></span><span>Sick</span></label>
+            <label class="opt"><input type="radio" name="leaveType" value="Personal"/><span class="mark"></span><span>Personal</span></label>
+            <label class="opt"><input type="radio" name="leaveType" value="Bereavement"/><span class="mark"></span><span>Bereavement</span></label>
+            <label class="opt"><input type="radio" name="leaveType" value="Jury duty"/><span class="mark"></span><span>Jury duty</span></label>
+            <label class="opt"><input type="radio" name="leaveType" value="Unpaid"/><span class="mark"></span><span>Unpaid</span></label>
+            <label class="opt"><input type="radio" name="leaveType" value="Other"/><span class="mark"></span><span>Other</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field"><label>First day off <span class="req">*</span></label><input type="date" name="firstDay" required/></div>
+        <div class="field"><label>Last day off <span class="req">*</span></label><input type="date" name="lastDay" required/></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Total days</label><input type="text" name="totalDays" inputmode="numeric"/></div>
+        <div class="field"><label>Total hours</label><input type="text" name="totalHours" inputmode="numeric"/></div>
+      </div>
+      <div class="row one">
+        <div class="field">
+          <label>Partial day?</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="partialDay" value="No — full day(s)"/><span class="mark"></span><span>No — full day(s)</span></label>
+            <label class="opt"><input type="radio" name="partialDay" value="Yes — partial"/><span class="mark"></span><span>Yes — partial</span></label>
+          </div>
+          <div class="hint">If partial, note the times below.</div>
+          <input type="text" name="partialTimes" placeholder="e.g. 8:00 am – 12:00 pm" style="margin-top:2px"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Coverage -->
+    <div class="section c-blue">
+      <div class="section-head"><span class="section-num">3</span><h2>Coverage</h2></div>
+      <div class="row one">
+        <div class="field wide">
+          <label>Coverage arrangements — who will cover your clients / sessions?</label>
+          <textarea name="coverage" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label>Reachable during leave?</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="reachable" value="Yes"/><span class="mark"></span><span>Yes</span></label>
+            <label class="opt"><input type="radio" name="reachable" value="No"/><span class="mark"></span><span>No</span></label>
+          </div>
+        </div>
+        <div class="field"><label>Contact number during leave</label><input type="tel" name="contactNumber"/></div>
+      </div>
+    </div>
+
+    <!-- 4. Signature -->
+    <div class="section c-berry">
+      <div class="section-head"><span class="section-num">4</span><h2>Signature</h2></div>
+      <div class="consent">
+        I confirm the information above is accurate. I understand that submitting this request does not guarantee approval and that leave is subject to staffing needs and my available balances.
+      </div>
+      <div class="row" style="margin-top:14px">
+        <div class="field"><label>Type your full name as your electronic signature <span class="req">*</span></label><input type="text" name="signature" required/></div>
+        <div class="field"><label>Date <span class="req">*</span></label><input type="date" name="signDate" required/></div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button type="submit" class="submit-btn">Submit Time-Off Request</button>
+      <div class="privacy-line no-capture">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Sent to your supervisor as a PDF; a copy downloads to your device.
+      </div>
+    </div>
+
+  </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="online-form.js"></script>
+<script>
+  NoorForm.init({
+    form: '#timeoff-form',
+    sheet: '#timeoff-form',
+    netlifyName: 'online-timeoff',
+    title: 'Time-Off Request',
+    kicker: 'Staff · Scheduling',
+    label: 'time-off request'
+  });
+</script>
+</body>
+</html>
