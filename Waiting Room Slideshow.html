@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Noor Therapy Center — Waiting Room Slideshow</title>
+<style>
+  /* ---------- Reset + stage scaling for a 4K-friendly 16:9 canvas ---------- */
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; background: #000; font-family: 'DM Sans', system-ui, -apple-system, sans-serif; color: #1f2e1a; overflow: hidden; cursor: none; }
+
+  /* Brand tokens, lifted from the website */
+  :root {
+    --bg: #fdfaf3;
+    --ink: #1f2e1a;
+    --ink-soft: #4a5c52;
+    --line: #c4bfa8;
+    --brand-green: #2aa63a;
+    --brand-berry: #e5396a;
+    --brand-orange: #f18a2c;
+    --brand-purple: #9b51c7;
+    --brand-blue: #2f6fd6;
+    --brand-pink: #e84e8f;
+    --brand-yellow: #f6c945;
+  }
+
+  /* Stage is a fixed 1920x1080 — outer wrapper letterboxes & scales to fit */
+  .stage-wrap {
+    position: fixed; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: #000;
+  }
+  .stage {
+    width: 1920px; height: 1080px; position: relative;
+    transform-origin: center center;
+    background: var(--bg);
+    overflow: hidden;
+  }
+
+  /* ---------- Slides ---------- */
+  .slide {
+    position: absolute; inset: 0;
+    opacity: 0; pointer-events: none;
+    transition: opacity 1.2s ease;
+    display: flex; flex-direction: column;
+    overflow: hidden;
+  }
+  .slide.active { opacity: 1; }
+
+  /* per-slide bg variations */
+  .bg-cream  { background: var(--bg); color: var(--ink); }
+  .bg-green  { background: var(--brand-green); color: #fff; }
+  .bg-yellow { background: var(--brand-yellow); color: var(--ink); }
+  .bg-berry  { background: var(--brand-berry); color: #fff; }
+  .bg-blue   { background: var(--brand-blue); color: #fff; }
+  .bg-purple { background: var(--brand-purple); color: #fff; }
+  .bg-orange { background: var(--brand-orange); color: #fff; }
+
+  /* ---------- Type ---------- */
+  .eyebrow {
+    font-size: 28px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+    opacity: 0.7;
+  }
+  h1.title {
+    font-size: 180px; font-weight: 700; letter-spacing: -0.04em; line-height: 0.95;
+    margin: 0;
+  }
+  h1.title.smaller { font-size: 140px; }
+  h2.headline {
+    font-size: 120px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.0;
+    margin: 0;
+  }
+  h2.headline.smaller { font-size: 88px; }
+  .lead {
+    font-size: 44px; line-height: 1.35; max-width: 1200px; font-weight: 500;
+  }
+  .big-stat {
+    font-size: 280px; font-weight: 800; letter-spacing: -0.05em; line-height: 1;
+  }
+  .mono {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    letter-spacing: 0.02em;
+  }
+  .italic { font-style: italic; }
+
+  /* ---------- Layout helpers ---------- */
+  .pad { padding: 110px 130px 200px; }
+  .center { align-items: center; justify-content: center; text-align: center; }
+  .col { display: flex; flex-direction: column; }
+  .gap-s { gap: 18px; }
+  .gap-m { gap: 32px; }
+  .gap-l { gap: 56px; }
+  .gap-xl { gap: 80px; }
+
+  /* ---------- Persistent chrome (logo + footer + progress) ---------- */
+  .chrome-top {
+    position: absolute; top: 56px; left: 80px;
+    display: flex; align-items: center; gap: 18px; z-index: 20;
+  }
+  .chrome-top .mark { width: 84px; height: 84px; object-fit: contain; }
+  .chrome-top .mark.color { display: inline-block; }
+  .chrome-top .mark.white { display: none; }
+  .slide.dark .chrome-top .mark.color { display: none; }
+  .slide.dark .chrome-top .mark.white { display: inline-block; }
+  .slide.dark .chrome-top .word { color: #fff; }
+  .slide.dark .chrome-bottom { color: #fff; }
+  .chrome-top .word { font-size: 32px; font-weight: 700; letter-spacing: -0.01em; color: inherit; }
+  .chrome-top .word .green { color: var(--brand-green); }
+  .slide.dark .chrome-top .word .green { color: var(--brand-yellow); }
+
+  .chrome-bottom {
+    position: absolute; bottom: 56px; left: 80px; right: 80px;
+    display: flex; align-items: center; justify-content: space-between; z-index: 20;
+    font-size: 22px; font-weight: 600; opacity: 0.85;
+  }
+  .chrome-bottom .site { letter-spacing: 0.05em; }
+  .progress {
+    display: flex; gap: 10px;
+  }
+  .progress .dot {
+    width: 14px; height: 14px; border-radius: 50%;
+    background: currentColor; opacity: 0.22;
+    transition: all .4s ease;
+  }
+  .progress .dot.active { opacity: 1; width: 44px; border-radius: 8px; }
+
+  /* ---------- Floating decorations ---------- */
+  .deco { position: absolute; pointer-events: none; }
+  @keyframes float-a { 0%,100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-18px) rotate(6deg); } }
+  @keyframes float-b { 0%,100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(22px) rotate(-8deg); } }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+  .anim-float-a { animation: float-a 5s ease-in-out infinite; }
+  .anim-float-b { animation: float-b 6.5s ease-in-out infinite; }
+  .anim-spin { animation: spin 22s linear infinite; transform-origin: center; }
+  .anim-pulse { animation: pulse 4s ease-in-out infinite; }
+
+  /* ---------- Service tiles ---------- */
+  .svc-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
+    width: 100%;
+  }
+  .svc-card {
+    background: rgba(255,255,255,0.94); color: var(--ink);
+    border-radius: 32px; padding: 44px;
+    display: flex; flex-direction: column; gap: 22px;
+    border: 2px solid rgba(0,0,0,0.06);
+  }
+  .svc-card .icon-circle {
+    width: 110px; height: 110px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .svc-card h3 { font-size: 44px; font-weight: 700; margin: 0; letter-spacing: -0.02em; }
+  .svc-card p { font-size: 26px; line-height: 1.35; margin: 0; color: var(--ink-soft); }
+
+  /* ---------- WiFi card ---------- */
+  .wifi-card {
+    background: #fff; color: var(--ink);
+    border-radius: 48px; padding: 80px 100px;
+    border: 6px solid var(--brand-yellow);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.18);
+    display: flex; flex-direction: column; gap: 36px; min-width: 1100px;
+  }
+  .wifi-row { display: flex; align-items: baseline; gap: 30px; border-bottom: 2px dashed var(--line); padding-bottom: 18px; }
+  .wifi-row:last-child { border-bottom: 0; padding-bottom: 0; }
+  .wifi-row .label { font-size: 30px; font-weight: 700; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.1em; width: 220px; }
+  .wifi-row .value { font-size: 72px; font-weight: 700; letter-spacing: -0.02em; }
+  .wifi-row .value.mono { font-family: ui-monospace, 'SF Mono', Menlo, monospace; }
+
+  /* ---------- Hours block ---------- */
+  .hours-block { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; width: 100%; }
+  .hours-card {
+    background: rgba(255,255,255,0.95); color: var(--ink);
+    border-radius: 32px; padding: 50px 56px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .hours-card h3 { font-size: 36px; margin: 0; letter-spacing: -0.01em; }
+  .hours-card .line { font-size: 30px; line-height: 1.5; }
+  .hours-card .big { font-size: 56px; font-weight: 700; letter-spacing: -0.02em; }
+
+  /* ---------- Quote ---------- */
+  .quote {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 130px; font-weight: 500; line-height: 1.05; letter-spacing: -0.02em;
+    max-width: 1400px;
+    text-align: center;
+  }
+  .quote.smaller { font-size: 100px; }
+  .quote-mark {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 280px; line-height: 0.5; opacity: 0.45;
+  }
+  .attribution {
+    font-size: 32px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    opacity: 0.8; margin-top: 30px;
+  }
+
+  /* ---------- Tip card ---------- */
+  .tip-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; width: 100%;
+  }
+
+  /* ---------- Hello multilanguage ---------- */
+  .hello-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 60px; width: 100%;
+  }
+  .hello-item { display: flex; flex-direction: column; gap: 6px; }
+  .hello-item .word {
+    font-family: 'Fraunces', Georgia, serif; font-weight: 500;
+    font-size: 76px; letter-spacing: -0.02em; line-height: 1;
+    white-space: nowrap;
+  }
+  .hello-item .lang {
+    font-size: 22px; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.7; font-weight: 700;
+  }
+
+  /* ---------- Fun fact ---------- */
+  .fact-bubble {
+    background: #fff; color: var(--ink);
+    border-radius: 60px; padding: 90px 110px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+    max-width: 1500px; position: relative;
+  }
+  .fact-bubble::after {
+    content: ''; position: absolute;
+    bottom: -50px; left: 200px;
+    width: 90px; height: 80px;
+    background: #fff;
+    clip-path: polygon(0 0, 100% 0, 60% 100%);
+  }
+
+  /* Right-side image column placeholder gradients */
+  .imgblock {
+    border-radius: 40px; height: 100%; min-height: 600px; width: 100%;
+    background-size: cover; background-position: center;
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+
+  /* Auto-scroll for the services slide */
+  .scroll-list { transform: translateY(0); will-change: transform; }
+</style>
+</head>
+<body>
+
+<template id="__bundler_thumbnail">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="200" height="200" fill="#F5F1EA"/>
+    <circle cx="100" cy="100" r="46" fill="#F4C842"/>
+    <g stroke="#E8853F" stroke-width="6" stroke-linecap="round">
+      <line x1="100" y1="30" x2="100" y2="42"/>
+      <line x1="100" y1="158" x2="100" y2="170"/>
+      <line x1="30" y1="100" x2="42" y2="100"/>
+      <line x1="158" y1="100" x2="170" y2="100"/>
+      <line x1="50" y1="50" x2="58" y2="58"/>
+      <line x1="142" y1="142" x2="150" y2="150"/>
+      <line x1="50" y1="150" x2="58" y2="142"/>
+      <line x1="142" y1="58" x2="150" y2="50"/>
+    </g>
+    <circle cx="100" cy="100" r="14" fill="#E8853F"/>
+  </svg>
+</template>
+
+<div class="stage-wrap" id="stageWrap">
+  <div class="stage" id="stage">
+
+    <!-- ============================================================== -->
+    <!-- SLIDE 1 — Welcome -->
+    <!-- ============================================================== -->
+    <section class="slide active bg-cream center pad col" data-bg="cream">
+      <!-- bg decoration -->
+      <svg class="deco anim-spin" style="top:80px; right:120px; width:220px; height:220px;" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="32" fill="var(--brand-yellow)"/>
+        <g><!-- rays -->
+          <rect x="48" y="3" width="4" height="12" rx="2" fill="var(--brand-orange)"/>
+          <rect x="48" y="3" width="4" height="12" rx="2" fill="var(--brand-orange)" transform="rotate(30 50 50)"/>
+          <rect x="48" y="3" width="4" height="12" rx="2" fill="var(--brand-orange)" transform="rotate(60 50 50)"/>
+          <rect x="48" y="3" width="4" height="12" rx="2" fill="var(--brand-orange)" transform="rotate(90 50 50)"/>
+          <rect x="48" y="3" width="4" height="12" rx="2" fill="var(--brand-orange)" transform="rotate(120 50 50)"/>
+          <rect x="48" y="3" width="4" height="12" rx="2" fill="var(--brand-orange)" transform="rotate(150 50 50)"/>
+          <rect x="48" y="3" width="4" height="12" rx="2" fill="var(--brand-orange)" transform="rotate(180 50 50)"/>
+          <rect x="48" y="3" width="4" height="12" rx="2" fill="var(--brand-orange)" transform="rotate(210 50 50)"/>
+          <rect x="48" y="3" width="4" height="12" rx="2" fill="var(--brand-orange)" transform="rotate(240 50 50)"/>
+          <rect x="48" y="3" width="4" height="12" rx="2" fill="var(--brand-orange)" transform="rotate(270 50 50)"/>
+          <rect x="48" y="3" width="4" height="12" rx="2" fill="var(--brand-orange)" transform="rotate(300 50 50)"/>
+          <rect x="48" y="3" width="4" height="12" rx="2" fill="var(--brand-orange)" transform="rotate(330 50 50)"/>
+        </g>
+      </svg>
+      <svg class="deco anim-float-a" style="bottom:120px; left:120px; width:160px; height:160px;" viewBox="0 0 80 64">
+        <ellipse cx="22" cy="40" rx="14" ry="12" fill="var(--brand-blue)"/>
+        <ellipse cx="40" cy="32" rx="18" ry="16" fill="var(--brand-blue)"/>
+        <ellipse cx="58" cy="40" rx="14" ry="12" fill="var(--brand-blue)"/>
+        <ellipse cx="40" cy="44" rx="24" ry="10" fill="var(--brand-blue)"/>
+      </svg>
+      <svg class="deco anim-float-b" style="top:200px; left:200px; width:120px; height:120px;" viewBox="0 0 70 60">
+        <ellipse cx="20" cy="22" rx="14" ry="12" fill="var(--brand-purple)"/>
+        <ellipse cx="50" cy="22" rx="14" ry="12" fill="var(--brand-purple)"/>
+        <ellipse cx="22" cy="40" rx="10" ry="9" fill="var(--brand-berry)"/>
+        <ellipse cx="48" cy="40" rx="10" ry="9" fill="var(--brand-berry)"/>
+        <ellipse cx="35" cy="30" rx="3" ry="14" fill="var(--brand-orange)"/>
+      </svg>
+      <svg class="deco anim-float-b" style="bottom:200px; right:180px; width:140px; height:90px;" viewBox="0 0 80 50">
+        <path d="M6 46 A34 34 0 0 1 74 46" fill="none" stroke="var(--brand-berry)" stroke-width="6" stroke-linecap="round"/>
+        <path d="M14 46 A26 26 0 0 1 66 46" fill="none" stroke="var(--brand-orange)" stroke-width="6" stroke-linecap="round"/>
+        <path d="M22 46 A18 18 0 0 1 58 46" fill="none" stroke="var(--brand-yellow)" stroke-width="6" stroke-linecap="round"/>
+        <path d="M30 46 A10 10 0 0 1 50 46" fill="none" stroke="var(--brand-green)" stroke-width="6" stroke-linecap="round"/>
+      </svg>
+
+      <div class="col center" style="z-index:5; gap: 40px;">
+        <img src="assets/noor-logo-mark.png" alt=""
+             style="width: 360px; height: auto; margin-bottom: -30px;"/>
+        <div class="col center" style="gap: 14px;">
+          <div style="font-size: 96px; font-weight: 700; letter-spacing: 0.02em; color: var(--brand-green); line-height: 1;">NOOR THERAPY CENTER</div>
+          <div style="font-size: 32px; font-weight: 700; letter-spacing: 0.22em; color: var(--brand-berry); text-transform: uppercase;">Letting every light shine bright</div>
+        </div>
+        <div class="lead" style="color: var(--ink-soft); text-align:center;">
+          We're so glad you're here. Make yourself comfortable — our team will be with you shortly.
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SLIDE 2 — Hello in many languages -->
+    <!-- ============================================================== -->
+    <section class="slide bg-green pad col dark" data-bg="green">
+      <svg class="deco anim-float-a" style="top:120px; right:160px; width:140px; height:140px;" viewBox="0 0 64 60">
+        <path d="M32 54 C8 38 6 22 18 14 C26 9 32 16 32 22 C32 16 38 9 46 14 C58 22 56 38 32 54 Z" fill="var(--brand-yellow)"/>
+      </svg>
+      <svg class="deco anim-float-b" style="bottom:130px; left:140px; width:160px; height:120px;" viewBox="0 0 64 64">
+        <path d="M32 6 L38 26 L58 26 L42 38 L48 58 L32 46 L16 58 L22 38 L6 26 L26 26 Z" fill="var(--brand-yellow)"/>
+      </svg>
+
+      <div class="col gap-l" style="margin-top:120px; z-index:5;">
+        <div class="eyebrow">A warm hello, in your language</div>
+        <div class="hello-grid">
+          <div class="hello-item"><div class="word">Hello</div><div class="lang">English</div></div>
+          <div class="hello-item"><div class="word">مرحبا</div><div class="lang">Arabic</div></div>
+          <div class="hello-item"><div class="word">Soo dhowoow</div><div class="lang">Somali</div></div>
+          <div class="hello-item"><div class="word">Hola</div><div class="lang">Spanish</div></div>
+          <div class="hello-item"><div class="word">Nyob zoo</div><div class="lang">Hmong</div></div>
+          <div class="hello-item"><div class="word">Sawubona</div><div class="lang">Zulu</div></div>
+          <div class="hello-item"><div class="word">Bonjour</div><div class="lang">French</div></div>
+          <div class="hello-item"><div class="word">नमस्ते</div><div class="lang">Hindi</div></div>
+          <div class="hello-item"><div class="word">你好</div><div class="lang">Mandarin</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SLIDE 3 — Services (auto-scrolling, matches website) -->
+    <!-- ============================================================== -->
+    <section class="slide bg-cream col" data-bg="cream" data-duration="26000">
+      <!-- Fixed header -->
+      <div style="padding: 200px 130px 0 130px; flex-shrink: 0;">
+        <div class="eyebrow" style="color: var(--brand-orange);">Our services</div>
+        <h2 class="headline" style="margin-top: 18px;">Care that fits<br/>every child<span style="color: var(--brand-green);">.</span></h2>
+      </div>
+
+      <!-- Scrolling viewport -->
+      <div class="scroll-viewport" style="flex: 1; overflow: hidden; padding: 60px 130px 0; position: relative; -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 80px, #000 calc(100% - 80px), transparent 100%); mask-image: linear-gradient(to bottom, transparent 0, #000 80px, #000 calc(100% - 80px), transparent 100%);">
+        <div class="scroll-list" style="display: flex; flex-direction: column; gap: 36px;">
+
+          <!-- Part-time ABA -->
+          <div class="svc-card" style="padding: 56px; flex-direction: row; align-items: center; gap: 40px;">
+            <div class="icon-circle" style="background: color-mix(in srgb, var(--brand-purple) 16%, white); width: 160px; height: 160px; flex-shrink: 0;">
+              <svg width="86" height="86" viewBox="0 0 24 24" fill="none"><rect x="6" y="3" width="12" height="18" rx="2" stroke="var(--brand-purple)" stroke-width="2.4"/><path d="M9 3v2h6V3M9 11h6M9 15h6M9 7h6" stroke="var(--brand-purple)" stroke-width="2.4" stroke-linecap="round"/></svg>
+            </div>
+            <div style="flex: 1;">
+              <div style="font-size:24px; color:var(--brand-purple); font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom: 8px;">~ 20 hrs / week</div>
+              <h3 style="font-size:60px;">Part-time ABA</h3>
+              <p style="font-size:30px; margin-top: 12px;">Targeted skill-building and behavior reduction. Pairs well with school, speech, and OT — works around the rest of your child's day.</p>
+            </div>
+          </div>
+
+          <!-- Full-time ABA -->
+          <div class="svc-card" style="padding: 56px; flex-direction: row; align-items: center; gap: 40px;">
+            <div class="icon-circle" style="background: color-mix(in srgb, var(--brand-berry) 16%, white); width: 160px; height: 160px; flex-shrink: 0;">
+              <svg width="86" height="86" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.5 6 6.5.5-5 4.5 1.5 6.5L12 16l-5.5 3.5L8 13 3 8.5l6.5-.5L12 2z" fill="var(--brand-berry)"/></svg>
+            </div>
+            <div style="flex: 1;">
+              <div style="font-size:24px; color:var(--brand-berry); font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom: 8px;">~ 40 hrs / week · Early intervention</div>
+              <h3 style="font-size:60px;">Full-time ABA</h3>
+              <p style="font-size:30px; margin-top: 12px;">All-encompassing early intervention: ABA plus integrated speech, OT, and community engagement under one coordinated plan.</p>
+            </div>
+          </div>
+
+          <!-- Speech therapy -->
+          <div class="svc-card" style="padding: 56px; flex-direction: row; align-items: center; gap: 40px;">
+            <div class="icon-circle" style="background: color-mix(in srgb, var(--brand-pink) 16%, white); width: 160px; height: 160px; flex-shrink: 0;">
+              <svg width="86" height="86" viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 0 1 16 0v3a3 3 0 0 1-3 3h-1v-6h4M4 12v3a3 3 0 0 0 3 3h1v-6H4" stroke="var(--brand-pink)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div style="flex: 1;">
+              <div style="font-size:24px; color:var(--brand-pink); font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom: 8px;">Standalone or paired</div>
+              <h3 style="font-size:60px;">Speech therapy</h3>
+              <p style="font-size:30px; margin-top: 12px;">SLPs working on AAC, articulation, expressive &amp; receptive language, and social/pragmatic communication.</p>
+            </div>
+          </div>
+
+          <!-- Occupational therapy -->
+          <div class="svc-card" style="padding: 56px; flex-direction: row; align-items: center; gap: 40px;">
+            <div class="icon-circle" style="background: color-mix(in srgb, var(--brand-orange) 16%, white); width: 160px; height: 160px; flex-shrink: 0;">
+              <svg width="86" height="86" viewBox="0 0 24 24" fill="none"><path d="M7 11V6a2 2 0 1 1 4 0v4M11 10V4a2 2 0 1 1 4 0v6M15 10V6a2 2 0 1 1 4 0v8a6 6 0 0 1-12 0v-3a2 2 0 1 1 4 0" stroke="var(--brand-orange)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div style="flex: 1;">
+              <div style="font-size:24px; color:var(--brand-orange); font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom: 8px;">Standalone or paired</div>
+              <h3 style="font-size:60px;">Occupational therapy</h3>
+              <p style="font-size:30px; margin-top: 12px;">OTs targeting sensory regulation, fine motor, feeding, and daily living skills — tailored to each child.</p>
+            </div>
+          </div>
+
+          <!-- Parent training -->
+          <div class="svc-card" style="padding: 56px; flex-direction: row; align-items: center; gap: 40px;">
+            <div class="icon-circle" style="background: color-mix(in srgb, var(--brand-blue) 16%, white); width: 160px; height: 160px; flex-shrink: 0;">
+              <svg width="86" height="86" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="9" r="3" stroke="var(--brand-blue)" stroke-width="2.6"/><circle cx="17" cy="9" r="2.4" stroke="var(--brand-blue)" stroke-width="2.6"/><path d="M3 19c0-2.8 2.7-5 6-5s6 2.2 6 5M15 19c0-2.1 1.7-4 4-4s2 0 2 0" stroke="var(--brand-blue)" stroke-width="2.6" stroke-linecap="round"/></svg>
+            </div>
+            <div style="flex: 1;">
+              <div style="font-size:24px; color:var(--brand-blue); font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom: 8px;">Caregivers · 8-week curriculum</div>
+              <h3 style="font-size:60px;">Parent training</h3>
+              <p style="font-size:30px; margin-top: 12px;">You learn the strategies your team is using — so progress at the table becomes progress at home.</p>
+            </div>
+          </div>
+
+          <!-- Setting card -->
+          <div class="svc-card" style="padding: 56px; flex-direction: row; align-items: center; gap: 40px; background: var(--brand-green); color: #fff; border-color: transparent;">
+            <div class="icon-circle" style="background: rgba(255,255,255,0.2); width: 160px; height: 160px; flex-shrink: 0;">
+              <svg width="86" height="86" viewBox="0 0 24 24" fill="none"><path d="M3 12l9-8 9 8M5 10v10h14V10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div style="flex: 1;">
+              <div style="font-size:24px; color: var(--brand-yellow); font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom: 8px;">Where care happens</div>
+              <h3 style="font-size:60px; color: #fff;">In-home · Center-based · Hybrid</h3>
+              <p style="font-size:30px; margin-top: 12px; color: rgba(255,255,255,0.92);">Care wherever serves your child best — at our St. Louis Park center, in your home across the Twin Cities, or any mix.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SLIDE 4 — Office hours + contact -->
+    <!-- ============================================================== -->
+    <section class="slide bg-blue pad col dark" data-bg="blue">
+      <svg class="deco anim-spin" style="top:80px; right:120px; width:200px; height:200px; opacity:0.25;" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="4 8"/>
+        <circle cx="50" cy="20" r="6" fill="var(--brand-yellow)"/>
+      </svg>
+
+      <div class="col gap-l" style="margin-top:80px;">
+        <div class="eyebrow">When &amp; where we are</div>
+        <h2 class="headline">Open seven<br/>days a week.</h2>
+      </div>
+
+      <div class="hours-block" style="margin-top:60px;">
+        <div class="hours-card">
+          <h3 style="color: var(--brand-green);">Hours</h3>
+          <div class="big">8 am – 6 pm</div>
+          <div class="line" style="color: var(--ink-soft);">Monday through Sunday</div>
+          <div class="line" style="color: var(--ink-soft); margin-top:14px;">In-home schedules are flexible — early morning, after school, and weekends.</div>
+        </div>
+        <div class="hours-card">
+          <h3 style="color: var(--brand-berry);">Find us</h3>
+          <div class="line"><strong>6250 Excelsior Blvd, Suite 102</strong></div>
+          <div class="line">St. Louis Park, MN 55416</div>
+          <div class="line" style="margin-top:20px;">📞 (612) 703-9022</div>
+          <div class="line">✉ info@noortherapycenter.com</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SLIDE 5 — WiFi -->
+    <!-- ============================================================== -->
+    <section class="slide bg-yellow center pad col" data-bg="yellow">
+      <svg class="deco anim-float-a" style="top:120px; right:200px; width:170px; height:170px;" viewBox="0 0 64 64">
+        <path d="M4 22 Q32 4 60 22 M10 30 Q32 16 54 30 M16 38 Q32 28 48 38" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="32" cy="48" r="5" fill="var(--ink)"/>
+      </svg>
+      <svg class="deco anim-float-b" style="bottom:160px; left:180px; width:130px; height:130px;" viewBox="0 0 60 80">
+        <polygon points="30,4 54,30 30,58 6,30" fill="var(--brand-green)"/>
+        <path d="M30 58 Q26 64 30 70 Q34 76 30 78" stroke="var(--brand-orange)" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg>
+
+      <div class="col center gap-m" style="margin-bottom: 50px;">
+        <div class="eyebrow" style="color: var(--ink-soft);">Guest WiFi</div>
+        <h2 class="headline">Stay connected while you wait.</h2>
+      </div>
+
+      <div class="wifi-card">
+        <div class="wifi-row">
+          <div class="label">Network</div>
+          <div class="value mono">NoorTherapy</div>
+        </div>
+        <div class="wifi-row">
+          <div class="label">Password</div>
+          <div class="value mono">Admission1!</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SLIDE 6 — Tip for parents 1 -->
+    <!-- ============================================================== -->
+    <section class="slide bg-cream pad col" data-bg="cream">
+      <div class="tip-grid" style="margin-top:60px; height: calc(100% - 120px);">
+        <div class="col gap-l">
+          <div class="eyebrow" style="color: var(--brand-berry);">Tip for parents</div>
+          <h2 class="headline">Celebrate the<br/><span style="font-style:italic; color: var(--brand-berry);">small wins</span><span style="color: var(--brand-berry);">.</span></h2>
+          <div class="lead" style="color: var(--ink-soft);">
+            Progress in therapy is rarely a straight line. A new word, a calm transition, a few extra seconds of eye contact — these are the wins worth naming out loud.
+          </div>
+        </div>
+        <div style="position:relative;">
+          <div style="background: var(--brand-berry); border-radius: 48px; padding: 70px; color: #fff; transform: rotate(2deg);">
+            <div style="font-family:'Fraunces',Georgia,serif; font-style: italic; font-size: 64px; line-height:1.1;">
+              "She asked for water on her own today."
+            </div>
+            <div style="margin-top:30px; font-size: 24px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; opacity: 0.85;">
+              That counts. That's huge.
+            </div>
+          </div>
+          <svg class="deco anim-float-a" style="top:-40px; right:-40px; width:120px; height:120px;" viewBox="0 0 64 60">
+            <path d="M32 54 C8 38 6 22 18 14 C26 9 32 16 32 22 C32 16 38 9 46 14 C58 22 56 38 32 54 Z" fill="var(--brand-yellow)"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SLIDE 7 — Fun fact for kids 1 -->
+    <!-- ============================================================== -->
+    <section class="slide bg-purple center pad col dark" data-bg="purple">
+      <svg class="deco anim-spin" style="top:140px; left:160px; width:160px; height:160px;" viewBox="0 0 64 64">
+        <ellipse cx="32" cy="16" rx="9" ry="13" fill="var(--brand-pink)"/>
+        <ellipse cx="32" cy="16" rx="9" ry="13" fill="var(--brand-pink)" transform="rotate(72 32 32)"/>
+        <ellipse cx="32" cy="16" rx="9" ry="13" fill="var(--brand-pink)" transform="rotate(144 32 32)"/>
+        <ellipse cx="32" cy="16" rx="9" ry="13" fill="var(--brand-pink)" transform="rotate(216 32 32)"/>
+        <ellipse cx="32" cy="16" rx="9" ry="13" fill="var(--brand-pink)" transform="rotate(288 32 32)"/>
+        <circle cx="32" cy="32" r="7" fill="var(--brand-yellow)"/>
+      </svg>
+      <svg class="deco anim-float-b" style="bottom:150px; right:160px; width:160px; height:120px;" viewBox="0 0 80 64">
+        <ellipse cx="22" cy="40" rx="14" ry="12" fill="#fff" opacity="0.95"/>
+        <ellipse cx="40" cy="32" rx="18" ry="16" fill="#fff" opacity="0.95"/>
+        <ellipse cx="58" cy="40" rx="14" ry="12" fill="#fff" opacity="0.95"/>
+        <ellipse cx="40" cy="44" rx="24" ry="10" fill="#fff" opacity="0.95"/>
+      </svg>
+
+      <div class="col gap-l center" style="z-index:5;">
+        <div class="eyebrow" style="color: var(--brand-yellow);">Did you know?</div>
+        <div class="big-stat" style="color: var(--brand-yellow);">86,400</div>
+        <div class="lead" style="text-align:center; max-width: 1100px;">
+          That's how many <strong>seconds</strong> you have in one day. Plenty of time for a snack, a song, and a high-five.
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SLIDE 8 — Quote 1 -->
+    <!-- ============================================================== -->
+    <section class="slide bg-cream center pad col" data-bg="cream">
+      <div class="quote-mark" style="color: var(--brand-green); align-self: center; margin-bottom: 50px;">"</div>
+      <div class="quote" style="color: var(--ink);">
+        Every child shines a <span style="color: var(--brand-green); font-style: italic;">different light</span> — our job is to help it grow.
+      </div>
+      <div class="attribution" style="color: var(--brand-green);">— The Noor Team</div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SLIDE 9 — Tip for parents 2 -->
+    <!-- ============================================================== -->
+    <section class="slide bg-orange pad col dark" data-bg="orange" style="justify-content: center;">
+      <svg class="deco anim-float-a" style="top:100px; right:140px; width:170px; height:170px;" viewBox="0 0 64 64">
+        <path d="M8 52 C8 22 28 6 54 6 C54 30 38 52 8 52 Z" fill="var(--brand-green)"/>
+      </svg>
+
+      <div class="tip-grid">
+        <div class="col" style="gap: 32px;">
+          <div class="eyebrow">Tip for parents</div>
+          <h2 class="headline smaller">Be your child's<br/><span style="font-style:italic;">favorite teacher</span>.</h2>
+          <div style="font-size: 32px; line-height: 1.4; font-weight: 500;">
+            The hour you spend at home matters more than any hour we spend in the therapy room. Narrate the day. Slow down at transitions. Reinforce what your child is working on.
+          </div>
+          <div style="font-size: 22px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.9;">
+            Ask your BCBA for this week's home target.
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; justify-content:center;">
+          <div style="background: #fff; color: var(--ink); border-radius: 48px; padding: 60px; box-shadow: 0 30px 60px rgba(0,0,0,0.15); width:100%;">
+            <div style="font-size: 32px; font-weight: 800; color: var(--brand-orange); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 20px;">
+              Three easy moves
+            </div>
+            <div class="col gap-m" style="font-size: 34px; line-height: 1.35;">
+              <div style="display:flex; gap:24px; align-items:flex-start;">
+                <div style="width: 56px; height:56px; border-radius:50%; background: var(--brand-green); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; flex-shrink:0;">1</div>
+                <div>Get down to their eye level.</div>
+              </div>
+              <div style="display:flex; gap:24px; align-items:flex-start;">
+                <div style="width: 56px; height:56px; border-radius:50%; background: var(--brand-berry); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; flex-shrink:0;">2</div>
+                <div>Wait a beat — give them time to respond.</div>
+              </div>
+              <div style="display:flex; gap:24px; align-items:flex-start;">
+                <div style="width: 56px; height:56px; border-radius:50%; background: var(--brand-blue); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; flex-shrink:0;">3</div>
+                <div>Celebrate the moment it lands.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SLIDE 10 — Fun fact for kids 2 -->
+    <!-- ============================================================== -->
+    <section class="slide bg-cream center pad col" data-bg="cream">
+      <svg class="deco anim-float-b" style="top:120px; left:160px; width:140px; height:140px;" viewBox="0 0 50 80">
+        <ellipse cx="25" cy="28" rx="18" ry="22" fill="var(--brand-berry)"/>
+        <polygon points="22,50 28,50 25,55" fill="var(--brand-berry)"/>
+        <path d="M25 55 Q20 65 25 78" stroke="var(--brand-berry)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      </svg>
+      <svg class="deco anim-float-a" style="bottom:140px; right:180px; width:130px; height:130px;" viewBox="0 0 64 64">
+        <path d="M32 6 L38 26 L58 26 L42 38 L48 58 L32 46 L16 58 L22 38 L6 26 L26 26 Z" fill="var(--brand-yellow)" stroke="var(--brand-orange)" stroke-width="1.5" stroke-linejoin="round"/>
+      </svg>
+
+      <div class="col gap-l center" style="z-index:5; max-width: 1500px;">
+        <div class="eyebrow" style="color: var(--brand-blue);">Did you know?</div>
+        <h2 class="headline">A child takes their<br/><span style="color: var(--brand-blue); font-style:italic;">first 1,000 steps</span></h2>
+        <div class="lead" style="color: var(--ink-soft); text-align:center;">
+          …before they ever string two words together. Walking, talking, playing — each happens on its own clock. <strong>So does therapy.</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SLIDE 11 — Quote 2 -->
+    <!-- ============================================================== -->
+    <section class="slide bg-berry center pad col dark" data-bg="berry">
+      <div class="quote-mark" style="color: var(--brand-yellow); align-self: center; margin-bottom: 40px;">"</div>
+      <div class="quote smaller" style="color: #fff;">
+        The way we talk to children<br/>becomes their<br/><span style="color: var(--brand-yellow); font-style: italic;">inner voice.</span>
+      </div>
+      <div class="attribution" style="color: var(--brand-yellow);">— Peggy O'Mara</div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SLIDE 12 — Closing / Thank you -->
+    <!-- ============================================================== -->
+    <section class="slide bg-green center pad col dark" data-bg="green">
+      <svg class="deco anim-spin" style="top:80px; left:120px; width:220px; height:220px; opacity:0.5;" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="32" fill="var(--brand-yellow)"/>
+      </svg>
+      <svg class="deco anim-float-a" style="bottom:140px; right:140px; width:170px; height:170px;" viewBox="0 0 64 60">
+        <path d="M32 54 C8 38 6 22 18 14 C26 9 32 16 32 22 C32 16 38 9 46 14 C58 22 56 38 32 54 Z" fill="var(--brand-yellow)"/>
+      </svg>
+      <svg class="deco anim-float-b" style="top:200px; right:240px; width:120px; height:120px;" viewBox="0 0 70 60">
+        <ellipse cx="20" cy="22" rx="14" ry="12" fill="var(--brand-purple)"/>
+        <ellipse cx="50" cy="22" rx="14" ry="12" fill="var(--brand-purple)"/>
+        <ellipse cx="22" cy="40" rx="10" ry="9" fill="var(--brand-berry)"/>
+        <ellipse cx="48" cy="40" rx="10" ry="9" fill="var(--brand-berry)"/>
+        <ellipse cx="35" cy="30" rx="3" ry="14" fill="var(--brand-orange)"/>
+      </svg>
+
+      <div class="col gap-l center" style="z-index:5;">
+        <div class="eyebrow" style="color: var(--brand-yellow);">Thank you</div>
+        <h1 class="title smaller">For trusting us with<br/>your <span style="color: var(--brand-yellow); font-style:italic;">light</span>.</h1>
+        <div style="display: inline-grid; grid-template-columns: auto auto; gap: 18px 28px; text-align: left; font-size: 36px; line-height: 1.2; margin-top: 20px;">
+          <div style="font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 28px; opacity: 0.85; align-self: center;">Phone</div>
+          <div>(612) 703-9022</div>
+          <div style="font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 28px; opacity: 0.85; align-self: center;">Email</div>
+          <div>info@noortherapycenter.com</div>
+          <div style="font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 28px; opacity: 0.85; align-self: center;">Website</div>
+          <div>www.noortherapycenter.com</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- Chrome + progress indicator (overlaid on stage) -->
+<!-- ============================================================== -->
+<template id="chrome-template">
+  <div class="chrome-top">
+    <img class="mark color" src="assets/noor-logo-mark.png" alt="Noor Therapy Center"/>
+    <img class="mark white" src="assets/noor-logo-mark-white.png" alt=""/>
+    <div class="word"><span class="green">Noor</span> Therapy Center</div>
+  </div>
+  <div class="chrome-bottom">
+    <div class="site">www.noortherapycenter.com</div>
+    <div class="progress" id="progress"></div>
+  </div>
+</template>
+
+<script>
+(function(){
+  const stage    = document.getElementById('stage');
+  const stageWrap= document.getElementById('stageWrap');
+  const slides   = Array.from(stage.querySelectorAll('.slide'));
+
+  // Inject chrome (logo + footer + progress) into every slide so it scales with stage.
+  // Brand color of the chrome adapts based on the slide bg.
+  slides.forEach((slide, i) => {
+    const chrome = document.getElementById('chrome-template').content.cloneNode(true);
+    slide.appendChild(chrome);
+  });
+
+  // Build progress dots inside every slide
+  slides.forEach((slide) => {
+    const prog = slide.querySelector('#progress');
+    if (!prog) return;
+    prog.id = ''; // dedupe
+    slides.forEach(()=> {
+      const d = document.createElement('div'); d.className = 'dot'; prog.appendChild(d);
+    });
+  });
+
+  // Mark active slide + dots
+  let current = 0;
+  let timer = null;
+  function show(n){
+    slides.forEach((s, i) => s.classList.toggle('active', i === n));
+    slides.forEach((s) => {
+      const dots = s.querySelectorAll('.progress .dot');
+      dots.forEach((d, j) => d.classList.toggle('active', j === n));
+    });
+    // Reset any scroll animation so it restarts each time the slide becomes active
+    document.querySelectorAll('.scroll-list').forEach(el => {
+      el.style.transition = 'none';
+      el.style.transform = 'translateY(0)';
+    });
+    const active = slides[n];
+    const scroller = active.querySelector('.scroll-list');
+    if (scroller) {
+      const vp = active.querySelector('.scroll-viewport');
+      // End with the LAST card pinned near the TOP of the viewport (with a small margin)
+      const lastCard = scroller.lastElementChild;
+      const topMargin = 40;
+      const targetTranslate = -(lastCard.offsetTop - topMargin);
+      const dist = Math.max(0, -targetTranslate);
+      const dur = parseInt(active.dataset.duration, 10) || 10000;
+      // No intro lift — start scrolling immediately. Reserve 2s dwell at end.
+      const dwellMs = 2000;
+      const scrollMs = Math.max(1000, dur - dwellMs);
+      // Force browser to commit the reset before starting the animation
+      void scroller.offsetWidth;
+      requestAnimationFrame(() => {
+        scroller.style.transition = `transform ${scrollMs/1000}s linear`;
+        scroller.style.transform = `translateY(-${dist}px)`;
+      });
+    }
+  }
+  show(0);
+
+  // Auto-advance (per-slide duration via data-duration, default 10s)
+  function scheduleNext(){
+    const dur = parseInt(slides[current].dataset.duration, 10) || 10000;
+    timer = setTimeout(() => {
+      current = (current + 1) % slides.length;
+      show(current);
+      scheduleNext();
+    }, dur);
+  }
+  scheduleNext();
+
+  // Allow ←/→/space for manual debugging (hidden cursor on TV anyway)
+  document.addEventListener('keydown', (e)=>{
+    clearTimeout(timer);
+    if (e.key === 'ArrowRight' || e.key === ' ') { current = (current+1) % slides.length; show(current); }
+    if (e.key === 'ArrowLeft')  { current = (current-1+slides.length) % slides.length; show(current); }
+    scheduleNext();
+  });
+
+  // Scale stage to fill the entire viewport (slight stretch on non-16:9 screens)
+  function fit(){
+    const vw = stageWrap.clientWidth, vh = stageWrap.clientHeight;
+    const scaleX = vw / 1920;
+    const scaleY = vh / 1080;
+    stage.style.transform = `scale(${scaleX}, ${scaleY})`;
+  }
+  fit();
+  window.addEventListener('resize', fit);
+})();
+</script>
+</body>
+</html>

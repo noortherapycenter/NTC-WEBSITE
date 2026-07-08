@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Noor Therapy Center — Mobile Preview</title>
+<style>
+  html, body { margin:0; padding:0; min-height:100%; background:#F5F1EA; font-family:-apple-system, system-ui, sans-serif; color:#2a2620; }
+  body {
+    background:
+      radial-gradient(circle at 20% 15%, rgba(159, 183, 142, 0.25), transparent 55%),
+      radial-gradient(circle at 80% 85%, rgba(232, 178, 122, 0.22), transparent 55%),
+      radial-gradient(circle at 50% 50%, rgba(140, 168, 196, 0.12), transparent 60%),
+      #F5F1EA;
+    min-height:100vh;
+    display:flex; flex-direction:column; align-items:center; padding:40px 24px 60px; box-sizing:border-box;
+  }
+  .header { text-align:center; max-width:640px; margin-bottom:32px; }
+  .header .eyebrow { font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#7a6f5e; font-weight:700; margin-bottom:10px; }
+  .header h1 { font-family:'Fraunces', Georgia, serif; font-weight:500; font-size:36px; line-height:1.1; margin:0 0 10px; letter-spacing:-0.02em; }
+  .header p { font-size:15px; color:#6b6357; margin:0; line-height:1.55; }
+
+  .stage { display:flex; flex-direction:column; align-items:center; gap:24px; }
+
+  .controls { display:flex; gap:8px; align-items:center; background:#fff; padding:6px; border-radius:999px; box-shadow:0 6px 20px rgba(60,40,20,0.08), 0 1px 0 rgba(0,0,0,0.04); border:1px solid rgba(0,0,0,0.05); }
+  .controls button { appearance:none; border:0; background:transparent; padding:8px 14px; border-radius:999px; font:inherit; font-size:13px; font-weight:600; color:#5b5345; cursor:pointer; display:inline-flex; align-items:center; gap:6px; }
+  .controls button:hover { background:#f3eee5; }
+  .controls button.active { background:#3d5a3a; color:#fff; }
+  .controls .sep { width:1px; height:20px; background:rgba(0,0,0,0.08); margin:0 2px; }
+  .controls .url { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:12px; color:#7a6f5e; padding:0 10px; }
+
+  .hint { font-size:13px; color:#7a6f5e; max-width:380px; text-align:center; margin-top:8px; }
+  .hint kbd { background:#fff; padding:2px 7px; border-radius:6px; box-shadow:0 1px 0 rgba(0,0,0,0.08), inset 0 -1px 0 rgba(0,0,0,0.04); font-family:inherit; font-size:11px; }
+
+  .device-wrap { position:relative; }
+  .device-wrap::before {
+    /* floor shadow */
+    content:'';
+    position:absolute; left:50%; bottom:-30px; transform:translateX(-50%);
+    width:340px; height:40px; border-radius:50%;
+    background:radial-gradient(ellipse, rgba(60,40,20,0.22), transparent 70%);
+    filter:blur(6px); z-index:-1;
+  }
+
+  iframe.site {
+    border:0; display:block; background:#fff;
+    width:100%; height:100%;
+  }
+
+  /* annotation bubbles */
+  .annotation {
+    position:absolute; background:#fff; padding:10px 14px; border-radius:14px;
+    box-shadow:0 8px 24px rgba(60,40,20,0.12), 0 1px 0 rgba(0,0,0,0.04);
+    border:1px solid rgba(0,0,0,0.05);
+    font-size:12px; color:#3d5a3a; font-weight:600; max-width:180px; line-height:1.4;
+  }
+  .annotation::after { content:''; position:absolute; width:10px; height:10px; background:inherit; border-right:1px solid rgba(0,0,0,0.05); border-bottom:1px solid rgba(0,0,0,0.05); }
+  .annotation.left  { left:-200px; top:120px; }
+  .annotation.left::after  { right:-6px; top:50%; transform:translateY(-50%) rotate(-45deg); }
+  .annotation.right { right:-200px; top:340px; }
+  .annotation.right::after { left:-6px; top:50%; transform:translateY(-50%) rotate(135deg); }
+  .annotation .pin { display:inline-block; width:8px; height:8px; border-radius:50%; background:#3d5a3a; margin-right:6px; vertical-align:1px; }
+  .annotation .label { color:#9a8d76; text-transform:uppercase; letter-spacing:0.08em; font-size:10px; font-weight:700; display:block; margin-bottom:2px; }
+
+  @media (max-width: 1100px) {
+    .annotation { display:none; }
+  }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="header">
+  <div class="eyebrow">Mobile Preview</div>
+  <h1>Noor Therapy Center on iPhone</h1>
+  <p>The live site, fully interactive — tap, scroll, fill out forms. Use the controls below to refresh or jump to a section.</p>
+</div>
+
+<div class="stage">
+  <div class="controls" id="controls">
+    <button data-page="" class="active">Home</button>
+    <button data-page="#services">Services</button>
+    <button data-page="#families">Families</button>
+    <button data-page="#about">About</button>
+    <button data-page="#contact">Contact</button>
+    <div class="sep"></div>
+    <button id="refreshBtn" title="Reload">↻ Refresh</button>
+  </div>
+
+  <div id="root"></div>
+
+  <div class="hint">Scroll inside the phone to explore. The frame is sized like an iPhone 15 Pro.</div>
+</div>
+
+<script type="text/babel" src="ios-frame.jsx"></script>
+
+<script type="text/babel">
+const { useState, useRef, useEffect } = React;
+
+function Annotation({ side, label, children }) {
+  return (
+    <div className={`annotation ${side}`}>
+      <span className="label"><span className="pin"></span>{label}</span>
+      {children}
+    </div>
+  );
+}
+
+function App() {
+  const [src, setSrc] = useState('index.html');
+  const [nonce, setNonce] = useState(0);
+  const iframeRef = useRef(null);
+
+  useEffect(() => {
+    const buttons = document.querySelectorAll('#controls button[data-page]');
+    const handle = (e) => {
+      buttons.forEach(b => b.classList.remove('active'));
+      e.currentTarget.classList.add('active');
+      const hash = e.currentTarget.getAttribute('data-page') || '';
+      setSrc('index.html' + hash);
+      setNonce(n => n + 1);
+    };
+    buttons.forEach(b => b.addEventListener('click', handle));
+    const refresh = document.getElementById('refreshBtn');
+    const onRefresh = () => setNonce(n => n + 1);
+    refresh.addEventListener('click', onRefresh);
+    return () => {
+      buttons.forEach(b => b.removeEventListener('click', handle));
+      refresh.removeEventListener('click', onRefresh);
+    };
+  }, []);
+
+  return (
+    <div className="device-wrap">
+      <Annotation side="left" label="Hero">
+        Headline + intake CTA visible above the fold on a 6.1″ screen.
+      </Annotation>
+      <Annotation side="right" label="Sticky">
+        Top nav stays tappable as you scroll through the site.
+      </Annotation>
+
+      <IOSDevice width={402} height={874}>
+        <iframe
+          key={nonce}
+          ref={iframeRef}
+          className="site"
+          src={src}
+          title="Noor Therapy Center"
+          allow="clipboard-write"
+        />
+      </IOSDevice>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+
+</body>
+</html>

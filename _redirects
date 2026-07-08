@@ -1,0 +1,2 @@
+# Redirect www to root
+https://www.noortherapycenter.com/* https://noortherapycenter.com/:splat 301!

@@ -1,0 +1,19 @@
+# Netlify configuration — Noor Therapy Center
+# The site deploys as-is from the repo root (plain HTML, no build step).
+
+[build]
+  publish = "."
+
+# Server-side password lock for the admin area.
+# The code lives in netlify/edge-functions/staff-auth.js
+[[edge_functions]]
+  path = "/admin.html"
+  function = "staff-auth"
+
+[[edge_functions]]
+  path = "/admin"
+  function = "staff-auth"
+
+[[edge_functions]]
+  path = "/staff-portal/*"
+  function = "staff-auth"

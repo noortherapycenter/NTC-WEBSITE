@@ -1,0 +1,15 @@
+# Server-side password protection (Netlify Basic-Auth).
+# Only the paths listed below require a login — the public website is unaffected.
+# CHANGE THE PASSWORD below before deploying, then keep this file out of any public repo.
+
+/admin.html
+  Basic-Auth: noorstaff:Admission1!
+
+/admin
+  Basic-Auth: noorstaff:Admission1!
+
+/admin/*
+  Basic-Auth: noorstaff:Admission1!
+
+/staff-portal/*
+  Basic-Auth: noorstaff:Admission1!
