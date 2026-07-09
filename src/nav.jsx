@@ -323,7 +323,7 @@ const Footer = () => (
           <a style={{cursor:'pointer'}} onClick={()=>window.navigate('hipaa')}>HIPAA Notice</a>
           <a style={{cursor:'pointer'}} onClick={()=>window.navigate('accessibility')}>Accessibility</a>
           <a style={{cursor:'pointer'}} onClick={()=>window.navigate('gfe')}>Good Faith Estimate</a>
-          <a href="admin.html" style={{cursor:'pointer'}}>Admin</a>
+          <a href="admin.html" style={{cursor:'pointer'}}>Admin Portal</a>
         </div>
       </div>
     </div>

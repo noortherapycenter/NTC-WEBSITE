@@ -194,7 +194,7 @@
   /* Build tree: Clients group + Staff group that expands into provider levels */
   GROUPS.forEach(function (g) {
     var div = document.createElement("div");
-    div.className = "nav-group";
+    div.className = "nav-group open";
     var btn = document.createElement("button");
     btn.type = "button";
     btn.innerHTML = '<span class="dot" style="background:' + g.color + '"></span>' + g.name +

@@ -3,9 +3,16 @@
 // server, never in the browser. A signed cookie keeps the portal unlocked
 // for 1 hour, then it asks again.
 
-const PIN = "1538";                 // the 4-digit staff code
+const PIN = "153820";              // the 6-digit staff code
 const HOURS = 1;                    // how long an unlock lasts
 const SECRET = "ntc-9f27c1e8b4d3a6f0-lock"; // signing key for the cookie
+
+// Progressive lockout: after 5 wrong tries from the same address,
+// require a 30-second wait before the next attempt. Best-effort,
+// in-memory per edge node — resets on redeploy.
+const fails = new Map();
+const MAX_TRIES = 5;
+const LOCK_MS = 30 * 1000;
 
 const enc = new TextEncoder();
 
@@ -18,7 +25,7 @@ async function sign(data) {
 }
 
 function loginPage(error) {
-  const msg = error ? "Incorrect code — try again" : "";
+  const msg = error || "";
   return new Response(`<!doctype html>
 <html lang="en">
 <head>
@@ -37,9 +44,9 @@ function loginPage(error) {
   .card img { height:56px; margin-bottom:18px; }
   h1 { font-size:22px; font-weight:800; letter-spacing:-0.02em; margin:0 0 6px; }
   .sub { color:#4a5545; font-size:13.5px; margin:0 0 26px; line-height:1.5; }
-  .code { display:flex; justify-content:center; gap:10px; margin-bottom:22px; }
-  .code input { width:52px; height:60px; border:1.8px solid #e6e0cc; border-radius:12px; font-family:inherit;
-                font-size:26px; font-weight:800; text-align:center; color:#1f2e1a; background:#fdfaf3; outline:none; }
+  .code { display:flex; justify-content:center; gap:8px; margin-bottom:22px; }
+  .code input { width:44px; height:56px; border:1.8px solid #e6e0cc; border-radius:12px; font-family:inherit;
+                font-size:24px; font-weight:800; text-align:center; color:#1f2e1a; background:#fdfaf3; outline:none; }
   .code input:focus { border-color:#2aa63a; background:#fff; box-shadow:0 0 0 3px rgba(42,166,58,.15); }
   .msg { min-height:18px; font-size:12.5px; font-weight:700; color:#d64545; margin-bottom:14px; }
   button { width:100%; font-family:inherit; font-size:14.5px; font-weight:700; color:#fff; background:#2aa63a;
@@ -52,13 +59,15 @@ function loginPage(error) {
   <div class="card">
     <img src="/assets/noor-logo-mark.png" alt="Noor Therapy Center"/>
     <h1>Staff Access</h1>
-    <p class="sub">Enter the 4-digit staff code to open the admin portal.</p>
+    <p class="sub">Enter the 6-digit staff code to open the admin portal.</p>
     <form method="post">
       <div class="code">
         <input type="password" inputmode="numeric" maxlength="1" aria-label="Digit 1"/>
         <input type="password" inputmode="numeric" maxlength="1" aria-label="Digit 2"/>
         <input type="password" inputmode="numeric" maxlength="1" aria-label="Digit 3"/>
         <input type="password" inputmode="numeric" maxlength="1" aria-label="Digit 4"/>
+        <input type="password" inputmode="numeric" maxlength="1" aria-label="Digit 5"/>
+        <input type="password" inputmode="numeric" maxlength="1" aria-label="Digit 6"/>
       </div>
       <input type="hidden" name="pin"/>
       <div class="msg">${msg}</div>
@@ -109,9 +118,16 @@ export default async (request, context) => {
 
   // PIN submitted?
   if (request.method === "POST") {
+    const ip = context.ip || request.headers.get("x-nf-client-connection-ip") || "unknown";
+    const rec = fails.get(ip);
+    if (rec && rec.count >= MAX_TRIES && Date.now() < rec.until) {
+      const secs = Math.ceil((rec.until - Date.now()) / 1000);
+      return loginPage("Too many attempts — wait " + secs + " seconds and try again");
+    }
     let entered = "";
     try { entered = String((await request.formData()).get("pin") || ""); } catch (e) {}
     if (entered === PIN) {
+      fails.delete(ip);
       const exp = String(Date.now() + HOURS * 3600 * 1000);
       const cookie = `ntc_staff=${exp}.${await sign(exp)}; Path=/; Max-Age=${HOURS * 3600}; HttpOnly; Secure; SameSite=Lax`;
       return new Response(null, {
@@ -119,9 +135,11 @@ export default async (request, context) => {
         headers: { Location: url.pathname, "Set-Cookie": cookie, "Cache-Control": "no-store" },
       });
     }
-    // Wrong code: slow down guessing, then re-show the form.
+    // Wrong code: count it, slow down guessing, then re-show the form.
+    const next = { count: (rec && Date.now() < rec.until + LOCK_MS ? rec.count : 0) + 1, until: Date.now() + LOCK_MS };
+    fails.set(ip, next);
     await new Promise((r) => setTimeout(r, 1500));
-    return loginPage(true);
+    return loginPage(next.count >= MAX_TRIES ? "Too many attempts — wait 30 seconds and try again" : "Incorrect code — try again");
   }
 
   return loginPage(false);
