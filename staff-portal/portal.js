@@ -1,4 +1,4 @@
-/* Noor Therapy Center — Admin Portal shared behavior */
+/* Noor Therapy Center — Admin Portal guard + shared behavior */
 (function () {
   'use strict';
   var KEY = 'noor-admin-auth';
@@ -47,7 +47,7 @@
       // real (server-side) credentials until it's closed, so hide it.
       lock.style.display = 'none';
 
-      // Dark mode toggle
+      // Dark mode toggle, inserted before the Lock button on every page
       var t = document.createElement('button');
       t.type = 'button';
       t.className = 'theme-toggle';
@@ -58,6 +58,7 @@
       });
       lock.parentNode.insertBefore(t, lock);
       applyTheme();
+
     }
   });
 })();

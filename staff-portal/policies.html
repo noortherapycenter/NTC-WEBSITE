@@ -58,19 +58,65 @@
   .nav-group li a.active { color: var(--green-dark); border-left-color: var(--green); background: #eef7ea; font-weight: 700; }
   .nav-none { display: none; font-size: 12px; color: var(--muted); padding: 10px 12px; }
 
-  /* ---- Main pane ---- */
+  /* ---- Actions bar ---- */
   .pol-actions { display: flex; gap: 10px; margin: 0 0 16px; flex-wrap: wrap; align-items: center; }
-  .pol-actions[hidden] { display: none; }
-  .pol-actions button {
-    font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
-    border-radius: 999px; padding: 9px 16px; border: 1.5px solid var(--line); background: #fff; color: var(--ink);
-    display: inline-flex; align-items: center; gap: 6px;
+  .pol-actions .iconbtn {
+    font-family: inherit; cursor: pointer;
+    width: 40px; height: 40px; border-radius: 999px; padding: 0;
+    border: 1.5px solid var(--line); background: #fff; color: var(--ink);
+    display: grid; place-items: center; position: relative;
   }
-  .pol-actions button:hover { border-color: var(--green); }
-  .pol-actions button.primary { background: var(--green); border-color: var(--green); color: #fff; }
-  .pol-actions button.primary:hover { background: var(--green-dark); }
+  .pol-actions .iconbtn:hover { border-color: var(--green); color: var(--green-dark); }
+  .pol-actions .iconbtn[hidden] { display: none; }
+  .pol-actions .iconbtn svg { width: 17px; height: 17px; }
+  .pol-actions .iconbtn.busy svg { visibility: hidden; }
+  .pol-actions .iconbtn.busy::after {
+    content: ""; position: absolute; inset: 0; margin: auto;
+    width: 16px; height: 16px; border-radius: 999px;
+    border: 2.5px solid var(--line); border-top-color: var(--green);
+    animation: polspin .7s linear infinite;
+  }
+  @keyframes polspin { to { transform: rotate(360deg); } }
 
-  article.policy { background: #fff; border: 1.5px solid var(--line); border-radius: 18px; padding: 40px 48px 38px; min-height: 420px; }
+  /* ---- Full-text search ---- */
+  .hb-search {
+    display: flex; align-items: center; gap: 8px;
+    background: #fff; border: 1.5px solid var(--line); border-radius: 999px;
+    padding: 3px 6px 3px 15px; flex: 1; min-width: 200px; max-width: 400px;
+  }
+  .hb-search:focus-within { border-color: var(--green); }
+  .hb-search svg { width: 15px; height: 15px; flex-shrink: 0; color: var(--muted); }
+  .hb-search input {
+    flex: 1; min-width: 0; border: none; outline: none; background: transparent;
+    font-family: inherit; font-size: 13px; font-weight: 600; color: var(--ink); padding: 7px 0;
+  }
+  .hb-search input::placeholder { color: var(--muted); font-weight: 500; }
+  .hb-search .hb-count { font-size: 11.5px; font-weight: 700; color: var(--muted); white-space: nowrap; }
+  mark.hb-hit { background: #ffe27a; color: inherit; border-radius: 3px; padding: 0 1px; }
+  mark.hb-hit.current { background: var(--orange); color: #fff; }
+
+  /* Floating match navigator */
+  .hb-float {
+    position: fixed; right: 22px; bottom: 22px; z-index: 40;
+    display: none; align-items: center; gap: 4px;
+    background: var(--ink); color: #fff;
+    border-radius: 999px; padding: 6px 8px 6px 16px;
+    box-shadow: 0 12px 32px -12px rgba(31,46,26,.5);
+    font-size: 12.5px; font-weight: 700;
+  }
+  .hb-float.on { display: flex; }
+  .hb-float .fcount { white-space: nowrap; margin-right: 4px; opacity: .85; }
+  .hb-float button {
+    border: none; cursor: pointer; border-radius: 999px;
+    width: 30px; height: 30px; display: grid; place-items: center;
+    background: rgba(255,255,255,.14); color: #fff;
+    font-family: inherit; font-size: 14px; font-weight: 800;
+  }
+  .hb-float button:hover { background: rgba(255,255,255,.28); }
+  .hb-float .fclose { background: transparent; font-size: 12px; opacity: .7; }
+  .hb-float .fclose:hover { opacity: 1; background: rgba(255,255,255,.14); }
+
+  article.policy { background: #fff; border: 1.5px solid var(--line); border-radius: 18px; padding: 40px 48px 38px; min-height: 420px; min-width: 0; }
   .policy .kicker { font-size: 11px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
   .policy h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 10px; }
   .policy .pol-meta { font-size: 12px; color: var(--muted); padding-bottom: 16px; margin-bottom: 8px; border-bottom: 1.5px solid var(--line); display: flex; gap: 18px; flex-wrap: wrap; }
@@ -88,7 +134,7 @@
   .sig-grid .f .ln { border-bottom: 1.3px solid var(--ink); height: 30px; }
   .sig-grid .f label { font-size: 9.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); }
 
-  /* ---- Cover (nothing selected) ---- */
+  /* ---- Cover ---- */
   .cover .kicker { font-size: 11.5px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--green); margin-bottom: 6px; }
   .cover h1 { font-size: 30px; }
   .cover p.lede { font-size: 14.5px; color: var(--muted); line-height: 1.6; max-width: 560px; }
@@ -126,10 +172,12 @@
     html[data-theme="dark"] .nav-group li a.active { background: rgba(76,194,91,.14); }
     html[data-theme="dark"] .mob-nav-btn { background: #1d2316; color: var(--ink); }
     html[data-theme="dark"] .policy h2 { border-top-color: #2f3826; }
+    html[data-theme="dark"] .pol-actions .iconbtn { background: #1d2316; }
+    html[data-theme="dark"] .hb-search { background: #1d2316; }
   }
 
   @media print {
-    .topbar, .pol-actions, .portal-foot, .nav-tree, .mob-nav-btn { display: none !important; }
+    .topbar, .pol-actions, .portal-foot, .nav-tree, .mob-nav-btn, .hb-float { display: none !important; }
     body { background: #fff; }
     .wrap { padding: 0; max-width: 100%; }
     .manual { display: block; }
@@ -175,19 +223,37 @@
     </aside>
 
     <section id="pane" data-screen-label="Policy content">
-      <div class="pol-actions" id="pol-actions" hidden>
-        <button type="button" id="pol-home">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
-          Manual home
+      <div class="pol-actions" id="pol-actions">
+        <button type="button" class="iconbtn" id="pol-home" hidden title="Manual home" aria-label="Manual home">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
         </button>
+        <div class="hb-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
+          <input id="pol-text-q" type="search" placeholder="Search key words in all policies…" autocomplete="off"/>
+          <span class="hb-count" id="pol-count"></span>
+        </div>
         <span style="flex:1"></span>
-        <button type="button" id="pol-dl" class="primary">Download PDF (with signature space)</button>
-        <button type="button" id="pol-print">Print</button>
+        <button type="button" class="iconbtn" id="pol-share" hidden title="Share this policy as a PDF" aria-label="Share this policy as a PDF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1.8 1.8 0 0 0 1.8 1.8h12.4A1.8 1.8 0 0 0 20 19v-7"></path><path d="M16 6l-4-4-4 4"></path><path d="M12 2v13"></path></svg>
+        </button>
+        <button type="button" class="iconbtn" id="pol-dl" hidden title="Download PDF (with signature space)" aria-label="Download PDF with signature space">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 17v2a1.8 1.8 0 0 1-1.8 1.8H5.8A1.8 1.8 0 0 1 4 19v-2"></path><path d="M8 11l4 4 4-4"></path><path d="M12 15V3"></path></svg>
+        </button>
+        <button type="button" class="iconbtn" id="pol-print" hidden title="Print" aria-label="Print">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6"></path><path d="M6 18H4.5A2.5 2.5 0 0 1 2 15.5v-4A2.5 2.5 0 0 1 4.5 9h15A2.5 2.5 0 0 1 22 11.5v4a2.5 2.5 0 0 1-2.5 2.5H18"></path><rect x="6" y="14" width="12" height="8" rx="1"></rect></svg>
+        </button>
       </div>
       <article class="policy" id="content"></article>
     </section>
   </div>
 </main>
+
+<div class="hb-float" id="pol-float" data-screen-label="Search match navigator">
+  <span class="fcount" id="pol-fcount"></span>
+  <button type="button" id="pol-fprev" title="Previous match (Shift+Enter)">&#8593;</button>
+  <button type="button" id="pol-fnext" title="Next match (Enter)">&#8595;</button>
+  <button type="button" class="fclose" id="pol-fclose" title="Clear search">&#10005;</button>
+</div>
 
 <footer class="portal-foot">
   <span class="dots">
@@ -196,6 +262,7 @@
   <span>Noor Therapy Center · Admin Portal · Internal use only</span>
 </footer>
 
+<script src="share-pdf.js"></script>
 <script>
 (function () {
   var GROUPS = [
@@ -238,17 +305,19 @@
 
   var tree = document.getElementById("tree");
   var content = document.getElementById("content");
-  var actions = document.getElementById("pol-actions");
   var noneMsg = document.getElementById("nav-none");
   var manual = document.getElementById("manual");
   var cache = {};
+  var currentSlug = "";
+  var pendingHighlight = null;
 
   function slug(file) { return file.toLowerCase().replace(/[^a-z0-9]+/g, "-"); }
   var bySlug = {};
-  GROUPS.forEach(function (g) { g.items.forEach(function (it) { bySlug[slug(it[2])] = it; }); });
+  var ORDER = [];
+  GROUPS.forEach(function (g) { g.items.forEach(function (it) { var s = slug(it[2]); bySlug[s] = it; ORDER.push(s); }); });
 
   /* Build tree */
-  GROUPS.forEach(function (g, gi) {
+  GROUPS.forEach(function (g) {
     var div = document.createElement("div");
     div.className = "nav-group open";
     var btn = document.createElement("button");
@@ -270,7 +339,7 @@
     tree.appendChild(div);
   });
 
-  /* Search filter */
+  /* Nav search filter */
   document.getElementById("pol-q").addEventListener("input", function () {
     var v = this.value.trim().toLowerCase();
     var any = false;
@@ -307,8 +376,15 @@
     }
   }
 
+  function setButtons(onPolicy) {
+    ["pol-home", "pol-share", "pol-dl", "pol-print"].forEach(function (id) {
+      document.getElementById(id).hidden = !onPolicy;
+    });
+  }
+
   function showCover() {
-    actions.hidden = true;
+    currentSlug = "";
+    setButtons(false);
     setActive("");
     var toc = GROUPS.map(function (g) {
       var first = g.items[0];
@@ -319,29 +395,47 @@
       '<div class="cover">' +
       '<div class="kicker">Policies &amp; Procedures</div>' +
       "<h1>Policy &amp; Procedure Manual</h1>" +
-      '<p class="lede">The agency\u2019s EIDBI policies, all in one place. Pick a policy from the list to read it here \u2014 use the download button on any policy to print or save it with a signature space.</p>' +
+      '<p class="lede">The agency\u2019s EIDBI policies, all in one place. Pick a policy from the list to read it here \u2014 use the buttons above any policy to share, download, or print it.</p>' +
       '<div class="toc">' + toc + "</div></div>";
   }
 
-  function showPolicy(s) {
+  function fetchPolicy(s) {
     var it = bySlug[s];
-    if (!it) { showCover(); return; }
-    setActive(s);
-    manual.classList.remove("nav-open");
-    actions.hidden = false;
-    if (cache[s]) { content.innerHTML = cache[s]; return; }
-    content.innerHTML = '<div class="pol-loading">Loading\u2026</div>';
-    fetch("policies/" + it[2] + ".html")
+    if (cache[s]) return Promise.resolve(cache[s]);
+    return fetch("policies/" + it[2] + ".html")
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
       .then(function (html) {
         var doc = new DOMParser().parseFromString(html, "text/html");
         var art = doc.querySelector("article.policy");
         cache[s] = art ? art.innerHTML : "<p>Could not load this policy.</p>";
-        if (location.hash.replace(/^#/, "") === s) content.innerHTML = cache[s];
+        return cache[s];
+      });
+  }
+
+  function showPolicy(s) {
+    var it = bySlug[s];
+    if (!it) { showCover(); return; }
+    currentSlug = s;
+    setActive(s);
+    manual.classList.remove("nav-open");
+    setButtons(true);
+    if (cache[s]) { content.innerHTML = cache[s]; afterRender(); return; }
+    content.innerHTML = '<div class="pol-loading">Loading\u2026</div>';
+    fetchPolicy(s)
+      .then(function (html) {
+        if (currentSlug === s) { content.innerHTML = html; afterRender(); }
       })
       .catch(function () {
         content.innerHTML = '<p style="font-size:13.5px">Could not load this policy. <a href="policies/' + it[2] + '.html">Open it directly</a>.</p>';
       });
+  }
+
+  function afterRender() {
+    if (pendingHighlight) {
+      var p = pendingHighlight;
+      pendingHighlight = null;
+      applyMarksAndJump(p.q, p.local);
+    }
   }
 
   function route() {
@@ -352,9 +446,9 @@
   window.addEventListener("hashchange", route);
   route();
 
-  /* Actions */
   document.getElementById("pol-home").addEventListener("click", function () {
-    location.hash = "";
+    if (location.hash) location.hash = "";
+    else showCover();
   });
   document.getElementById("pol-dl").addEventListener("click", function () {
     var sb = content.querySelector("#sig-block");
@@ -369,6 +463,161 @@
   document.getElementById("mob-nav").addEventListener("click", function () {
     manual.classList.toggle("nav-open");
   });
+
+  /* ---------------- Share current policy as PDF ---------------- */
+  document.getElementById("pol-share").addEventListener("click", function () {
+    if (!currentSlug) return;
+    var btn = this;
+    if (btn.classList.contains("busy")) return;
+    var it = bySlug[currentSlug];
+    var title = it[1];
+    btn.classList.add("busy");
+    fetchPolicy(currentSlug).then(function (html) {
+      var div = document.createElement("div");
+      div.innerHTML = html;
+      var sb = div.querySelector("#sig-block");
+      if (sb) sb.hidden = false;
+      return NoorPdf.share({
+        title: title,
+        kicker: "Policies & Procedures",
+        filename: "Noor Therapy Center - " + title + ".pdf",
+        nodes: [div]
+      });
+    }).catch(function () {
+      alert("Could not build the PDF. Check your internet connection and try again.");
+    }).finally(function () {
+      btn.classList.remove("busy");
+    });
+  });
+
+  /* ---------------- Full-text search across ALL policies ---------------- */
+  (function () {
+    var input = document.getElementById("pol-text-q");
+    var count = document.getElementById("pol-count");
+    var float = document.getElementById("pol-float");
+    var fcount = document.getElementById("pol-fcount");
+    var per = [];        // [{slug, count}]
+    var total = 0, cur = -1, curQ = "", timer = null;
+    var marks = [];      // marks in the currently displayed policy
+
+    function setCount(text) {
+      count.textContent = text;
+      fcount.textContent = text;
+      float.classList.toggle("on", total > 0);
+    }
+
+    function clearMarks() {
+      marks.forEach(function (m) {
+        var parent = m.parentNode;
+        if (!parent) return;
+        parent.replaceChild(document.createTextNode(m.textContent), m);
+        parent.normalize();
+      });
+      marks = [];
+    }
+
+    function countIn(html, q) {
+      var div = document.createElement("div");
+      div.innerHTML = html;
+      var text = div.textContent.toLowerCase();
+      var n = 0, i = text.indexOf(q);
+      while (i !== -1) { n++; i = text.indexOf(q, i + q.length); }
+      return n;
+    }
+
+    function ensureAll() {
+      return Promise.all(ORDER.map(function (s) { return fetchPolicy(s).catch(function () { return ""; }); }));
+    }
+
+    window.applyMarksAndJump = function (q, local) {
+      clearMarks();
+      var lower = q.toLowerCase();
+      var walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT, null);
+      var nodes = [], n;
+      while ((n = walker.nextNode())) nodes.push(n);
+      nodes.forEach(function (node) {
+        var text = node.nodeValue, i = text.toLowerCase().indexOf(lower);
+        if (i === -1) return;
+        var frag = document.createDocumentFragment(), pos = 0;
+        while (i !== -1) {
+          frag.appendChild(document.createTextNode(text.slice(pos, i)));
+          var m = document.createElement("mark");
+          m.className = "hb-hit";
+          m.textContent = text.slice(i, i + q.length);
+          frag.appendChild(m);
+          marks.push(m);
+          pos = i + q.length;
+          i = text.toLowerCase().indexOf(lower, pos);
+        }
+        frag.appendChild(document.createTextNode(text.slice(pos)));
+        node.parentNode.replaceChild(frag, node);
+      });
+      if (marks[local]) {
+        marks.forEach(function (m) { m.classList.remove("current"); });
+        marks[local].classList.add("current");
+        var y = marks[local].getBoundingClientRect().top + window.pageYOffset - 150;
+        window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+      }
+    };
+
+    function go(idx) {
+      if (!total) return;
+      cur = ((idx % total) + total) % total;
+      setCount((cur + 1) + " / " + total);
+      // locate which policy holds this hit
+      var acc = 0;
+      for (var k = 0; k < per.length; k++) {
+        if (cur < acc + per[k].count) {
+          var local = cur - acc;
+          if (currentSlug === per[k].slug) {
+            applyMarksAndJump(curQ, local);
+          } else {
+            pendingHighlight = { q: curQ, local: local };
+            location.hash = per[k].slug;
+          }
+          return;
+        }
+        acc += per[k].count;
+      }
+    }
+
+    function run() {
+      var q = input.value.trim();
+      curQ = q;
+      clearMarks();
+      per = []; total = 0; cur = -1;
+      if (q.length < 2) { setCount(""); float.classList.remove("on"); return; }
+      setCount("\u2026");
+      ensureAll().then(function () {
+        if (input.value.trim() !== q) return; // stale
+        var lower = q.toLowerCase();
+        ORDER.forEach(function (s) {
+          var c = cache[s] ? countIn(cache[s], lower) : 0;
+          if (c) per.push({ slug: s, count: c });
+          total += c;
+        });
+        if (total) { go(0); }
+        else setCount("0 matches");
+      });
+    }
+
+    input.addEventListener("input", function () {
+      clearTimeout(timer);
+      timer = setTimeout(run, 300);
+    });
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") { e.preventDefault(); e.shiftKey ? go(cur - 1) : go(cur + 1); }
+    });
+    document.getElementById("pol-fnext").addEventListener("click", function () { go(cur + 1); });
+    document.getElementById("pol-fprev").addEventListener("click", function () { go(cur - 1); });
+    document.getElementById("pol-fclose").addEventListener("click", function () {
+      input.value = "";
+      clearMarks();
+      per = []; total = 0; cur = -1;
+      setCount("");
+      float.classList.remove("on");
+    });
+  })();
 })();
 </script>
 

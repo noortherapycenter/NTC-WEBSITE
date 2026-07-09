@@ -12,32 +12,107 @@
 <link rel="stylesheet" href="portal.css"/>
 <script src="portal.js" data-root=".."></script>
 <style>
-  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 10px; align-items: start; }
-  .split .col {
-    background: #fff; border: 1.5px solid var(--line); border-radius: 20px; padding: 26px;
+  .manual { display: grid; grid-template-columns: 292px 1fr; gap: 28px; align-items: start; }
+
+  /* ---- Nav tree (matches Policies / Handbook) ---- */
+  .nav-tree {
+    position: sticky; top: 82px;
+    max-height: calc(100vh - 106px); overflow-y: auto;
+    background: #fff; border: 1.5px solid var(--line); border-radius: 16px;
+    padding: 10px 12px 16px;
   }
-  .split .col h2 { margin: 0 0 4px; font-size: 20px; font-weight: 800; letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px; }
-  .split .col h2 .dot { width: 11px; height: 11px; border-radius: 999px; }
-  .split .col > p { margin: 0 0 18px; font-size: 13.5px; color: var(--muted); line-height: 1.55; }
-  .levels { display: grid; gap: 10px; }
-  .levels a {
-    display: flex; align-items: center; gap: 14px;
-    border: 1.5px solid var(--line); border-radius: 14px;
-    padding: 14px 16px; text-decoration: none; color: var(--ink);
-    transition: border-color .15s ease;
+  .nav-group + .nav-group { margin-top: 4px; }
+  .nav-group > button {
+    width: 100%; display: flex; align-items: center; gap: 8px;
+    border: none; background: none; cursor: pointer; text-align: left;
+    font-family: inherit; font-size: 10.5px; font-weight: 800;
+    letter-spacing: 0.13em; text-transform: uppercase; color: var(--muted);
+    padding: 9px 8px 7px; border-radius: 8px;
   }
-  .levels a:hover { border-color: var(--green); color: var(--ink); }
-  .levels .lv {
-    width: 46px; height: 46px; border-radius: 12px; flex-shrink: 0;
+  .nav-group > button:hover { color: var(--ink); }
+  .nav-group > button .dot { width: 8px; height: 8px; border-radius: 999px; flex-shrink: 0; }
+  .nav-group > button .chev { margin-left: auto; transition: transform .15s ease; }
+  .nav-group.open > button .chev { transform: rotate(90deg); }
+  .nav-group ul { list-style: none; margin: 0; padding: 0 0 4px; display: none; }
+  .nav-group.open ul { display: block; }
+  .nav-group li a {
+    display: flex; align-items: baseline; gap: 8px;
+    padding: 7.5px 8px 7.5px 10px; margin: 1px 0 1px 6px;
+    border-left: 2px solid var(--line); border-radius: 0 8px 8px 0;
+    text-decoration: none; color: var(--muted);
+    font-size: 12.5px; font-weight: 600; line-height: 1.35;
+  }
+  .nav-group li a .num { font-size: 10px; font-weight: 800; color: var(--muted); opacity: .75; flex-shrink: 0; width: 26px; }
+  .nav-group li a:hover { color: var(--ink); background: #f6f1e2; }
+  .nav-group li a.active { color: var(--green-dark); border-left-color: var(--green); background: #eef7ea; font-weight: 700; }
+  .nav-group li a small { display: block; font-size: 10.5px; font-weight: 500; opacity: .8; }
+
+  /* ---- Actions ---- */
+  .pol-actions { display: flex; gap: 10px; margin: 0 0 16px; flex-wrap: wrap; align-items: center; }
+  .pol-actions[hidden] { display: none; }
+  .pol-actions .iconbtn {
+    font-family: inherit; cursor: pointer;
+    width: 40px; height: 40px; border-radius: 999px; padding: 0;
+    border: 1.5px solid var(--line); background: #fff; color: var(--ink);
     display: grid; place-items: center;
-    font-size: 15px; font-weight: 800; color: #fff;
   }
-  .levels strong { display: block; font-size: 14.5px; font-weight: 800; }
-  .levels small { color: var(--muted); font-size: 12px; line-height: 1.4; display: block; }
-  .levels .arrow { margin-left: auto; color: var(--muted); font-weight: 800; }
-  @media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+  .pol-actions .iconbtn:hover { border-color: var(--green); color: var(--green-dark); }
+  .pol-actions .iconbtn svg { width: 17px; height: 17px; }
+
+  /* ---- Reader pane ---- */
+  article.ob-doc { background: #fff; border: 1.5px solid var(--line); border-radius: 18px; padding: 34px 40px 34px; min-height: 420px; min-width: 0; }
+  article.ob-doc .page-head h1 { font-size: 24px; }
+  article.ob-doc .page-back { display: none; }
+  article.ob-doc .sect:first-child, article.ob-doc .page-head { margin-top: 0; }
+  .ob-loading { color: var(--muted); font-size: 13.5px; padding: 30px 0; }
+
+  /* ---- Cover ---- */
+  .ob-cover .kicker { font-size: 11.5px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--green); margin-bottom: 6px; }
+  .ob-cover h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 10px; }
+  .ob-cover p.lede { font-size: 14.5px; color: var(--muted); line-height: 1.6; max-width: 560px; }
+  .ob-cover .toc { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 26px; }
+  .ob-cover .toc a {
+    display: flex; align-items: center; gap: 12px;
+    border: 1.5px solid var(--line); border-radius: 12px; padding: 13px 15px;
+    text-decoration: none; color: var(--ink); font-size: 13px; font-weight: 700;
+  }
+  .ob-cover .toc a:hover { border-color: var(--green); }
+  .ob-cover .toc .lv {
+    width: 38px; height: 38px; border-radius: 10px; flex-shrink: 0;
+    display: grid; place-items: center; font-size: 12px; font-weight: 800; color: #fff;
+  }
+  .ob-cover .toc small { display: block; color: var(--muted); font-weight: 500; font-size: 11.5px; }
+
+  .mob-nav-btn { display: none; }
+
+  @media (max-width: 900px) {
+    .manual { grid-template-columns: 1fr; }
+    .nav-tree { position: static; max-height: none; display: none; }
+    .manual.nav-open .nav-tree { display: block; }
+    .mob-nav-btn {
+      display: inline-flex; align-items: center; gap: 7px; margin-bottom: 14px;
+      font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+      border-radius: 999px; padding: 9px 16px; border: 1.5px solid var(--line); background: #fff; color: var(--ink);
+    }
+    article.ob-doc { padding: 26px 22px; }
+    .ob-cover .toc { grid-template-columns: 1fr; }
+  }
+
   @media screen {
-    html[data-theme="dark"] .split .col { background: #1d2316; }
+    html[data-theme="dark"] .nav-tree { background: #1d2316; }
+    html[data-theme="dark"] .nav-group li a:hover { background: #232b1a; }
+    html[data-theme="dark"] .nav-group li a.active { background: rgba(76,194,91,.14); }
+    html[data-theme="dark"] .mob-nav-btn { background: #1d2316; color: var(--ink); }
+    html[data-theme="dark"] .pol-actions .iconbtn { background: #1d2316; }
+    html[data-theme="dark"] article.ob-doc { background: transparent; }
+  }
+
+  @media print {
+    .topbar, .pol-actions, .portal-foot, .nav-tree, .mob-nav-btn { display: none !important; }
+    body { background: #fff; }
+    .wrap { padding: 0; max-width: 100%; }
+    .manual { display: block; }
+    article.ob-doc { border: none; border-radius: 0; padding: 0; }
   }
 </style>
 </head>
@@ -60,58 +135,29 @@
   </div>
 </header>
 
-<main class="wrap">
-  <div class="page-head">
-    <div class="kicker">Onboarding</div>
-    <h1>Onboarding</h1>
-    <p>Two tracks: bringing a new <strong>client</strong> into services, and bringing a new <strong>staff member</strong> on board at the right EIDBI provider level.</p>
-  </div>
+<main class="wrap" style="padding-top:30px">
+  <button class="mob-nav-btn" type="button" id="mob-nav">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"></path></svg>
+    Browse onboarding
+  </button>
 
-  <div class="split">
-    <div class="col">
-      <h2><span class="dot" style="background:#2f6fd6"></span>Clients</h2>
-      <p>Open the client track. The page lists the full intake packet and every onboarding form in order.</p>
-      <div class="levels">
-        <a href="onboarding-clients.html">
-          <span class="lv" style="background:#2f6fd6">CL</span>
-          <span><strong>Client Onboarding</strong><small>Click here to access client onboarding forms</small></span>
-          <span class="arrow">&rarr;</span>
-        </a>
+  <div class="manual" id="manual">
+    <aside class="nav-tree" id="nav-tree" data-screen-label="Onboarding nav tree">
+      <div id="tree"></div>
+    </aside>
+
+    <section id="pane" data-screen-label="Onboarding content">
+      <div class="pol-actions" id="ob-actions" hidden>
+        <button type="button" class="iconbtn" id="ob-home" title="Onboarding home" aria-label="Onboarding home">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+        </button>
+        <span style="flex:1"></span>
+        <button type="button" class="iconbtn" onclick="window.print()" title="Print / Save as PDF" aria-label="Print or save as PDF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6"></path><path d="M6 18H4.5A2.5 2.5 0 0 1 2 15.5v-4A2.5 2.5 0 0 1 4.5 9h15A2.5 2.5 0 0 1 22 11.5v4a2.5 2.5 0 0 1-2.5 2.5H18"></path><rect x="6" y="14" width="12" height="8" rx="1"></rect></svg>
+        </button>
       </div>
-    </div>
-
-    <div class="col">
-      <h2><span class="dot" style="background:#2aa63a"></span>Staff</h2>
-      <p>Pick the provider level. Each page lists the qualification requirements and the full new-hire packet.</p>
-      <div class="levels">
-        <a href="onboarding-qsp.html">
-          <span class="lv" style="background:#1f8a2e">QSP</span>
-          <span><strong>QSP / BCBA</strong><small>Qualified Supervising Professional / Board Certified Behavior Analyst</small></span>
-          <span class="arrow">&rarr;</span>
-        </a>
-        <a href="onboarding-level1.html">
-          <span class="lv" style="background:#2aa63a">L1</span>
-          <span><strong>Level I Provider</strong><small>Advanced provider — intervention, observation &amp; direction, family training</small></span>
-          <span class="arrow">&rarr;</span>
-        </a>
-        <a href="onboarding-level2.html">
-          <span class="lv" style="background:#f18a2c">L2</span>
-          <span><strong>Level II Provider</strong><small>Behavior technician — direct intervention under QSP direction</small></span>
-          <span class="arrow">&rarr;</span>
-        </a>
-        <a href="onboarding-level3.html">
-          <span class="lv" style="background:#9b51c7">L3</span>
-          <span><strong>Level III Provider</strong><small>Behavior technician — direct intervention under QSP direction</small></span>
-          <span class="arrow">&rarr;</span>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="sect">
-    <div class="note">
-      <strong>Every new hire, regardless of level,</strong> completes the same 10-item mandatory packet: employment application, level-specific offer letter, DHS-4138, level-specific DHS-7120 assurance statement, W-4, I-9, direct deposit, background check consent, handbook acknowledgement, and the confidentiality / HIPAA agreement. Each level page lists it in order with links.
-    </div>
+      <article class="ob-doc" id="content"></article>
+    </section>
   </div>
 </main>
 
@@ -121,6 +167,128 @@
   </span>
   <span>Noor Therapy Center · Admin Portal · Internal use only</span>
 </footer>
+
+<script>
+(function () {
+  var GROUPS = [
+    { name: "Clients", color: "#2f6fd6", items: [
+      ["CL", "Client Onboarding", "The full intake packet, in order", "onboarding-clients.html", "clients", "#2f6fd6"]
+    ]},
+    { name: "Staff", color: "#2aa63a", items: [
+      ["QSP", "QSP / BCBA", "Qualified Supervising Professional", "onboarding-qsp.html", "qsp", "#1f8a2e"],
+      ["L1", "Level I Provider", "Advanced provider", "onboarding-level1.html", "level-1", "#2aa63a"],
+      ["L2", "Level II Provider", "Behavior technician", "onboarding-level2.html", "level-2", "#f18a2c"],
+      ["L3", "Level III Provider", "Behavior technician", "onboarding-level3.html", "level-3", "#9b51c7"]
+    ]}
+  ];
+
+  var tree = document.getElementById("tree");
+  var content = document.getElementById("content");
+  var actions = document.getElementById("ob-actions");
+  var manual = document.getElementById("manual");
+  var cache = {};
+  var current = "";
+  var bySlug = {};
+  GROUPS.forEach(function (g) { g.items.forEach(function (it) { bySlug[it[4]] = it; }); });
+
+  /* Build tree: Clients group + Staff group that expands into provider levels */
+  GROUPS.forEach(function (g) {
+    var div = document.createElement("div");
+    div.className = "nav-group";
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.innerHTML = '<span class="dot" style="background:' + g.color + '"></span>' + g.name +
+      '<svg class="chev" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"></path></svg>';
+    btn.addEventListener("click", function () { div.classList.toggle("open"); });
+    var ul = document.createElement("ul");
+    g.items.forEach(function (it) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = "#" + it[4];
+      a.innerHTML = '<span class="num">' + it[0] + '</span><span>' + it[1] + '<small>' + it[2] + "</small></span>";
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    div.appendChild(btn);
+    div.appendChild(ul);
+    tree.appendChild(div);
+  });
+
+  function setActive(s) {
+    tree.querySelectorAll("a").forEach(function (a) {
+      var hit = a.getAttribute("href") === "#" + s;
+      a.classList.toggle("active", hit);
+      if (hit) {
+        var grp = a.closest(".nav-group");
+        if (grp) grp.classList.add("open");
+      }
+    });
+  }
+
+  function showCover() {
+    current = "";
+    actions.hidden = true;
+    setActive("");
+    var toc = "";
+    GROUPS.forEach(function (g) {
+      g.items.forEach(function (it) {
+        toc += '<a href="#' + it[4] + '"><span class="lv" style="background:' + it[5] + '">' + it[0] + '</span><span>' + it[1] +
+          "<small>" + it[2] + "</small></span></a>";
+      });
+    });
+    content.innerHTML =
+      '<div class="ob-cover">' +
+      '<div class="kicker">Onboarding</div>' +
+      "<h1>Onboarding</h1>" +
+      '<p class="lede">Two tracks: bringing a new <strong>client</strong> into services, and bringing a new <strong>staff member</strong> on board at the right EIDBI provider level. Pick a track on the left \u2014 staff expands into provider levels.</p>' +
+      '<div class="toc">' + toc + "</div></div>";
+  }
+
+  function showPage(s) {
+    var it = bySlug[s];
+    if (!it) { showCover(); return; }
+    current = s;
+    setActive(s);
+    manual.classList.remove("nav-open");
+    actions.hidden = false;
+    if (cache[s]) { content.innerHTML = cache[s]; return; }
+    content.innerHTML = '<div class="ob-loading">Loading\u2026</div>';
+    fetch(it[3])
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(function (html) {
+        var doc = new DOMParser().parseFromString(html, "text/html");
+        var main = doc.querySelector("main.wrap");
+        if (main) {
+          var back = main.querySelector(".page-back");
+          if (back) back.remove();
+          cache[s] = main.innerHTML;
+        } else {
+          cache[s] = "<p>Could not load this page.</p>";
+        }
+        if (current === s) content.innerHTML = cache[s];
+      })
+      .catch(function () {
+        content.innerHTML = '<p style="font-size:13.5px">Could not load this page. <a href="' + it[3] + '">Open it directly</a>.</p>';
+      });
+  }
+
+  function route() {
+    var s = location.hash.replace(/^#/, "");
+    if (s && bySlug[s]) { showPage(s); window.scrollTo(0, 0); }
+    else showCover();
+  }
+  window.addEventListener("hashchange", route);
+  route();
+
+  document.getElementById("ob-home").addEventListener("click", function () {
+    if (location.hash) location.hash = "";
+    else showCover();
+  });
+  document.getElementById("mob-nav").addEventListener("click", function () {
+    manual.classList.toggle("nav-open");
+  });
+})();
+</script>
 
 </body>
 </html>

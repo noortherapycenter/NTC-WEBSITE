@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Staff Availability — Noor Therapy Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="form-styles.css"/>
+<link rel="stylesheet" href="fillable.css"/>
+<style>
+  body { margin: 0; }
+</style>
+<script src="theme-boot.js"></script>
+</head>
+<body>
+
+<doc-page size="letter" margin="0.6in">
+
+  <div slot="footer" class="form-footer">
+    <span>Noor Therapy Center · Staff Availability</span>
+    <span class="dots">
+      <span style="background:#2aa63a"></span>
+      <span style="background:#f18a2c"></span>
+      <span style="background:#2f6fd6"></span>
+      <span style="background:#9b51c7"></span>
+      <span style="background:#e5396a"></span>
+    </span>
+    <span>Scheduling</span>
+  </div>
+
+  <div class="form-masthead">
+    <img class="logo" src="noor-logo.png" alt="Noor Therapy Center"/>
+    <div class="form-meta">
+      <strong>Noor Therapy Center</strong><br/>
+      6250 Excelsior Blvd, Suite 102<br/>
+      St. Louis Park, MN 55416<br/>
+      (612) 703-9022 · Fax (612) 482-3186<br/>
+      info@noortherapycenter.com
+    </div>
+  </div>
+
+  <div class="form-title">
+    <div class="kicker">Scheduling</div>
+    <h1>Staff Availability</h1>
+    <p class="lede">Tell scheduling when and where you can work. Submit a new form whenever your availability changes — changes take effect once confirmed by the scheduler.</p>
+  </div>
+
+  <!-- 1. Employee -->
+  <div class="section">
+    <div class="section-head"><span class="section-num">1</span><h2>Employee</h2></div>
+    <div class="grid c3">
+      <div class="field"><label>Name <span class="req">*</span></label><div class="line"></div></div>
+      <div class="field"><label>Position / Provider Level</label><div class="line"></div></div>
+      <div class="field"><label>Effective Date <span class="req">*</span></label><div class="line"></div></div>
+    </div>
+  </div>
+
+  <!-- 2. Weekly availability -->
+  <div class="section c-blue">
+    <div class="section-head"><span class="section-num">2</span><h2>Weekly Availability</h2></div>
+    <table class="form-table rows">
+      <thead>
+        <tr><th style="width:18%">Day</th><th class="tc" style="width:14%">Available</th><th style="width:22%">From</th><th style="width:22%">To</th><th style="width:24%">Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="doc">Monday</td><td class="tc"><span class="cbox"></span></td><td></td><td></td><td></td></tr>
+        <tr><td class="doc">Tuesday</td><td class="tc"><span class="cbox"></span></td><td></td><td></td><td></td></tr>
+        <tr><td class="doc">Wednesday</td><td class="tc"><span class="cbox"></span></td><td></td><td></td><td></td></tr>
+        <tr><td class="doc">Thursday</td><td class="tc"><span class="cbox"></span></td><td></td><td></td><td></td></tr>
+        <tr><td class="doc">Friday</td><td class="tc"><span class="cbox"></span></td><td></td><td></td><td></td></tr>
+        <tr><td class="doc">Saturday</td><td class="tc"><span class="cbox"></span></td><td></td><td></td><td></td></tr>
+        <tr><td class="doc">Sunday</td><td class="tc"><span class="cbox"></span></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 3. Hours & locations -->
+  <div class="section c-purple">
+    <div class="section-head"><span class="section-num">3</span><h2>Hours &amp; Locations</h2></div>
+    <div class="grid c3" style="margin-bottom:14px">
+      <div class="field"><label>Desired Hours / Week</label><div class="line"></div></div>
+      <div class="field"><label>Maximum Hours / Week</label><div class="line"></div></div>
+      <div class="field"><label>Willing to Travel (miles)</label><div class="line"></div></div>
+    </div>
+    <div class="field col-all">
+      <label>Service settings I can work in</label>
+      <div class="checks lg" style="gap:10px 24px">
+        <span class="check"><span class="box"></span>Center-based</span>
+        <span class="check"><span class="box"></span>In-home</span>
+        <span class="check"><span class="box"></span>Community</span>
+        <span class="check"><span class="box"></span>Telehealth</span>
+      </div>
+    </div>
+    <div style="height:14px"></div>
+    <div class="field col-all">
+      <label>Standing conflicts we should plan around (classes, other employment, etc.)</label>
+      <div class="writein h2"></div>
+    </div>
+  </div>
+
+  <!-- 4. Signature -->
+  <div class="section c-berry">
+    <div class="section-head"><span class="section-num">4</span><h2>Signature</h2></div>
+    <div class="sign-row">
+      <div class="sign-field"><div class="sig-line"></div><label>Employee Signature</label></div>
+      <div class="sign-field"><div class="sig-line"></div><label>Date</label></div>
+    </div>
+    <div style="height:14px"></div>
+    <div class="sign-row">
+      <div class="sign-field"><div class="sig-line"></div><label>Scheduler / Supervisor Confirmation</label></div>
+      <div class="sign-field"><div class="sig-line"></div><label>Date</label></div>
+    </div>
+  </div>
+
+</doc-page>
+
+<script src="doc-page.js"></script>
+<script src="fillable.js"></script>
+<script src="submit.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Medical Information — Noor Therapy Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="form-styles.css"/>
+<link rel="stylesheet" href="fillable.css"/>
+<style>
+  body { margin: 0; }
+</style>
+<script src="theme-boot.js"></script>
+</head>
+<body>
+
+<doc-page size="letter" margin="0.6in">
+
+  <div slot="footer" class="form-footer">
+    <span>Noor Therapy Center · Medical Information</span>
+    <span class="dots">
+      <span style="background:#2aa63a"></span>
+      <span style="background:#f18a2c"></span>
+      <span style="background:#2f6fd6"></span>
+      <span style="background:#9b51c7"></span>
+      <span style="background:#e5396a"></span>
+    </span>
+    <span>Confidential · Client File</span>
+  </div>
+
+  <div class="form-masthead">
+    <img class="logo" src="noor-logo.png" alt="Noor Therapy Center"/>
+    <div class="form-meta">
+      <strong>Noor Therapy Center</strong><br/>
+      6250 Excelsior Blvd, Suite 102<br/>
+      St. Louis Park, MN 55416<br/>
+      (612) 703-9022 · Fax (612) 482-3186<br/>
+      info@noortherapycenter.com
+    </div>
+  </div>
+
+  <div class="form-title">
+    <div class="kicker">Client Services · Confidential</div>
+    <h1>Medical Information</h1>
+    <p class="lede">Completed by the parent or guardian so our team can respond safely to allergies, medications, and medical needs during services. Update whenever anything changes.</p>
+  </div>
+
+  <!-- 1. Client -->
+  <div class="section">
+    <div class="section-head"><span class="section-num">1</span><h2>Client Information</h2></div>
+    <div class="grid c3">
+      <div class="field"><label>Client Name <span class="req">*</span></label><div class="line"></div></div>
+      <div class="field"><label>Date of Birth <span class="req">*</span></label><div class="line"></div></div>
+      <div class="field"><label>Date Completed</label><div class="line"></div></div>
+    </div>
+    <div style="height:14px"></div>
+    <div class="grid c2">
+      <div class="field"><label>Parent / Guardian Name</label><div class="line"></div></div>
+      <div class="field"><label>Phone</label><div class="line"></div></div>
+    </div>
+  </div>
+
+  <!-- 2. Allergies -->
+  <div class="section c-berry">
+    <div class="section-head"><span class="section-num">2</span><h2>Allergies</h2></div>
+    <div class="checks lg" style="gap:10px 24px; margin-bottom:12px">
+      <span class="check"><span class="box"></span>No known allergies</span>
+      <span class="check"><span class="box"></span>Carries an EpiPen</span>
+      <span class="check"><span class="box"></span>Carries an inhaler</span>
+    </div>
+    <table class="form-table" data-addrows="">
+      <thead>
+        <tr><th style="width:30%">Allergy (food, medication, environmental)</th><th style="width:40%">Reaction</th><th style="width:30%">Severity / What to Do</th></tr>
+      </thead>
+      <tbody>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 3. Medications -->
+  <div class="section c-blue">
+    <div class="section-head"><span class="section-num">3</span><h2>Current Medications</h2></div>
+    <table class="form-table" data-addrows="">
+      <thead>
+        <tr><th style="width:30%">Medication</th><th style="width:20%">Dosage</th><th style="width:22%">When Taken</th><th style="width:28%">Prescribed For</th></tr>
+      </thead>
+      <tbody>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+    <div style="height:12px"></div>
+    <div class="field col-all">
+      <label>Does any medication need to be given during session hours? If so, describe.</label>
+      <div class="writein h2"></div>
+    </div>
+  </div>
+
+  <!-- 4. Medical conditions -->
+  <div class="section c-orange">
+    <div class="section-head"><span class="section-num">4</span><h2>Medical Conditions</h2></div>
+    <div class="field col-all" style="margin-bottom:14px">
+      <label>Diagnoses and medical conditions we should know about (seizures, asthma, diabetes, feeding concerns, etc.)</label>
+      <div class="writein h3"></div>
+    </div>
+    <div class="grid c2">
+      <div class="field"><label>History of Seizures</label>
+        <div class="checks" style="height:20px;align-items:center">
+          <span class="check"><span class="box"></span>Yes</span>
+          <span class="check"><span class="box"></span>No</span>
+        </div>
+      </div>
+      <div class="field"><label>Dietary Restrictions</label><div class="line"></div></div>
+    </div>
+  </div>
+
+  <!-- 5. Physician -->
+  <div class="section c-purple">
+    <div class="section-head"><span class="section-num">5</span><h2>Physician Information</h2></div>
+    <div class="grid c2">
+      <div class="field"><label>Primary Care Physician <span class="req">*</span></label><div class="line"></div></div>
+      <div class="field"><label>Clinic / Practice</label><div class="line"></div></div>
+    </div>
+    <div style="height:14px"></div>
+    <div class="grid c2">
+      <div class="field"><label>Clinic Phone</label><div class="line"></div></div>
+      <div class="field"><label>Preferred Hospital</label><div class="line"></div></div>
+    </div>
+    <div style="height:14px"></div>
+    <div class="field col-all">
+      <label>Specialists involved in care (name, specialty, phone)</label>
+      <div class="writein h2"></div>
+    </div>
+  </div>
+
+  <!-- 6. Signature -->
+  <div class="section c-berry">
+    <div class="section-head"><span class="section-num">6</span><h2>Parent / Guardian Signature</h2></div>
+    <p class="fineprint" style="margin:0 0 12px">
+      The information above is accurate to the best of my knowledge. I will notify Noor Therapy Center promptly of any changes to my child's allergies, medications, or medical needs. In a medical emergency, staff will call 911 and then contact me.
+    </p>
+    <div class="sign-row">
+      <div class="sign-field"><div class="sig-line"></div><label>Parent / Guardian Signature</label></div>
+      <div class="sign-field"><div class="sig-line"></div><label>Date</label></div>
+    </div>
+  </div>
+
+</doc-page>
+
+<script src="doc-page.js"></script>
+<script src="fillable.js"></script>
+<script src="submit.js"></script>
+</body>
+</html>
