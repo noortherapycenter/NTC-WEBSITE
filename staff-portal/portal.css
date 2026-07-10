@@ -226,6 +226,14 @@ mark.find-hit.current { background: var(--orange); color: #fff; }
 .packet .item .links a.pdf { background: #fdeee0; color: #b25f10; }
 .packet .item .links a.ext { background: #e8f0fc; color: #1d4fa8; }
 .packet .item .links a:hover { filter: brightness(.95); }
+.packet .item .treq {
+  display: inline-block; vertical-align: 1.5px; margin-left: 8px;
+  font-size: 9.5px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase;
+  padding: 2.5px 9px; border-radius: 999px; white-space: nowrap;
+}
+.treq.req { background: #eef7ea; color: var(--green-dark); }
+.treq.cond { background: #fdeee0; color: #b25f10; }
+.treq.rec { background: #e8f0fc; color: #1d4fa8; }
 
 /* ---- Search bar ---- */
 .searchbar {
@@ -294,6 +302,9 @@ mark.find-hit.current { background: var(--orange); color: #fff; }
   html[data-theme="dark"] .doclist .ic.ext,
   html[data-theme="dark"] .doclist .tag.ext,
   html[data-theme="dark"] .packet .item .links a.ext { background: rgba(88,143,235,.18); color: #99badf; }
+  html[data-theme="dark"] .treq.req { background: rgba(76,194,91,.16); color: #8ddd98; }
+  html[data-theme="dark"] .treq.cond { background: rgba(241,138,44,.16); color: #f2ab68; }
+  html[data-theme="dark"] .treq.rec { background: rgba(88,143,235,.18); color: #99badf; }
   /* Handbook */
   html[data-theme="dark"] .hb-doc { background: #1d2316; }
   html[data-theme="dark"] .hb-doc p, html[data-theme="dark"] .hb-doc li { color: #cdd4bf; }

@@ -185,23 +185,36 @@ window.NoorPdf = (function () {
     };
   }
 
-  /* opts: { title, kicker, filename, nodes: [Element] } */
-  function share(opts) {
+  function makeBlob(opts) {
     return Promise.all([load(), loadLogo()]).then(function (r) {
       var dd = build(opts, r[1]);
       return new Promise(function (resolve) { pdfMake.createPdf(dd).getBlob(resolve); });
-    }).then(function (blob) {
+    });
+  }
+
+  function saveBlob(blob, filename) {
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url; a.download = filename;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+  }
+
+  /* opts: { title, kicker, filename, nodes: [Element] } */
+  function share(opts) {
+    return makeBlob(opts).then(function (blob) {
       var file = new File([blob], opts.filename, { type: 'application/pdf' });
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
         return navigator.share({ files: [file], title: opts.title }).catch(function () {});
       }
-      var url = URL.createObjectURL(blob);
-      var a = document.createElement('a');
-      a.href = url; a.download = opts.filename;
-      document.body.appendChild(a); a.click(); a.remove();
-      setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+      saveBlob(blob, opts.filename);
     });
   }
 
-  return { share: share };
+  /* Same PDF, but always saves the file to the device (no share sheet). */
+  function download(opts) {
+    return makeBlob(opts).then(function (blob) { saveBlob(blob, opts.filename); });
+  }
+
+  return { share: share, download: download };
 })();

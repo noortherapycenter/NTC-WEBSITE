@@ -233,10 +233,7 @@
           <span class="hb-count" id="pol-count"></span>
         </div>
         <span style="flex:1"></span>
-        <button type="button" class="iconbtn" id="pol-share" hidden title="Share this policy as a PDF" aria-label="Share this policy as a PDF">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1.8 1.8 0 0 0 1.8 1.8h12.4A1.8 1.8 0 0 0 20 19v-7"></path><path d="M16 6l-4-4-4 4"></path><path d="M12 2v13"></path></svg>
-        </button>
-        <button type="button" class="iconbtn" id="pol-dl" hidden title="Download PDF (with signature space)" aria-label="Download PDF with signature space">
+        <button type="button" class="iconbtn" id="pol-dl" hidden title="Download as PDF (with signature space)" aria-label="Download as PDF with signature space">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 17v2a1.8 1.8 0 0 1-1.8 1.8H5.8A1.8 1.8 0 0 1 4 19v-2"></path><path d="M8 11l4 4 4-4"></path><path d="M12 15V3"></path></svg>
         </button>
         <button type="button" class="iconbtn" id="pol-print" hidden title="Print" aria-label="Print">
@@ -377,7 +374,7 @@
   }
 
   function setButtons(onPolicy) {
-    ["pol-home", "pol-share", "pol-dl", "pol-print"].forEach(function (id) {
+    ["pol-home", "pol-dl", "pol-print"].forEach(function (id) {
       document.getElementById(id).hidden = !onPolicy;
     });
   }
@@ -395,7 +392,7 @@
       '<div class="cover">' +
       '<div class="kicker">Policies &amp; Procedures</div>' +
       "<h1>Policy &amp; Procedure Manual</h1>" +
-      '<p class="lede">The agency\u2019s EIDBI policies, all in one place. Pick a policy from the list to read it here \u2014 use the buttons above any policy to share, download, or print it.</p>' +
+      '<p class="lede">The agency\u2019s EIDBI policies, all in one place. Pick a policy from the list to read it here \u2014 use the buttons above any policy to download or print it.</p>' +
       '<div class="toc">' + toc + "</div></div>";
   }
 
@@ -450,22 +447,8 @@
     if (location.hash) location.hash = "";
     else showCover();
   });
+  /* Download builds the same branded PDF as Share, but always saves the file. */
   document.getElementById("pol-dl").addEventListener("click", function () {
-    var sb = content.querySelector("#sig-block");
-    if (sb) sb.hidden = false;
-    setTimeout(function () { window.print(); }, 80);
-  });
-  document.getElementById("pol-print").addEventListener("click", function () {
-    var sb = content.querySelector("#sig-block");
-    if (sb) sb.hidden = true;
-    setTimeout(function () { window.print(); }, 80);
-  });
-  document.getElementById("mob-nav").addEventListener("click", function () {
-    manual.classList.toggle("nav-open");
-  });
-
-  /* ---------------- Share current policy as PDF ---------------- */
-  document.getElementById("pol-share").addEventListener("click", function () {
     if (!currentSlug) return;
     var btn = this;
     if (btn.classList.contains("busy")) return;
@@ -477,7 +460,7 @@
       div.innerHTML = html;
       var sb = div.querySelector("#sig-block");
       if (sb) sb.hidden = false;
-      return NoorPdf.share({
+      return NoorPdf.download({
         title: title,
         kicker: "Policies & Procedures",
         filename: "Noor Therapy Center - " + title + ".pdf",
@@ -488,6 +471,14 @@
     }).finally(function () {
       btn.classList.remove("busy");
     });
+  });
+  document.getElementById("pol-print").addEventListener("click", function () {
+    var sb = content.querySelector("#sig-block");
+    if (sb) sb.hidden = true;
+    setTimeout(function () { window.print(); }, 80);
+  });
+  document.getElementById("mob-nav").addEventListener("click", function () {
+    manual.classList.toggle("nav-open");
   });
 
   /* ---------------- Full-text search across ALL policies ---------------- */

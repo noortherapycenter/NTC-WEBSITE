@@ -210,8 +210,8 @@ const Nav = ({ current }) => {
   React.useEffect(() => {
     if (!mounted.current) { mounted.current = true; return; }
     const entry = LANGS.find(l => l.code === lang) || LANGS[0];
-    if (window.applyLanguage) window.applyLanguage(entry.g);
     try { localStorage.setItem('noor_lang', lang); } catch(e) {}
+    if (window.setNoorLang) window.setNoorLang(entry.g);
   }, [lang]);
 
   const ddRef = React.useRef(null);
